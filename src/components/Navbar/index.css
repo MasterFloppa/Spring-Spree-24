@@ -1,0 +1,126 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.beautt {
+  background-color: #0d0d0d;
+}
+
+
+/* ._navbar {
+  position : fixed;
+  z-index: 10;
+  top: 0px;
+} */
+
+.liaa:before {
+  content: ">>";
+  margin-right: 10px;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.liaa:after {
+  content: "<<";
+  margin-left: 10px;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.liaa:hover:before,
+.liaa:hover:after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.mylinkdecor a, .logout{
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  
+  .mylinkdecor a:hover, .logout:hover{
+    /* color: black; */
+    background-image: linear-gradient(45deg, black , black);
+  }
+  .menu-hover-effect-1 a, .logout{
+    transition: color 0.2s linear 0s;
+}
+.menu-hover-effect-1 a:before, .logout:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #f7ca17, #f7ca17);
+    border-radius: 30px;
+    z-index: -1;
+    transform: scale(0.3, 1);
+    opacity: 0;
+}
+.menu-hover-effect-1 a:hover:before, .logout:hover:before {
+    transform: scale(1, 1);
+    opacity: 1;
+    /* transition: all 0.2s linear 0s; */
+}
+
+
+.menu-hover-effect ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-hover-effect ul li a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #c29090;
+    margin-left:14px;
+    margin-right:14px;
+}
+
+
+.btn, .logout{
+  transition: 0.5s;
+  color: white;
+  box-shadow: 0 0 5px #f3ec78;
+  border-radius: 30px;
+  /* background: linear-gradient(to right,  #3324A7 , #bc1718 ); */
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn:hover, .logout{
+  background-position: right center; /* change the direction of the change here */
+}
+
