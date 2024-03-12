@@ -2,7 +2,8 @@
 :root {
   --mar: 10px;
   --imsz: 264px;
-  --circle: radial-gradient(circle at 50% 50%, transparent 10%, rgba(0, 0, 0) 30vh) ;
+  /* --circle: radial-gradient(transparent 10%, rgba(0, 0, 0) 30vh) ; */
+  background-color: rgba(0, 0, 0);
 }
 
 @keyframes scrollYf {
@@ -137,7 +138,7 @@
   animation-delay: 0.06s;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
@@ -170,7 +171,7 @@
   100% {
     transform: translate3d(0, 0, 0) translateZ(0);
   }
-}
+} */
 .float {
   position: fixed;
   width: 60px;
@@ -1087,3 +1088,9 @@ button.float:hover > img {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+.something {
+  margin-bottom: var(--mar);
+  height: calc(var(--imsz) * 3);
+  background-image: url('');
+}
