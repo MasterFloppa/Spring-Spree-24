@@ -87,8 +87,109 @@ const Hero = () => {
     //     }, 10)
     // }
 
+    const PetalCanvas = () => {
+      const canvasRef = useRef(null);
+      const [ctx, setCtx] = useState(null);
+      const [petalArray, setPetalArray] = useState([]);
+      const [petalImg, setPetalImg] = useState(new Image());
     
+      useEffect(() => {
+        const canvas = canvasRef.current;
+        const context = canvas.getContext('2d');
+        setCtx(context);
     
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    
+        const handleResize = () => {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        };
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+    
+      useEffect(() => {
+        const loadPetalImg = () => {
+          const img = new Image();
+          img.src = 'https://djjjk9bjm164h.cloudfront.net/petal.png';
+          img.onload = () => setPetalImg(img);
+        };
+        loadPetalImg();
+      }, []);
+    
+      useEffect(() => {
+        if (ctx && petalImg) {
+          const TOTAL = 100;
+          const newPetalArray = [];
+          for (let i = 0; i < TOTAL; i++) {
+            newPetalArray.push(new Petal(ctx, petalImg));
+          }
+          setPetalArray(newPetalArray);
+        }
+      }, [ctx, petalImg]);
+    
+      useEffect(() => {
+        if (ctx && petalArray.length > 0) {
+          const render = () => {
+            ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+            petalArray.forEach(petal => petal.animate());
+            window.requestAnimationFrame(render);
+          };
+          window.requestAnimationFrame(render);
+        }
+      }, [ctx, petalArray]);
+    
+      return <canvas ref={canvasRef}></canvas>;
+    };
+    
+    class Petal {
+      constructor(ctx, img) {
+        this.x = Math.random() * ctx.canvas.width;
+        this.y = (Math.random() * ctx.canvas.height * 2) - ctx.canvas.height;
+        this.w = 25 + Math.random() * 15;
+        this.h = 20 + Math.random() * 10;
+        this.opacity = this.w / 40;
+        this.flip = Math.random();
+        this.xSpeed = 1.5 + Math.random() * 2;
+        this.ySpeed = 1 + Math.random() * 1;
+        this.flipSpeed = Math.random() * 0.03;
+        this.ctx = ctx;
+        this.img = img;
+      }
+    
+      draw() {
+        if (this.y > this.ctx.canvas.height || this.x > this.ctx.canvas.width) {
+          this.x = -this.img.width;
+          this.y = (Math.random() * this.ctx.canvas.height * 2) - this.ctx.canvas.height;
+          this.xSpeed = 1.5 + Math.random() * 2;
+          this.ySpeed = 1 + Math.random() * 1;
+          this.flip = Math.random();
+        }
+        this.ctx.globalAlpha = this.opacity;
+        this.ctx.drawImage(
+          this.img,
+          this.x,
+          this.y,
+          this.w * (0.6 + (Math.abs(Math.cos(this.flip)) / 3)),
+          this.h * (0.8 + (Math.abs(Math.sin(this.flip)) / 5))
+        );
+      }
+    
+      animate() {
+        this.x += this.xSpeed;
+        this.y += this.ySpeed;
+        this.flip += this.flipSpeed;
+        this.draw();
+      }
+    }
+    
+
+
     return (
         <>
         {loading ? <Loader /> : ""}
@@ -105,7 +206,7 @@ const Hero = () => {
             })*/}
 
             <div class="something" />
-
+            <PetalCanvas />
             <div class="rasengan">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
