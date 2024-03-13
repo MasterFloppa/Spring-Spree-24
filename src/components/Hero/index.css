@@ -262,718 +262,214 @@ button.float:hover > img {
 }
 
 .line1 {
-  top: 83px;
-  left: 83px;
-  bottom: 83px;
-  right: 83px;
-  animation: rotating 0.03s infinite linear;
+  top: 8px;
+  left: 8px;
+  bottom: 8px;
+  right: 8px;
+  animation: rotating 0.1s infinite linear;
 }
 
 .line2 {
-  top: 51px;
-  left: 51px;
-  bottom: 51px;
-  right: 51px;
-  animation: rotating 0.06s infinite linear;
-}
-
-.line3 {
-  top: 23px;
-  left: 23px;
-  bottom: 23px;
-  right: 23px;
-  animation: rotating 0.09s infinite linear;
-}
-
-.line4 {
-  top: 34px;
-  left: 34px;
-  bottom: 34px;
-  right: 34px;
-  animation: rotating 0.12s infinite linear;
-}
-
-.line5 {
-  top: 13px;
-  left: 13px;
-  bottom: 13px;
-  right: 13px;
-  animation: rotating 0.15s infinite linear;
-}
-
-.line6 {
-  top: 62px;
-  left: 62px;
-  bottom: 62px;
-  right: 62px;
-  animation: rotating 0.18s infinite linear;
-}
-
-.line7 {
-  top: 88px;
-  left: 88px;
-  bottom: 88px;
-  right: 88px;
-  animation: rotating 0.21s infinite linear;
-}
-
-.line8 {
   top: 87px;
   left: 87px;
   bottom: 87px;
   right: 87px;
-  animation: rotating 0.24s infinite linear;
+  animation: rotating 0.2s infinite linear;
 }
 
-.line9 {
-  top: 74px;
-  left: 74px;
-  bottom: 74px;
-  right: 74px;
-  animation: rotating 0.27s infinite linear;
-}
-
-.line10 {
-  top: 63px;
-  left: 63px;
-  bottom: 63px;
-  right: 63px;
+.line3 {
+  top: 61px;
+  left: 61px;
+  bottom: 61px;
+  right: 61px;
   animation: rotating 0.3s infinite linear;
 }
 
-.line11 {
-  top: 71px;
-  left: 71px;
-  bottom: 71px;
-  right: 71px;
-  animation: rotating 0.33s infinite linear;
-}
-
-.line12 {
-  top: 38px;
-  left: 38px;
-  bottom: 38px;
-  right: 38px;
-  animation: rotating 0.36s infinite linear;
-}
-
-.line13 {
-  top: 55px;
-  left: 55px;
-  bottom: 55px;
-  right: 55px;
-  animation: rotating 0.39s infinite linear;
-}
-
-.line14 {
-  top: 62px;
-  left: 62px;
-  bottom: 62px;
-  right: 62px;
-  animation: rotating 0.42s infinite linear;
-}
-
-.line15 {
-  top: 41px;
-  left: 41px;
-  bottom: 41px;
-  right: 41px;
-  animation: rotating 0.45s infinite linear;
-}
-
-.line16 {
-  top: 65px;
-  left: 65px;
-  bottom: 65px;
-  right: 65px;
-  animation: rotating 0.48s infinite linear;
-}
-
-.line17 {
-  top: 12px;
-  left: 12px;
-  bottom: 12px;
-  right: 12px;
-  animation: rotating 0.51s infinite linear;
-}
-
-.line18 {
-  top: 47px;
-  left: 47px;
-  bottom: 47px;
-  right: 47px;
-  animation: rotating 0.54s infinite linear;
-}
-
-.line19 {
-  top: 86px;
-  left: 86px;
-  bottom: 86px;
-  right: 86px;
-  animation: rotating 0.57s infinite linear;
-}
-
-.line20 {
-  top: 54px;
-  left: 54px;
-  bottom: 54px;
-  right: 54px;
-  animation: rotating 0.6s infinite linear;
-}
-
-.line21 {
-  top: 21px;
-  left: 21px;
-  bottom: 21px;
-  right: 21px;
-  animation: rotating 0.63s infinite linear;
-}
-
-.line22 {
-  top: 30px;
-  left: 30px;
-  bottom: 30px;
-  right: 30px;
-  animation: rotating 0.66s infinite linear;
-}
-
-.line23 {
-  top: 81px;
-  left: 81px;
-  bottom: 81px;
-  right: 81px;
-  animation: rotating 0.69s infinite linear;
-}
-
-.line24 {
-  top: 63px;
-  left: 63px;
-  bottom: 63px;
-  right: 63px;
-  animation: rotating 0.72s infinite linear;
-}
-
-.line25 {
-  top: 81px;
-  left: 81px;
-  bottom: 81px;
-  right: 81px;
-  animation: rotating 0.75s infinite linear;
-}
-
-.line26 {
-  top: 55px;
-  left: 55px;
-  bottom: 55px;
-  right: 55px;
-  animation: rotating 0.78s infinite linear;
-}
-
-.line27 {
+.line4 {
   top: 14px;
   left: 14px;
   bottom: 14px;
   right: 14px;
-  animation: rotating 0.81s infinite linear;
+  animation: rotating 0.4s infinite linear;
 }
 
-.line28 {
+.line5 {
+  top: 79px;
+  left: 79px;
+  bottom: 79px;
+  right: 79px;
+  animation: rotating 0.5s infinite linear;
+}
+
+.line6 {
+  top: 8px;
+  left: 8px;
+  bottom: 8px;
+  right: 8px;
+  animation: rotating 0.6s infinite linear;
+}
+
+.line7 {
+  top: 58px;
+  left: 58px;
+  bottom: 58px;
+  right: 58px;
+  animation: rotating 0.7s infinite linear;
+}
+
+.line8 {
   top: 56px;
   left: 56px;
   bottom: 56px;
   right: 56px;
-  animation: rotating 0.84s infinite linear;
+  animation: rotating 0.8s infinite linear;
 }
 
-.line29 {
-  top: 50px;
-  left: 50px;
-  bottom: 50px;
-  right: 50px;
-  animation: rotating 0.87s infinite linear;
-}
-
-.line30 {
-  top: 21px;
-  left: 21px;
-  bottom: 21px;
-  right: 21px;
+.line9 {
+  top: 32px;
+  left: 32px;
+  bottom: 32px;
+  right: 32px;
   animation: rotating 0.9s infinite linear;
 }
 
-.line31 {
+.line10 {
+  top: 54px;
+  left: 54px;
+  bottom: 54px;
+  right: 54px;
+  animation: rotating 1s infinite linear;
+}
+
+.line11 {
+  top: 43px;
+  left: 43px;
+  bottom: 43px;
+  right: 43px;
+  animation: rotating 1.1s infinite linear;
+}
+
+.line12 {
+  top: 23px;
+  left: 23px;
+  bottom: 23px;
+  right: 23px;
+  animation: rotating 1.2s infinite linear;
+}
+
+.line13 {
   top: 86px;
   left: 86px;
   bottom: 86px;
   right: 86px;
-  animation: rotating 0.93s infinite linear;
+  animation: rotating 1.3s infinite linear;
 }
 
-.line32 {
-  top: 82px;
-  left: 82px;
-  bottom: 82px;
-  right: 82px;
-  animation: rotating 0.96s infinite linear;
+.line14 {
+  top: 14px;
+  left: 14px;
+  bottom: 14px;
+  right: 14px;
+  animation: rotating 1.4s infinite linear;
 }
 
-.line33 {
-  top: 34px;
-  left: 34px;
-  bottom: 34px;
-  right: 34px;
-  animation: rotating 0.99s infinite linear;
-}
-
-.line34 {
-  top: 54px;
-  left: 54px;
-  bottom: 54px;
-  right: 54px;
-  animation: rotating 1.02s infinite linear;
-}
-
-.line35 {
-  top: 54px;
-  left: 54px;
-  bottom: 54px;
-  right: 54px;
-  animation: rotating 1.05s infinite linear;
-}
-
-.line36 {
-  top: 27px;
-  left: 27px;
-  bottom: 27px;
-  right: 27px;
-  animation: rotating 1.08s infinite linear;
-}
-
-.line37 {
-  top: 51px;
-  left: 51px;
-  bottom: 51px;
-  right: 51px;
-  animation: rotating 1.11s infinite linear;
-}
-
-.line38 {
-  top: 6px;
-  left: 6px;
-  bottom: 6px;
-  right: 6px;
-  animation: rotating 1.14s infinite linear;
-}
-
-.line39 {
-  top: 68px;
-  left: 68px;
-  bottom: 68px;
-  right: 68px;
-  animation: rotating 1.17s infinite linear;
-}
-
-.line40 {
-  top: 22px;
-  left: 22px;
-  bottom: 22px;
-  right: 22px;
-  animation: rotating 1.2s infinite linear;
-}
-
-.line41 {
-  top: 37px;
-  left: 37px;
-  bottom: 37px;
-  right: 37px;
-  animation: rotating 1.23s infinite linear;
-}
-
-.line42 {
-  top: 8px;
-  left: 8px;
-  bottom: 8px;
-  right: 8px;
-  animation: rotating 1.26s infinite linear;
-}
-
-.line43 {
-  top: 30px;
-  left: 30px;
-  bottom: 30px;
-  right: 30px;
-  animation: rotating 1.29s infinite linear;
-}
-
-.line44 {
-  top: 31px;
-  left: 31px;
-  bottom: 31px;
-  right: 31px;
-  animation: rotating 1.32s infinite linear;
-}
-
-.line45 {
-  top: 76px;
-  left: 76px;
-  bottom: 76px;
-  right: 76px;
-  animation: rotating 1.35s infinite linear;
-}
-
-.line46 {
-  top: 85px;
-  left: 85px;
-  bottom: 85px;
-  right: 85px;
-  animation: rotating 1.38s infinite linear;
-}
-
-.line47 {
-  top: 64px;
-  left: 64px;
-  bottom: 64px;
-  right: 64px;
-  animation: rotating 1.41s infinite linear;
-}
-
-.line48 {
-  top: 65px;
-  left: 65px;
-  bottom: 65px;
-  right: 65px;
-  animation: rotating 1.44s infinite linear;
-}
-
-.line49 {
-  top: 80px;
-  left: 80px;
-  bottom: 80px;
-  right: 80px;
-  animation: rotating 1.47s infinite linear;
-}
-
-.line50 {
-  top: 66px;
-  left: 66px;
-  bottom: 66px;
-  right: 66px;
+.line15 {
+  top: 12px;
+  left: 12px;
+  bottom: 12px;
+  right: 12px;
   animation: rotating 1.5s infinite linear;
 }
 
-.line51 {
-  top: 70px;
-  left: 70px;
-  bottom: 70px;
-  right: 70px;
-  animation: rotating 1.53s infinite linear;
-}
-
-.line52 {
-  top: 22px;
-  left: 22px;
-  bottom: 22px;
-  right: 22px;
-  animation: rotating 1.56s infinite linear;
-}
-
-.line53 {
-  top: 45px;
-  left: 45px;
-  bottom: 45px;
-  right: 45px;
-  animation: rotating 1.59s infinite linear;
-}
-
-.line54 {
-  top: 75px;
-  left: 75px;
-  bottom: 75px;
-  right: 75px;
-  animation: rotating 1.62s infinite linear;
-}
-
-.line55 {
-  top: 28px;
-  left: 28px;
-  bottom: 28px;
-  right: 28px;
-  animation: rotating 1.65s infinite linear;
-}
-
-.line56 {
-  top: 27px;
-  left: 27px;
-  bottom: 27px;
-  right: 27px;
-  animation: rotating 1.68s infinite linear;
-}
-
-.line57 {
-  top: 40px;
-  left: 40px;
-  bottom: 40px;
-  right: 40px;
-  animation: rotating 1.71s infinite linear;
-}
-
-.line58 {
-  top: 87px;
-  left: 87px;
-  bottom: 87px;
-  right: 87px;
-  animation: rotating 1.74s infinite linear;
-}
-
-.line59 {
-  top: 26px;
-  left: 26px;
-  bottom: 26px;
-  right: 26px;
-  animation: rotating 1.77s infinite linear;
-}
-
-.line60 {
-  top: 72px;
-  left: 72px;
-  bottom: 72px;
-  right: 72px;
-  animation: rotating 1.8s infinite linear;
-}
-
-.line61 {
-  top: 4px;
-  left: 4px;
-  bottom: 4px;
-  right: 4px;
-  animation: rotating 1.83s infinite linear;
-}
-
-.line62 {
-  top: 45px;
-  left: 45px;
-  bottom: 45px;
-  right: 45px;
-  animation: rotating 1.86s infinite linear;
-}
-
-.line63 {
-  top: 37px;
-  left: 37px;
-  bottom: 37px;
-  right: 37px;
-  animation: rotating 1.89s infinite linear;
-}
-
-.line64 {
-  top: 76px;
-  left: 76px;
-  bottom: 76px;
-  right: 76px;
-  animation: rotating 1.92s infinite linear;
-}
-
-.line65 {
-  top: 48px;
-  left: 48px;
-  bottom: 48px;
-  right: 48px;
-  animation: rotating 1.95s infinite linear;
-}
-
-.line66 {
-  top: 66px;
-  left: 66px;
-  bottom: 66px;
-  right: 66px;
-  animation: rotating 1.98s infinite linear;
-}
-
-.line67 {
+.line16 {
   top: 67px;
   left: 67px;
   bottom: 67px;
   right: 67px;
-  animation: rotating 2.01s infinite linear;
+  animation: rotating 1.6s infinite linear;
 }
 
-.line68 {
-  top: 54px;
-  left: 54px;
-  bottom: 54px;
-  right: 54px;
-  animation: rotating 2.04s infinite linear;
+.line17 {
+  top: 58px;
+  left: 58px;
+  bottom: 58px;
+  right: 58px;
+  animation: rotating 1.7s infinite linear;
 }
 
-.line69 {
-  top: 8px;
-  left: 8px;
-  bottom: 8px;
-  right: 8px;
-  animation: rotating 2.07s infinite linear;
+.line18 {
+  top: 65px;
+  left: 65px;
+  bottom: 65px;
+  right: 65px;
+  animation: rotating 1.8s infinite linear;
 }
 
-.line70 {
-  top: 88px;
-  left: 88px;
-  bottom: 88px;
-  right: 88px;
+.line19 {
+  top: 18px;
+  left: 18px;
+  bottom: 18px;
+  right: 18px;
+  animation: rotating 1.9s infinite linear;
+}
+
+.line20 {
+  top: 69px;
+  left: 69px;
+  bottom: 69px;
+  right: 69px;
+  animation: rotating 2s infinite linear;
+}
+
+.line21 {
+  top: 27px;
+  left: 27px;
+  bottom: 27px;
+  right: 27px;
   animation: rotating 2.1s infinite linear;
 }
 
-.line71 {
-  top: 57px;
-  left: 57px;
-  bottom: 57px;
-  right: 57px;
-  animation: rotating 2.13s infinite linear;
+.line22 {
+  top: 23px;
+  left: 23px;
+  bottom: 23px;
+  right: 23px;
+  animation: rotating 2.2s infinite linear;
 }
 
-.line72 {
-  top: 4px;
-  left: 4px;
-  bottom: 4px;
-  right: 4px;
-  animation: rotating 2.16s infinite linear;
+.line23 {
+  top: 45px;
+  left: 45px;
+  bottom: 45px;
+  right: 45px;
+  animation: rotating 2.3s infinite linear;
 }
 
-.line73 {
-  top: 57px;
-  left: 57px;
-  bottom: 57px;
-  right: 57px;
-  animation: rotating 2.19s infinite linear;
-}
-
-.line74 {
-  top: 7px;
-  left: 7px;
-  bottom: 7px;
-  right: 7px;
-  animation: rotating 2.22s infinite linear;
-}
-
-.line75 {
-  top: 39px;
-  left: 39px;
-  bottom: 39px;
-  right: 39px;
-  animation: rotating 2.25s infinite linear;
-}
-
-.line76 {
-  top: 77px;
-  left: 77px;
-  bottom: 77px;
-  right: 77px;
-  animation: rotating 2.28s infinite linear;
-}
-
-.line77 {
-  top: 73px;
-  left: 73px;
-  bottom: 73px;
-  right: 73px;
-  animation: rotating 2.31s infinite linear;
-}
-
-.line78 {
-  top: 69px;
-  left: 69px;
-  bottom: 69px;
-  right: 69px;
-  animation: rotating 2.34s infinite linear;
-}
-
-.line79 {
-  top: 84px;
-  left: 84px;
-  bottom: 84px;
-  right: 84px;
-  animation: rotating 2.37s infinite linear;
-}
-
-.line80 {
-  top: 35px;
-  left: 35px;
-  bottom: 35px;
-  right: 35px;
+.line24 {
+  top: 40px;
+  left: 40px;
+  bottom: 40px;
+  right: 40px;
   animation: rotating 2.4s infinite linear;
 }
 
-.line81 {
-  top: 81px;
-  left: 81px;
-  bottom: 81px;
-  right: 81px;
-  animation: rotating 2.43s infinite linear;
-}
-
-.line82 {
-  top: 6px;
-  left: 6px;
-  bottom: 6px;
-  right: 6px;
-  animation: rotating 2.46s infinite linear;
-}
-
-.line83 {
-  top: 69px;
-  left: 69px;
-  bottom: 69px;
-  right: 69px;
-  animation: rotating 2.49s infinite linear;
-}
-
-.line84 {
-  top: 70px;
-  left: 70px;
-  bottom: 70px;
-  right: 70px;
-  animation: rotating 2.52s infinite linear;
-}
-
-.line85 {
-  top: 28px;
-  left: 28px;
-  bottom: 28px;
-  right: 28px;
-  animation: rotating 2.55s infinite linear;
-}
-
-.line86 {
+.line25 {
   top: 13px;
   left: 13px;
   bottom: 13px;
   right: 13px;
-  animation: rotating 2.58s infinite linear;
+  animation: rotating 2.5s infinite linear;
 }
 
-.line87 {
-  top: 59px;
-  left: 59px;
-  bottom: 59px;
-  right: 59px;
-  animation: rotating 2.61s infinite linear;
+.line26 {
+  top: 31px;
+  left: 31px;
+  bottom: 31px;
+  right: 31px;
+  animation: rotating 2.6s infinite linear;
 }
 
-.line88 {
-  top: 87px;
-  left: 87px;
-  bottom: 87px;
-  right: 87px;
-  animation: rotating 2.64s infinite linear;
-}
-
-.line89 {
-  top: 42px;
-  left: 42px;
-  bottom: 42px;
-  right: 42px;
-  animation: rotating 2.67s infinite linear;
-}
-
-.line90 {
+.line27 {
   top: 85px;
   left: 85px;
   bottom: 85px;
@@ -981,84 +477,588 @@ button.float:hover > img {
   animation: rotating 2.7s infinite linear;
 }
 
-.line91 {
-  top: 84px;
-  left: 84px;
-  bottom: 84px;
-  right: 84px;
-  animation: rotating 2.73s infinite linear;
-}
-
-.line92 {
-  top: 54px;
-  left: 54px;
-  bottom: 54px;
-  right: 54px;
-  animation: rotating 2.76s infinite linear;
-}
-
-.line93 {
-  top: 82px;
-  left: 82px;
-  bottom: 82px;
-  right: 82px;
-  animation: rotating 2.79s infinite linear;
-}
-
-.line94 {
-  top: 53px;
-  left: 53px;
-  bottom: 53px;
-  right: 53px;
-  animation: rotating 2.82s infinite linear;
-}
-
-.line95 {
-  top: 4px;
-  left: 4px;
-  bottom: 4px;
-  right: 4px;
-  animation: rotating 2.85s infinite linear;
-}
-
-.line96 {
-  top: 53px;
-  left: 53px;
-  bottom: 53px;
-  right: 53px;
-  animation: rotating 2.88s infinite linear;
-}
-
-.line97 {
-  top: 28px;
-  left: 28px;
-  bottom: 28px;
-  right: 28px;
-  animation: rotating 2.91s infinite linear;
-}
-
-.line98 {
-  top: 63px;
-  left: 63px;
-  bottom: 63px;
-  right: 63px;
-  animation: rotating 2.94s infinite linear;
-}
-
-.line99 {
+.line28 {
   top: 66px;
   left: 66px;
   bottom: 66px;
   right: 66px;
-  animation: rotating 2.97s infinite linear;
+  animation: rotating 2.8s infinite linear;
 }
 
-.line100 {
+.line29 {
+  top: 72px;
+  left: 72px;
+  bottom: 72px;
+  right: 72px;
+  animation: rotating 2.9s infinite linear;
+}
+
+.line30 {
+  top: 86px;
+  left: 86px;
+  bottom: 86px;
+  right: 86px;
+  animation: rotating 3s infinite linear;
+}
+
+.line31 {
+  top: 17px;
+  left: 17px;
+  bottom: 17px;
+  right: 17px;
+  animation: rotating 3.1s infinite linear;
+}
+
+.line32 {
+  top: 60px;
+  left: 60px;
+  bottom: 60px;
+  right: 60px;
+  animation: rotating 3.2s infinite linear;
+}
+
+.line33 {
+  top: 74px;
+  left: 74px;
+  bottom: 74px;
+  right: 74px;
+  animation: rotating 3.3s infinite linear;
+}
+
+.line34 {
+  top: 57px;
+  left: 57px;
+  bottom: 57px;
+  right: 57px;
+  animation: rotating 3.4s infinite linear;
+}
+
+.line35 {
+  top: 65px;
+  left: 65px;
+  bottom: 65px;
+  right: 65px;
+  animation: rotating 3.5s infinite linear;
+}
+
+.line36 {
+  top: 67px;
+  left: 67px;
+  bottom: 67px;
+  right: 67px;
+  animation: rotating 3.6s infinite linear;
+}
+
+.line37 {
+  top: 51px;
+  left: 51px;
+  bottom: 51px;
+  right: 51px;
+  animation: rotating 3.7s infinite linear;
+}
+
+.line38 {
+  top: 63px;
+  left: 63px;
+  bottom: 63px;
+  right: 63px;
+  animation: rotating 3.8s infinite linear;
+}
+
+.line39 {
+  top: 67px;
+  left: 67px;
+  bottom: 67px;
+  right: 67px;
+  animation: rotating 3.9s infinite linear;
+}
+
+.line40 {
+  top: 59px;
+  left: 59px;
+  bottom: 59px;
+  right: 59px;
+  animation: rotating 4s infinite linear;
+}
+
+.line41 {
+  top: 44px;
+  left: 44px;
+  bottom: 44px;
+  right: 44px;
+  animation: rotating 4.1s infinite linear;
+}
+
+.line42 {
+  top: 88px;
+  left: 88px;
+  bottom: 88px;
+  right: 88px;
+  animation: rotating 4.2s infinite linear;
+}
+
+.line43 {
+  top: 67px;
+  left: 67px;
+  bottom: 67px;
+  right: 67px;
+  animation: rotating 4.3s infinite linear;
+}
+
+.line44 {
+  top: 43px;
+  left: 43px;
+  bottom: 43px;
+  right: 43px;
+  animation: rotating 4.4s infinite linear;
+}
+
+.line45 {
+  top: 48px;
+  left: 48px;
+  bottom: 48px;
+  right: 48px;
+  animation: rotating 4.5s infinite linear;
+}
+
+.line46 {
+  top: 80px;
+  left: 80px;
+  bottom: 80px;
+  right: 80px;
+  animation: rotating 4.6s infinite linear;
+}
+
+.line47 {
+  top: 7px;
+  left: 7px;
+  bottom: 7px;
+  right: 7px;
+  animation: rotating 4.7s infinite linear;
+}
+
+.line48 {
+  top: 68px;
+  left: 68px;
+  bottom: 68px;
+  right: 68px;
+  animation: rotating 4.8s infinite linear;
+}
+
+.line49 {
+  top: 27px;
+  left: 27px;
+  bottom: 27px;
+  right: 27px;
+  animation: rotating 4.9s infinite linear;
+}
+
+.line50 {
+  top: 7px;
+  left: 7px;
+  bottom: 7px;
+  right: 7px;
+  animation: rotating 5s infinite linear;
+}
+
+.line51 {
+  top: 38px;
+  left: 38px;
+  bottom: 38px;
+  right: 38px;
+  animation: rotating 5.1s infinite linear;
+}
+
+.line52 {
+  top: 29px;
+  left: 29px;
+  bottom: 29px;
+  right: 29px;
+  animation: rotating 5.2s infinite linear;
+}
+
+.line53 {
+  top: 21px;
+  left: 21px;
+  bottom: 21px;
+  right: 21px;
+  animation: rotating 5.3s infinite linear;
+}
+
+.line54 {
+  top: 28px;
+  left: 28px;
+  bottom: 28px;
+  right: 28px;
+  animation: rotating 5.4s infinite linear;
+}
+
+.line55 {
+  top: 37px;
+  left: 37px;
+  bottom: 37px;
+  right: 37px;
+  animation: rotating 5.5s infinite linear;
+}
+
+.line56 {
+  top: 80px;
+  left: 80px;
+  bottom: 80px;
+  right: 80px;
+  animation: rotating 5.6s infinite linear;
+}
+
+.line57 {
+  top: 39px;
+  left: 39px;
+  bottom: 39px;
+  right: 39px;
+  animation: rotating 5.7s infinite linear;
+}
+
+.line58 {
+  top: 23px;
+  left: 23px;
+  bottom: 23px;
+  right: 23px;
+  animation: rotating 5.8s infinite linear;
+}
+
+.line59 {
+  top: 24px;
+  left: 24px;
+  bottom: 24px;
+  right: 24px;
+  animation: rotating 5.9s infinite linear;
+}
+
+.line60 {
+  top: 74px;
+  left: 74px;
+  bottom: 74px;
+  right: 74px;
+  animation: rotating 6s infinite linear;
+}
+
+.line61 {
+  top: 17px;
+  left: 17px;
+  bottom: 17px;
+  right: 17px;
+  animation: rotating 6.1s infinite linear;
+}
+
+.line62 {
+  top: 17px;
+  left: 17px;
+  bottom: 17px;
+  right: 17px;
+  animation: rotating 6.2s infinite linear;
+}
+
+.line63 {
+  top: 66px;
+  left: 66px;
+  bottom: 66px;
+  right: 66px;
+  animation: rotating 6.3s infinite linear;
+}
+
+.line64 {
+  top: 70px;
+  left: 70px;
+  bottom: 70px;
+  right: 70px;
+  animation: rotating 6.4s infinite linear;
+}
+
+.line65 {
+  top: 35px;
+  left: 35px;
+  bottom: 35px;
+  right: 35px;
+  animation: rotating 6.5s infinite linear;
+}
+
+.line66 {
+  top: 47px;
+  left: 47px;
+  bottom: 47px;
+  right: 47px;
+  animation: rotating 6.6s infinite linear;
+}
+
+.line67 {
+  top: 39px;
+  left: 39px;
+  bottom: 39px;
+  right: 39px;
+  animation: rotating 6.7s infinite linear;
+}
+
+.line68 {
+  top: 31px;
+  left: 31px;
+  bottom: 31px;
+  right: 31px;
+  animation: rotating 6.8s infinite linear;
+}
+
+.line69 {
+  top: 56px;
+  left: 56px;
+  bottom: 56px;
+  right: 56px;
+  animation: rotating 6.9s infinite linear;
+}
+
+.line70 {
+  top: 34px;
+  left: 34px;
+  bottom: 34px;
+  right: 34px;
+  animation: rotating 7s infinite linear;
+}
+
+.line71 {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  animation: rotating 7.1s infinite linear;
+}
+
+.line72 {
+  top: 29px;
+  left: 29px;
+  bottom: 29px;
+  right: 29px;
+  animation: rotating 7.2s infinite linear;
+}
+
+.line73 {
+  top: 8px;
+  left: 8px;
+  bottom: 8px;
+  right: 8px;
+  animation: rotating 7.3s infinite linear;
+}
+
+.line74 {
+  top: 84px;
+  left: 84px;
+  bottom: 84px;
+  right: 84px;
+  animation: rotating 7.4s infinite linear;
+}
+
+.line75 {
+  top: 51px;
+  left: 51px;
+  bottom: 51px;
+  right: 51px;
+  animation: rotating 7.5s infinite linear;
+}
+
+.line76 {
+  top: 61px;
+  left: 61px;
+  bottom: 61px;
+  right: 61px;
+  animation: rotating 7.6s infinite linear;
+}
+
+.line77 {
+  top: 22px;
+  left: 22px;
+  bottom: 22px;
+  right: 22px;
+  animation: rotating 7.7s infinite linear;
+}
+
+.line78 {
+  top: 69px;
+  left: 69px;
+  bottom: 69px;
+  right: 69px;
+  animation: rotating 7.8s infinite linear;
+}
+
+.line79 {
+  top: 56px;
+  left: 56px;
+  bottom: 56px;
+  right: 56px;
+  animation: rotating 7.9s infinite linear;
+}
+
+.line80 {
+  top: 82px;
+  left: 82px;
+  bottom: 82px;
+  right: 82px;
+  animation: rotating 8s infinite linear;
+}
+
+.line81 {
+  top: 49px;
+  left: 49px;
+  bottom: 49px;
+  right: 49px;
+  animation: rotating 8.1s infinite linear;
+}
+
+.line82 {
+  top: 13px;
+  left: 13px;
+  bottom: 13px;
+  right: 13px;
+  animation: rotating 8.2s infinite linear;
+}
+
+.line83 {
+  top: 44px;
+  left: 44px;
+  bottom: 44px;
+  right: 44px;
+  animation: rotating 8.3s infinite linear;
+}
+
+.line84 {
+  top: 19px;
+  left: 19px;
+  bottom: 19px;
+  right: 19px;
+  animation: rotating 8.4s infinite linear;
+}
+
+.line85 {
+  top: 68px;
+  left: 68px;
+  bottom: 68px;
+  right: 68px;
+  animation: rotating 8.5s infinite linear;
+}
+
+.line86 {
+  top: 45px;
+  left: 45px;
+  bottom: 45px;
+  right: 45px;
+  animation: rotating 8.6s infinite linear;
+}
+
+.line87 {
+  top: 41px;
+  left: 41px;
+  bottom: 41px;
+  right: 41px;
+  animation: rotating 8.7s infinite linear;
+}
+
+.line88 {
+  top: 11px;
+  left: 11px;
+  bottom: 11px;
+  right: 11px;
+  animation: rotating 8.8s infinite linear;
+}
+
+.line89 {
+  top: 11px;
+  left: 11px;
+  bottom: 11px;
+  right: 11px;
+  animation: rotating 8.9s infinite linear;
+}
+
+.line90 {
+  top: 73px;
+  left: 73px;
+  bottom: 73px;
+  right: 73px;
+  animation: rotating 9s infinite linear;
+}
+
+.line91 {
+  top: 56px;
+  left: 56px;
+  bottom: 56px;
+  right: 56px;
+  animation: rotating 9.1s infinite linear;
+}
+
+.line92 {
+  top: 6px;
+  left: 6px;
+  bottom: 6px;
+  right: 6px;
+  animation: rotating 9.2s infinite linear;
+}
+
+.line93 {
+  top: 75px;
+  left: 75px;
+  bottom: 75px;
+  right: 75px;
+  animation: rotating 9.3s infinite linear;
+}
+
+.line94 {
+  top: 45px;
+  left: 45px;
+  bottom: 45px;
+  right: 45px;
+  animation: rotating 9.4s infinite linear;
+}
+
+.line95 {
+  top: 62px;
+  left: 62px;
+  bottom: 62px;
+  right: 62px;
+  animation: rotating 9.5s infinite linear;
+}
+
+.line96 {
+  top: 81px;
+  left: 81px;
+  bottom: 81px;
+  right: 81px;
+  animation: rotating 9.6s infinite linear;
+}
+
+.line97 {
+  top: 79px;
+  left: 79px;
+  bottom: 79px;
+  right: 79px;
+  animation: rotating 9.7s infinite linear;
+}
+
+.line98 {
+  top: 25px;
+  left: 25px;
+  bottom: 25px;
+  right: 25px;
+  animation: rotating 9.8s infinite linear;
+}
+
+.line99 {
   top: 42px;
   left: 42px;
   bottom: 42px;
   right: 42px;
-  animation: rotating 3s infinite linear;
+  animation: rotating 9.9s infinite linear;
+}
+
+.line100 {
+  top: 48px;
+  left: 48px;
+  bottom: 48px;
+  right: 48px;
+  animation: rotating 10s infinite linear;
 }
 
 @keyframes rotating {
@@ -1087,10 +1087,10 @@ button.float:hover > img {
   }
 }
 
-/*# sourceMappingURL=index.css.map */
-
 .something {
   margin-bottom: var(--mar);
   height: calc(var(--imsz) * 3);
-  background-image: url('');
+  background-image: url("");
 }
+
+/*# sourceMappingURL=index.css.map */
