@@ -3,7 +3,7 @@
   --mar: 10px;
   --imsz: 264px;
   /* --circle: radial-gradient(transparent 10%, rgba(0, 0, 0) 30vh) ; */
-  background-color: rgba(0, 0, 0);
+  background-color: #232754;
 }
 
 @keyframes scrollYf {
@@ -249,7 +249,7 @@ button.float:hover > img {
   width: 180px;
   height: 180px;
   perspective: 1000px;
-  background: radial-gradient(#fff 5%, #2994f2 40%);
+  background: radial-gradient(#fff 5%, #ca85b8 40%);
   border-radius: 50%;
   animation: twinkling 1.5s infinite linear;
 }
@@ -1071,19 +1071,19 @@ button.float:hover > img {
 }
 @keyframes twinkling {
   0%, 100% {
-    box-shadow: 0 0 3px 0px #fff, 0 0 30px 15px #2994f2;
+    box-shadow: 0 0 3px 0px #fff, 0 0 30px 15px #ca85b8;
   }
   20% {
-    box-shadow: 0 0 3px 1px #fff, 0 0 30px 10px #2994f2;
+    box-shadow: 0 0 3px 1px #fff, 0 0 30px 10px #ca85b8;
   }
   40% {
-    box-shadow: 0 0 5px 0px #fff, 0 0 20px 15px #2994f2;
+    box-shadow: 0 0 5px 0px #fff, 0 0 20px 15px #ca85b8;
   }
   60% {
-    box-shadow: 0 0 3px 1px #fff, 0 0 30px 15px #2994f2;
+    box-shadow: 0 0 3px 1px #fff, 0 0 30px 15px #ca85b8;
   }
   80% {
-    box-shadow: 0 0 5px 0px #fff, 0 0 25px 10px #2994f2;
+    box-shadow: 0 0 5px 0px #fff, 0 0 25px 10px #ca85b8;
   }
 }
 

@@ -155,8 +155,8 @@ const Hero = () => {
         this.h = 20 + Math.random() * 10;
         this.opacity = this.w / 40;
         this.flip = Math.random();
-        this.xSpeed = 1.5 + Math.random() * 2;
-        this.ySpeed = 1 + Math.random() * 1;
+        this.xSpeed = 0.3 + Math.random() * 2;
+        this.ySpeed = 0.3 + Math.random() * 1;
         this.flipSpeed = Math.random() * 0.03;
         this.ctx = ctx;
         this.img = img;
