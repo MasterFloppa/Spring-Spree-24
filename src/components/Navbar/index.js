@@ -14,9 +14,9 @@ const navigation = [
 	{ name: "SPONSORS", link: "/sponsors" },
 	// { name: "BLOGS", href: "/blogs", current: str === "blogs" },
 	{ name: "TEAM", link: "/team" },
-	// { name: "FAQs", href: "/faq", current: str === "faq" },
+	{ name: "FAQs", link: "/faq" },
 	// { name: "MAKE YOUR DP", href: "https://springspree-frame.nitw.in", current: str === "frame" },
-	{ name: "PRO SHOWS", link: "/proshows" }
+	// { name: "PRO SHOWS", link: "/proshows" }
 ];
 
 export default function Navbar() {
@@ -42,11 +42,25 @@ export default function Navbar() {
 		setMenuOpen(false);
 	};
 
-	const listItems = navigation.map((menuItem, index) => (
-		<li key={index}>
-			<NavLink to={menuItem.link} onClick={closeMenu}>{menuItem.name}</NavLink>
-		</li>
-	));
+	const listItems = navigation.map((menuItem, index) => {
+		if (menuItem.name === "EVENTS") {
+			return (
+				<li key={index} className="dropdown-menu">
+					<NavLink to={menuItem.link} onClick={closeMenu}>{menuItem.name} ▼</NavLink>
+					<ul className="dropdown-content">
+						<li ><NavLink to="/proshows">PRO SHOWS</NavLink></li>
+						<li ><NavLink to="/event2">Event 2</NavLink></li>
+					</ul>
+				</li>
+			);
+		} else {
+			return (
+				<li key={index}>
+					<NavLink to={menuItem.link} onClick={closeMenu}>{menuItem.name}</NavLink>
+				</li>
+			);
+		}
+	});
 
 	return (
 		<>
