@@ -54,7 +54,7 @@
   width: 100vw;
   height: 10vh;
   bottom: 0px;
-  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  background: linear-gradient(to bottom, transparent 0%, #283994 100%);
 }
 
 .heading1 {
