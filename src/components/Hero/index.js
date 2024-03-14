@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import kaladhvani from './kaladhvani.png';
-import spreedate from './spreedates.png';
+import spreedate from './LOGOS-05.png';
+import petalImager from './petal.png'
 import SlideTrack from "../SlideTrack";
 import './index.css';
 import { useAuth } from "../../Context/AuthManager";
@@ -116,7 +117,7 @@ const Hero = () => {
       useEffect(() => {
         const loadPetalImg = () => {
           const img = new Image();
-          img.src = 'https://djjjk9bjm164h.cloudfront.net/petal.png';
+          img.src = petalImager;
           img.onload = () => setPetalImg(img);
         };
         loadPetalImg();

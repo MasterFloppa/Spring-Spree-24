@@ -101,6 +101,17 @@
   width: 100%;
 }
 
+@keyframes ripple {
+  0% {
+    opacity:.25;
+  }
+  100% {
+    border-radius:2em;
+    opacity:0;
+    transform:scale(2.5);
+  }
+}
+
 .btn35 {
   position: relative;
   outline: none;
@@ -116,27 +127,56 @@
   font-weight: 800;
   opacity: 1;
   background-color: transparent;
-  border: 1.5px solid #F7CA17;
+  border: 1.5px solid #f4d4d8;
   margin-top: 20px;
+  font-size: 16px;
 }
 
 .btn35 span {
-  color: #F7CA17;
+  color: #f4d4d8;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.9px;
 }
 
+.btn35:hover:before {
+  animation:ripple 2s ease-out infinite;
+  border:solid 2px #f4d4d8;
+  border-radius:1em;
+  bottom:0;
+  box-sizing:border-box;
+  content:"";
+  left:0;
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+.btn35:hover:after {
+  animation:ripple 2s 1s ease-out infinite;
+  border:solid 2px #f4d4d8;
+  border-radius:1em;
+  bottom:0;
+  box-sizing:border-box;
+  content:"";
+  left:0;
+  position:absolute;
+  right:0;
+  top:0;
+  animation-delay: 1s;
+}
+
 .btn35:hover {
-  animation: rotate 0.7s ease-in-out both;
-  -webkit-box-shadow: 0 0 30px #F7CA17;
-  box-shadow: 0 0 30px #F7CA17;
+  -webkit-box-shadow: 0 0 30px #f4d4d8;
+  box-shadow: 0 0 30px #f4d4d8;
 }
 
 .btn35:hover span {
-  animation: storm 0.7s ease-in-out both;
+  /* animation: ripple 0.7s ease-in-out both; */
   animation-delay: 0.06s;
 }
+
+
 
 /* @keyframes rotate {
   0% {
