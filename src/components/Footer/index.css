@@ -366,15 +366,15 @@ hr.hr-13 {
 	text-decoration: none;
 	padding: 0.1em 1.0em;
 	margin: 0.1rem;
-	border-right: 1px solid rgba(255, 255, 255, 0.8);
+	border-right: 1px solid rgba(46, 47, 92, 1);
 	font-size: 0.8rem;
 	font-weight: 200;
 }
 
-#horz-list ul li a:hover {
+/* #horz-list ul li a:hover {
 	font-weight: 600;
 	color: #fff;
-}
+} */
 
 #horz-list ul li:last-child a {
 	border: none;
@@ -385,3 +385,21 @@ hr.hr-13 {
 		margin-top: 40px;
 	}
 }
+.Links {
+	position: relative;
+  }
+  
+  .Links::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px; /* Adjust this value to control the distance from the text */
+	width: 0%;
+	height: 2px; /* Adjust this value to control the thickness of the line */
+	background-color: purple; /* Adjust the color as needed */
+	transition: width 0.3s ease-in-out;
+  }
+  
+  .Links:hover::after {
+	width: 100%;
+  }

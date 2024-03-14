@@ -28,7 +28,10 @@ module.exports = {
 			black: "#000",
 			ssred: "#bc1718",
 			ssblue: "#3324A7",
-			ssyellow: "#F9C512"
+			ssyellow: "#F9C512",
+			purple:"#2f2e5c",
+      		pink:"#f4d4d8",
+
 		},
 		fontFamily: {
 			oswald: ["Oswald", "sans-serif"],
