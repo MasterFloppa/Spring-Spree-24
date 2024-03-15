@@ -139,9 +139,11 @@ const Hero = () => {
 		useEffect(() => {
 			if (ctx && petalArray.length > 0) {
 				const render = () => {
-					ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
-					petalArray.forEach(petal => petal.animate());
-					window.requestAnimationFrame(render);
+					if (canvasRef.current) {
+						ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+						petalArray.forEach(petal => petal.animate());
+						window.requestAnimationFrame(render);
+					}
 				};
 				window.requestAnimationFrame(render);
 			}
@@ -167,7 +169,7 @@ const Hero = () => {
 
 		draw() {
 			if (!this.ctx) return; // Check if ctx exists
-			
+
 			if (this.y > this.ctx.canvas.height || this.x > this.ctx.canvas.width) {
 				this.x = -this.img.width;
 				this.y = (Math.random() * this.ctx.canvas.height * 2) - this.ctx.canvas.height;
