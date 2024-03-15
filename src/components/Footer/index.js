@@ -3,6 +3,7 @@ import LOGO from "./LOGOS-04.png";
 import "./index.css";
 
 export default function Footer() {
+
 	return (
 		<div>
 			<footer className="w-full h-[450px] bg-pink relative pt-2 pb-2 rounded-4xl">

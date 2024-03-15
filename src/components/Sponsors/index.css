@@ -42,7 +42,6 @@
   color: white;
   --bs-gutter-x: 0 !important;
   font-weight: 800;
-  /* font-size: larger; */
 }
  .sponscont .current {
     text-transform: uppercase;
@@ -69,7 +68,7 @@
   border-radius: 10px;
   /* font-family: "Source Sans Pro", sans-serif; */
   /* font-weight: 800; */
-  /* font-size: larger; */
+  font-size: larger; 
 }
 .sponsitem .title-sponsor {
     color: black;
