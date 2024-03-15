@@ -96,6 +96,8 @@ const Hero = () => {
 
 		useEffect(() => {
 			const canvas = canvasRef.current;
+			if (!canvas) return; // Check if canvas exists
+
 			const context = canvas.getContext('2d');
 			setCtx(context);
 
@@ -164,6 +166,8 @@ const Hero = () => {
 		}
 
 		draw() {
+			if (!this.ctx) return; // Check if ctx exists
+			
 			if (this.y > this.ctx.canvas.height || this.x > this.ctx.canvas.width) {
 				this.x = -this.img.width;
 				this.y = (Math.random() * this.ctx.canvas.height * 2) - this.ctx.canvas.height;
