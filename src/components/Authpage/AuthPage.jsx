@@ -18,8 +18,8 @@ const AuthPage = () => {
 	return (
 		<div className='flex min-h-screen flex-col justify-center items-center bg-black'>
 			<button className='w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-[#DDDDDD]  text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline' onClick={handleOauth}>
-				<div class="bg-white p-2 rounded-full">
-					<svg class="w-4" viewBox="0 0 533.5 544.3">
+				<div className="bg-white p-2 rounded-full">
+					<svg className="w-4" viewBox="0 0 533.5 544.3">
 						<path
 							d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"
 							fill="#4285f4"

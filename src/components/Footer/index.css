@@ -1,6 +1,4 @@
 footer {
-	background-color: #f7ca17;
-	/* background: linear-gradient(to bottom, #f7ca17, #9b7d05); */
 	color: black;
 	overflow-x: hidden;
 }
@@ -225,7 +223,9 @@ button {
 	}
 }
 
-
+.footer {
+	overflow-x: none;
+}
 
 .SMN_effect-24 a {
 	padding: 10px 20px;
@@ -385,21 +385,25 @@ hr.hr-13 {
 		margin-top: 40px;
 	}
 }
+
 .Links {
 	position: relative;
-  }
-  
-  .Links::after {
+}
+
+.Links::after {
 	content: '';
 	position: absolute;
 	left: 0;
-	bottom: -2px; /* Adjust this value to control the distance from the text */
+	bottom: -2px;
+	/* Adjust this value to control the distance from the text */
 	width: 0%;
-	height: 2px; /* Adjust this value to control the thickness of the line */
-	background-color: purple; /* Adjust the color as needed */
+	height: 2px;
+	/* Adjust this value to control the thickness of the line */
+	background-color: purple;
+	/* Adjust the color as needed */
 	transition: width 0.3s ease-in-out;
-  }
-  
-  .Links:hover::after {
+}
+
+.Links:hover::after {
 	width: 100%;
-  }
+}
