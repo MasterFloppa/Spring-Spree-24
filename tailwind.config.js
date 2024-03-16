@@ -31,6 +31,7 @@ module.exports = {
 			ssyellow: "#F9C512",
 			purple:"#2f2e5c",
       		pink:"#f4d4d8",
+			purple2:"#343663",
 
 		},
 		fontFamily: {

@@ -1,4 +1,3 @@
-import react from 'react';
 import './index.css';
 
 import rangoli_outer from './rangoli-outer.png';

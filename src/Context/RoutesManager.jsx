@@ -11,7 +11,7 @@ import Sponsors from '../components/Sponsors/Sponsors'
 import Teams from '../components/Teams/Teams'
 import EachTeam from '../components/Teams/EachTeam'
 import { useAuth } from './AuthManager'
-import { FAQ } from '../components/FAQ'
+import FAQS from '../components/FAQ/FAQS'
 
 import { Register } from '../components/Register';
 import Proshow from '../components/Proshow'
@@ -44,7 +44,7 @@ const RoutesManager = () => {
       <Route path='/events/' element={<Events />} />
       <Route path='/team' element={<Teams />} />
       <Route path="/team/:teamname" element={<EachTeam />} />
-      <Route path='/faq' element={<FAQ />} />
+      <Route path='/faq' element={<FAQS />} />
       <Route path="/proshows" element={<Proshow />} />
     </Routes >
   )

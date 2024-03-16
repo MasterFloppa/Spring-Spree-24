@@ -103,7 +103,7 @@ footer {
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-	background: #333;
+	background: #ff0000;
 	color: aliceblue;
 }
 
@@ -371,10 +371,10 @@ hr.hr-13 {
 	font-weight: 200;
 }
 
-/* #horz-list ul li a:hover {
-	font-weight: 600;
-	color: #fff;
-} */
+#horz-list ul li a:hover {
+	text-decoration: underline
+}
+
 
 #horz-list ul li:last-child a {
 	border: none;
@@ -405,5 +405,9 @@ hr.hr-13 {
 }
 
 .Links:hover::after {
-	width: 100%;
+	width: 90%;
+}
+
+.linX li a:hover {
+	text-decoration: underline;
 }

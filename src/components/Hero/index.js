@@ -139,9 +139,11 @@ const Hero = () => {
 		useEffect(() => {
 			if (ctx && petalArray.length > 0) {
 				const render = () => {
-					ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
-					petalArray.forEach(petal => petal.animate());
-					window.requestAnimationFrame(render);
+					if (canvasRef.current) {
+						ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+						petalArray.forEach(petal => petal.animate());
+						window.requestAnimationFrame(render);
+					}
 				};
 				window.requestAnimationFrame(render);
 			}
