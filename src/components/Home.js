@@ -2,13 +2,13 @@ import React, { useState, useLayoutEffect } from "react";
 // components
 import Hero from "./Hero";
 import { About } from "./About";
-import { Pspk } from "./Pspk";
+import { Cguest } from "./Cguest";
 
 const Home = (props) => {
     return (
         <>
             <Hero />
-            <Pspk />
+            <Cguest />
             <About />
         </>
     )

@@ -4,12 +4,10 @@ import { About } from '../components/About'
 import AuthPage from '../components/Authpage/AuthPage'
 import Home from '../components/Home'
 import Events from '../components/Events'
-import Blogs from '../components/Blogs/Blogs'
-import BlogDetail from '../components/Blogs/BlogDetail'
 import Profile from '../components/Profile/Profile'
 import Sponsors from '../components/Sponsors/Sponsors'
 import Teams from '../components/Teams/Teams'
-import EachTeam from '../components/Teams/EachTeam'
+// import EachTeam from '../components/Teams/EachTeam'
 import { useAuth } from './AuthManager'
 import FAQS from '../components/FAQ/FAQS'
 
@@ -43,7 +41,7 @@ const RoutesManager = () => {
 			{/* <Route path="/blogs/:blogId" element={<BlogDetail />} /> */}
 			<Route path='/events/' element={<Events />} />
 			<Route path='/team' element={<Teams />} />
-			<Route path="/team/:teamname" element={<EachTeam />} />
+			{/* <Route path="/team/:teamname" element={<EachTeam />} /> */}
 			<Route path='/faq' element={<FAQS />} />
 			<Route path="/proshows" element={<Proshow />} />
 		</Routes >

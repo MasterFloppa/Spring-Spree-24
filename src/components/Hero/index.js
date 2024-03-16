@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import kaladhvani from './kaladhvani.png';
 import spreedate from './LOGOS-05.png';
 import petalImager from './petal.png'
-import SlideTrack from "../SlideTrack";
 import './index.css';
 import { useAuth } from "../../Context/AuthManager";
 import Loader from "../Loader";
@@ -211,8 +210,6 @@ const Hero = () => {
 				{/*[...Array(numCols).keys()].map((k) => {
                 return <SlideTrack key={k} forward={k % 2} images={images[k % images.length]} />
             })*/}
-
-				<div className="something" />
 				<PetalCanvas />
 				
 				<div
