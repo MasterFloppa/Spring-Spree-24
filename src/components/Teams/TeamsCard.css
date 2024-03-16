@@ -3,5 +3,11 @@
     background-color: #151823;
     animation: bgColor 5s ease infinite;
   }
+
+.boxx{
+  border: 8px solid #2f2e5c;
+  border-radius: 15px;
+  background: #343663;
+}
   
  

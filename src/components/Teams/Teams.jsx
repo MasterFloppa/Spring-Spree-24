@@ -98,11 +98,11 @@ const Teams = () => {
 
   return (
     <div className="bg-bgBlue text-white">
-      <div className='bg-[#0E0E0E] text-[#F7CA17] pt-[100px] text-center flex'>
+      <div className='bg-purple text-[#F7CA17] pt-[100px] text-center flex'>
         <h1 className="sponsors-hero-title text-4xl font-[800] text-bolder mx-auto flex justify-start items-center text-center">SpringSpree Team</h1>
       </div>
       <section
-        className="md:h-full flex items-center text-gray-60 bg-[#0E0E0E]">
+        className="md:h-full flex items-center text-gray-60 bg-purple">
         <div className="container px-5 py-8 mx-auto">
           <div className="text-center mb-6">
             <h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
