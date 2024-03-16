@@ -1,4 +1,4 @@
-.SideBar a {
+/* .SideBar a {
     text-decoration: none;
     margin: 10px 0;
     color: rgba(256, 256, 256, 0.8);
@@ -15,20 +15,20 @@
   margin-top: 80px;
   font-weight: 800;
   font-size: 1.5rem;
-}
+} */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.QueryContainer::-webkit-scrollbar {
+/* .QueryContainer::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.QueryContainer{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+/* .QueryContainer{
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
   scroll-behavior: smooth;
-}
-
+} */
+/* 
 .QueryContainer h1 {
   font-size: 2rem;
   padding-bottom: 15px;
@@ -63,4 +63,4 @@
     padding: 20px;
   }
   
-}
+} */
