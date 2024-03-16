@@ -1,6 +1,6 @@
 @font-face {
-  font-family: samarkan;
-  src: url(../public/fonts/SAMAN___.TTF);
+	font-family: samarkan;
+	src: url(../public/fonts/SAMAN___.TTF);
 }
 
 /* #root {
@@ -10,24 +10,26 @@
 } */
 
 body {
-  padding: 0 !important;
+	padding: 0 !important;
+	overflow-x: clip;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+	width: 0.6rem;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black; 
+	background: #f4d4d8;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(247, 202, 23, 1);
+	background: #ca85b8;
+	border-radius: 1rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(247, 202, 23, 0.4);
+	background: #d987c3;
 }

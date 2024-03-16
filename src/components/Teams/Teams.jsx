@@ -2,97 +2,97 @@ import React, { useEffect, useRef, useState } from "react";
 import TeamsCard from "./TeamsCard";
 
 import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
+	BrowserRouter as Router,
+	Route,
+	Routes,
+	useLocation,
 } from "react-router-dom";
 
 
 
 const teamInformation = [
-  {
-    teamName: "Prof. N.V. Ramana Rao ",
-    position: "Director",
-    photo: 'https://res.cloudinary.com/dzeqa9z3n/image/upload/v1680347359/Director_nh83bb.jpg',
-    link: "",
-    email: "",
-    phoneNum: "",
-  },
-  {
-    teamName: "Dr. P. Ravi Kumar",
-    position: "Dean Student Welfare",
-    photo: 'https://res.cloudinary.com/dzeqa9z3n/image/upload/v1680347359/SW_wfqbh1.jpg',
-    link: "",
-    email: "",
-    phoneNum: "",
-  },
-  {
-    teamName: "Dr. M. Heeralal",
-    position: "Faculty Advisor",
-    photo: 'https://res.cloudinary.com/dzeqa9z3n/image/upload/v1680349725/Heeralal_vuuina.jpg',
-    link: "",
-    email: "",
-    phoneNum: "",
-  },
-  {
-    teamName: "Ajay Kumar Alagiri",
-    position: "Student Coordinator",
-    photo: 'http://res.cloudinary.com/dzeqa9z3n/image/upload/v1680335800/main/media/IMG_20220917_174942.jpg.jpg',
-    link: "",
-    email: "alagir_831952@student.nitw.ac.in",
-    phoneNum: "9100264657",
-  },
-  {
-    teamName: "Sai Gurunath",
-    position: "Student Coordinator",
-    photo: 'http://res.cloudinary.com/dzeqa9z3n/image/upload/v1680333210/main/media/CD68632C-644F-4BD1-B0EC-78F24B041066.jpeg.jpg',
-    link: "",
-    email: "dasari_851923@student.nitw.ac.in",
-    phoneNum: "9966646205",
-  },
-  {
-    teamName: "Piyush",
-    position: "Student Coordinator",
-    photo: 'https://res.cloudinary.com/dzeqa9z3n/image/upload/v1680728955/main/media/4E440203-0D19-4830-B4D6-9A6CA5441C0B.jpeg.jpg',
-    link: "",
-    email: "",
-    phoneNum: "",
-  },
-  {
-    teamName: "Vamshi Kishore Rasamalla",
-    position: "Student Coordinator",
-    photo: 'http://res.cloudinary.com/dzeqa9z3n/image/upload/v1680424374/main/media/IMG_6835.jpg.jpg',
-    link: "",
-    email: "rasama_821946@student.nitw.ac.in",
-    phoneNum: "9963601982",
-  },
+	{
+		teamName: "Prof. N.V. Ramana Rao ",
+		position: "Director",
+		photo: 'https://res.cloudinary.com/dzeqa9z3n/image/upload/v1680347359/Director_nh83bb.jpg',
+		link: "",
+		email: "",
+		phoneNum: "",
+	},
+	{
+		teamName: "Dr. P. Ravi Kumar",
+		position: "Dean Student Welfare",
+		photo: 'https://res.cloudinary.com/dzeqa9z3n/image/upload/v1680347359/SW_wfqbh1.jpg',
+		link: "",
+		email: "",
+		phoneNum: "",
+	},
+	{
+		teamName: "Dr. M. Heeralal",
+		position: "Faculty Advisor",
+		photo: 'https://res.cloudinary.com/dzeqa9z3n/image/upload/v1680349725/Heeralal_vuuina.jpg',
+		link: "",
+		email: "",
+		phoneNum: "",
+	},
+	{
+		teamName: "Ajay Kumar Alagiri",
+		position: "Student Coordinator",
+		photo: 'http://res.cloudinary.com/dzeqa9z3n/image/upload/v1680335800/main/media/IMG_20220917_174942.jpg.jpg',
+		link: "",
+		email: "alagir_831952@student.nitw.ac.in",
+		phoneNum: "9100264657",
+	},
+	{
+		teamName: "Sai Gurunath",
+		position: "Student Coordinator",
+		photo: 'http://res.cloudinary.com/dzeqa9z3n/image/upload/v1680333210/main/media/CD68632C-644F-4BD1-B0EC-78F24B041066.jpeg.jpg',
+		link: "",
+		email: "dasari_851923@student.nitw.ac.in",
+		phoneNum: "9966646205",
+	},
+	{
+		teamName: "Piyush",
+		position: "Student Coordinator",
+		photo: 'https://res.cloudinary.com/dzeqa9z3n/image/upload/v1680728955/main/media/4E440203-0D19-4830-B4D6-9A6CA5441C0B.jpeg.jpg',
+		link: "",
+		email: "",
+		phoneNum: "",
+	},
+	{
+		teamName: "Vamshi Kishore Rasamalla",
+		position: "Student Coordinator",
+		photo: 'http://res.cloudinary.com/dzeqa9z3n/image/upload/v1680424374/main/media/IMG_6835.jpg.jpg',
+		link: "",
+		email: "rasama_821946@student.nitw.ac.in",
+		phoneNum: "9963601982",
+	},
 
 ];
 
 const Teams = () => {
-  const [teamInfo, SetTeamInfo] = useState(teamInformation);
+	const [teamInfo, SetTeamInfo] = useState(teamInformation);
 
 
-  useEffect(() => {
-    const URL = process.env.REACT_APP_BACKEND_URL;
-    const getTeam = async () => {
-      const response = await fetch(`${URL}/team/all`, {
-        method: "GET",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-        }
-      })
+	useEffect(() => {
+		const URL = process.env.REACT_APP_BACKEND_URL;
+		const getTeam = async () => {
+			const response = await fetch(`${URL}/team/all`, {
+				method: "GET",
+				mode: "cors",
+				headers: {
+					"Content-Type": "application/json",
+				}
+			})
 
-      let data = await response.json();
-      console.log(data);
-      const newTeam = [...teamInfo, ...data];
-      SetTeamInfo(newTeam);
-    }
+			let data = await response.json();
+			console.log(data);
+			const newTeam = [...teamInfo, ...data];
+			SetTeamInfo(newTeam);
+		}
 
-    getTeam();
-  }, []);
+		getTeam();
+	}, []);
 
 
 
@@ -114,6 +114,7 @@ const Teams = () => {
               if (index === 0) {
                 return (
                   <TeamsCard
+                    key={index}
                     teamName={team.teamName}
                     position={team.position}
                     photo={team.photo}
@@ -135,6 +136,7 @@ const Teams = () => {
               if (index > 0 && index <= 2) {
                 return (
                   <TeamsCard
+                    key={index}
                     teamName={team.teamName}
                     position={team.position}
                     photo={team.photo}
@@ -156,6 +158,7 @@ const Teams = () => {
               if (index > 2 && index <= 6) {
                 return (
                   <TeamsCard
+                    key={index}
                     teamName={team.teamName}
                     position={team.position}
                     photo={team.photo}
@@ -179,6 +182,7 @@ const Teams = () => {
               if (index > 6) {
                 return (
                   <TeamsCard
+                    key={index}
                     teamName={team.teamName}
                     position={team.position}
                     photo={team.photo}
