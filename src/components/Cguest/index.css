@@ -12,3 +12,7 @@
     bottom: 0px;
     background: linear-gradient(to bottom, #283994 0%, #232754 100%);
   }
+
+  h1{
+	font-family: "Aftersick";
+}

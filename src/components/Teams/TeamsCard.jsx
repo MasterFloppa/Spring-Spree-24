@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./TeamsCard.css";
 import { Link } from "react-router-dom";
+import branch from "./rsz_1rsz_cherry_branch.png"
 
 const TeamsCard = ({
   teamName,
@@ -17,6 +18,7 @@ const TeamsCard = ({
       <Link to={link} state={{ name: teamName, members: members }}>
         <div className="item h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-white  border-none hover:border-stone-50 frosted-glass miniitem cursor-pointer text-[#F9C512]">
           <div className="block">
+		  <img className="decor" src={branch} alt="cherry branch" />
             <div className="banner-card relative" id="container">
               <img
                 src={photo}

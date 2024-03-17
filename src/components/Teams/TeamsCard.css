@@ -5,9 +5,18 @@
   }
 
 .boxx{
-  border: 8px solid #2f2e5c;
+  border: 8px solid #f4d4d8;
   border-radius: 15px;
-  background: #343663;
+  background: #2f2e5c;
 }
-  
+
+.decor{
+  position: absolute;
+  z-index: 1;
+}
+
+h1{
+	font-family: "Aftersick";
+}
+
  

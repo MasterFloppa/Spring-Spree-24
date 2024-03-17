@@ -1,8 +1,12 @@
 @font-face {
-	font-family: samarkan;
-	src: url(../public/fonts/SAMAN___.TTF);
+	font-family: "Aftersick";
+	src: url(../public/fonts/aftersick-font-1706356594-0/aftersickdemo-semibold.otf);
 }
 
+h1{
+	font-family: "Aftersick";
+	
+}
 /* #root {
   min-height: 100vh;
   display: flex;
