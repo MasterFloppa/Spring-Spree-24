@@ -98,7 +98,7 @@ const Teams = () => {
 
   return (
     <div className="bg-bgBlue text-white">
-      <div className='bg-purple text-[#F7CA17] pt-[100px] text-center flex'>
+      <div className='bg-purple text-pink pt-[100px] text-center flex'>
         <h1 className="sponsors-hero-title text-4xl font-[800] text-bolder mx-auto flex justify-start items-center text-center">SpringSpree Team</h1>
       </div>
       <section

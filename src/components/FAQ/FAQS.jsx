@@ -85,7 +85,7 @@ function FAQS() {
   return (
     <div className='w-full h-[1100px] bg-purple flex flex-col'>
         <div className='flex flex-col mt-32'>
-            <div className='flex justify-center text-pink text-3xl mt-10 mb-10'>FAQS</div>
+            <h1 className='flex justify-center text-pink text-3xl mt-10 mb-10'>FAQS</h1>
             <div className='tabs relative flex ml-32 mt-10 justify-start  w-[250px] h-[600px] bg-purple2 text-pink rounded-3xl shadow-2xl '>
                 <input type='radio' id="About" name="group" checked={selectedTab === 'About'} onChange={handleTabChange}/>
                 <input type='radio' id="Registration" name="group" checked={selectedTab === 'Registration'} onChange={handleTabChange}/>
