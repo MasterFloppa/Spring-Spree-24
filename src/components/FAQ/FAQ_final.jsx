@@ -18,7 +18,7 @@ function FAQ() {
     }, []);
   return (
     <div>
-        {screenWidth <= 764 ? (
+        {screenWidth <= 1020? (
         <FAQS_Mobile/>
       ) : (
         <FAQS_Large />

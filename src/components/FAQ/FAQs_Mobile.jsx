@@ -78,9 +78,9 @@ function FAQS_Mobile() {
                 ];
   return (
     <div className='bg-purple w-full flex flex-col justify-center'>
-        <div className='flex text-3xl text-pink justify-center text-center mt-32'>FQAS</div>
+        <div className='flex text-3xl text-pink justify-center text-center mt-32'>FAQS</div>
         <div className='flex flex-col justify-center faq_div'>
-            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2'>About</div>
+            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2 md:text-2xl'>About</div>
             {
                 faqs.map((curElem) =>{
                     const {id}  = curElem;
@@ -89,7 +89,7 @@ function FAQS_Mobile() {
             }
         </div>
         <div className='flex flex-col justify-center faq_div'>
-            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2'>Registration</div>
+            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2 md:text-2xl'>Registration</div>
             {
                 faqs1.map((curElem) =>{
                     const {id}  = curElem;
@@ -98,7 +98,7 @@ function FAQS_Mobile() {
             }
         </div>
         <div className='flex flex-col justify-center faq_div'>
-            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2'>Events & Competitions</div>
+            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2 md:text-2xl'>Events & Competitions</div>
             {
                 faqs2.map((curElem) =>{
                     const {id}  = curElem;
@@ -107,7 +107,7 @@ function FAQS_Mobile() {
             }
         </div>
         <div className='flex flex-col justify-center faq_div'>
-            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2'>Food & Accomdation</div>
+            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2 md:text-2xl'>Food & Accomdation</div>
             {
                 faqs3.map((curElem) =>{
                     const {id}  = curElem;
@@ -116,7 +116,7 @@ function FAQS_Mobile() {
             }
         </div>
         <div className='flex flex-col justify-center faq_div'>
-            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2'>Pro Shows</div>
+            <div className='flex justify-start text-purple text-xl ml-2 mt-4 mb-2 md:text-2xl'>Pro Shows</div>
             {
                 faqs4.map((curElem) =>{
                     const {id}  = curElem;

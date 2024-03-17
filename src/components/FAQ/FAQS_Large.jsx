@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import "./FAQs.css";
+import "./FAQs_Large.css";
 import Accordions from "./FAQ_Skeleton"
 function FAQS_Large() {
     const faqs = [

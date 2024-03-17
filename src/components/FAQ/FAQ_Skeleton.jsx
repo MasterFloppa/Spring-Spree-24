@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FAQs.css';
+import './FAQs_Large.css';
 
 const Accordions = ({ faqs }) => {
   const [openIndex, setOpenIndex] = useState(null);
