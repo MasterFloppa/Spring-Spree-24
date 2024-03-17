@@ -80,13 +80,11 @@ function FAQS() {
               const handleTabChange = (event) => {
                 setSelectedTab(event.target.id);
               };
-          
-
   return (
     <div className='w-full h-[1100px] bg-purple flex flex-col'>
         <div className='flex flex-col mt-32'>
             <div className='flex justify-center text-pink text-3xl mt-10 mb-10'>FAQS</div>
-            <div className='tabs relative flex ml-32 mt-10 justify-start  w-[250px] h-[600px] bg-purple2 text-pink rounded-3xl shadow-2xl '>
+            <div className='tabs relative flex justify-start bg-purple2 text-pink rounded-3xl shadow-2xl md:ml-8 w-[200px]'>
                 <input type='radio' id="About" name="group" checked={selectedTab === 'About'} onChange={handleTabChange}/>
                 <input type='radio' id="Registration" name="group" checked={selectedTab === 'Registration'} onChange={handleTabChange}/>
                 <input type='radio' id="Events & Competitions" name="group"checked={selectedTab === 'Events & Competitions'} onChange={handleTabChange} />
@@ -98,10 +96,10 @@ function FAQS() {
                     <label htmlFor="Events & Competitions">Events & Competitions</label>
                     <label htmlFor="Food & Accomdation">Food & Accomdation</label>
                     <label htmlFor="Pro Shows" >Pro Shows</label>
-                    <div className='indicator flex'></div>
+                    <div className='indicator flex md:w-[220px]'></div>
                 </div>
-                    <div className='content '>
-                        <div className='contentBx h-auto ' htmlFor="About" > <Accordions faqs={faqs}  /></div>
+                    <div className='content'>
+                        <div className='contentBx h-auto ' htmlFor="About" > <Accordions faqs={faqs} /></div>
                         <div className='contentBx' htmlFor="Registration"> <Accordions faqs={faqs1}/></div>
                         <div className='contentBx' htmlFor="Events & Competitions"> <Accordions faqs={faqs2}/></div>
                         <div className='contentBx' htmlFor="Food & Accomdation"> <Accordions faqs={faqs3}/></div>
