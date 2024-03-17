@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import "./FAQs.css";
 import Accordions from "./FAQ_Skeleton"
-function FAQS() {
+function FAQS_Large() {
     const faqs = [
         {
           title: "What is Springspree?",
@@ -112,4 +112,4 @@ function FAQS() {
   )
 }
 
-export default FAQS
+export default FAQS_Large

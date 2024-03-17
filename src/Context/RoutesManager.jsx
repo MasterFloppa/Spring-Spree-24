@@ -11,7 +11,7 @@ import Sponsors from '../components/Sponsors/Sponsors'
 import Teams from '../components/Teams/Teams'
 import EachTeam from '../components/Teams/EachTeam'
 import { useAuth } from './AuthManager'
-import FAQS from '../components/FAQ/FAQS'
+import FAQS from '../components/FAQ/FAQ_final'
 
 import { Register } from '../components/Register';
 import Proshow from '../components/Proshow'

@@ -8,9 +8,9 @@ function Sponsors() {
             <div className='flex justify-center text-pink text-4xl mb-10'>Title Sponsor</div>
             <div className='flex justify-center'><SponsorsCard/></div>
         </div>
-        <div className='flex-col justify-center items-center mb-10'>
+        <div className='spons flex-col justify-center items-center mb-10'>
             <div className='flex justify-center text-pink text-4xl mb-10 mt-20'>Media Sponsor</div>
-            <div className='flex justify-around items-center'>
+            <div className='spons_line'>
                 <div className='flex justify-center'><SponsorsCard/></div>
                 <div className='flex justify-center'><SponsorsCard/></div>
                 <div className='flex justify-center'><SponsorsCard/></div>
