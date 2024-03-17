@@ -1,8 +1,7 @@
 import React from 'react'
 import { useGoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../../Context/AuthManager';
-import { Navigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import './index.css';
 
 const AuthPage = () => {
 	const { authGoogle } = useAuth();
@@ -127,7 +126,7 @@ const AuthPage = () => {
 				<div className="line line100"></div>
 			</div>
 
-			<button className='w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-[#DDDDDD]  text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline' onClick={handleOauth}>
+			<button className='google-authi w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-[#DDDDDD]  text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline' onClick={handleOauth}>
 				<div className="bg-white p-2 rounded-full">
 					<svg className="w-4" viewBox="0 0 533.5 544.3">
 						<path
@@ -148,7 +147,7 @@ const AuthPage = () => {
 						/>
 					</svg>
 				</div>
-				<span class="ml-4">
+				<span className="ml-4">
 					Sign In with Google
 				</span>
 			</button>

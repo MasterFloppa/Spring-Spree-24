@@ -26,6 +26,10 @@
 	}
 }
 
+.heroi {
+	margin-top: 5rem;
+}
+
 .image-wrapper,
 .image-wrapper>img {
 	margin-top: var(--mar);

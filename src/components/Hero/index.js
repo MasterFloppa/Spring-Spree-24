@@ -7,15 +7,6 @@ import { useAuth } from "../../Context/AuthManager";
 import Loader from "../Loader";
 import { useEffect } from "react";
 
-// add images here column wise
-// var images = [
-//     ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png",], // column 1
-//     ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png",], // column 2
-//     ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png",], // column 3
-//     ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png",], // column 4
-//     ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png",], // column 5
-// ]
-
 var mar = 10;
 var imsz = 264;
 const COLSZ = mar + imsz;
@@ -194,12 +185,10 @@ const Hero = () => {
 		}
 	}
 
-
-
 	return (
-		<>
+		<div>
 			{loading ? <Loader /> : ""}
-			<div className="relative flex overflow-hidden mx-auto w-full"
+			<div className=" relative flex overflow-hidden mx-auto w-full"
 			// onMouseMove={(e) => {
 			//     mouseMove(e);
 			// }}
@@ -211,7 +200,7 @@ const Hero = () => {
                 return <SlideTrack key={k} forward={k % 2} images={images[k % images.length]} />
             })*/}
 				<PetalCanvas />
-				
+
 				<div
 					ref={setRef}
 					className="absolute h-full w-full top-0 left-0 spotlight opacity-95"
@@ -236,7 +225,7 @@ const Hero = () => {
 
 				<div className="eat"></div>
 			</div>
-		</>
+		</div>
 	)
 }
 
