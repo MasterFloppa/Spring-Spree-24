@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 function FAQMobileSkeleton({ title, content }) {
 	const [show, setShow] = useState(false);
 	return (
@@ -12,6 +13,7 @@ function FAQMobileSkeleton({ title, content }) {
 
 		</div>
 	)
+
 }
 
 export default FAQMobileSkeleton

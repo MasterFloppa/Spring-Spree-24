@@ -84,7 +84,7 @@ function FAQS_Large() {
 	return (
 		<div className='w-full h-[1100px] bg-purple flex flex-col'>
 			<div className='flex flex-col mt-32'>
-				<div className='flex justify-center text-pink text-3xl mt-10 mb-10'>FAQS</div>
+				<div className='flex justify-center text-pink font-aftersick text-4xl mt-10 mb-10'>FAQS</div>
 				<div className='tabs relative flex justify-start bg-purple2 text-pink rounded-3xl shadow-2xl md:ml-8 w-[200px]'>
 					<input type='radio' id="About" name="group" checked={selectedTab === 'About'} onChange={handleTabChange} />
 					<input type='radio' id="Registration" name="group" checked={selectedTab === 'Registration'} onChange={handleTabChange} />

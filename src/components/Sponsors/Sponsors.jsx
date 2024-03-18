@@ -1,10 +1,13 @@
+
 import React, { useEffect, useState } from "react";
+
 import SponsorsCard from './SponsorsCard'
 import "./Sponsors.css"
 import Loader from '../Loader/index.js'
 
 
 function Sponsors() {
+
 
 	const [sponsorsInfo, setSponsorsInfo] = useState([]);
 	useEffect(() => {
@@ -33,6 +36,7 @@ function Sponsors() {
 					)
 				})
 			}
+
 		</div>
 	)
 }

@@ -37,6 +37,8 @@ module.exports = {
 		fontFamily: {
 			oswald: ["Oswald", "sans-serif"],
 			mont: ["Montserrat", "sans-serif"],
+			'aftersick':["Aftersick", "sans-serif"],
+			'futura':["Futura", "sans-serif"],
 		},
 	},
 	plugins: [],

@@ -1,0 +1,85 @@
+.Links {
+	position: relative;
+}
+.Links::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	/* Adjust this value to control the distance from the text */
+	width: 0%;
+	height: 2px;
+	/* Adjust this value to control the thickness of the line */
+	background-color: purple;
+	/* Adjust the color as needed */
+	transition: width 0.3s ease-in-out;
+}
+.Links:hover::after {
+	width: 100%;
+}
+#horz-list ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#horz-list ul li {
+	display: inline;
+}
+
+#horz-list ul li a {
+	display: inline-block;
+	position: relative;
+}
+
+#horz-list ul li a {
+	text-decoration: none;
+	padding: 0.1em 1.0em;
+	margin: 0.1rem;
+	border-right: 1px solid rgba(46, 47, 92, 1);
+	font-size: 0.8rem;
+	font-weight: 200;
+}
+#horz-list ul li:last-child a {
+	border: none;
+}
+.heading{
+    height: 200px;
+}
+.footer_title{
+	font-size: 50px;
+	background-color:transparent ;
+	margin-bottom: 25px;
+}
+.footer-tag{
+	font-size: 26px;
+}
+.footer-note{
+	font-size: 20px;
+}
+.footer-venue{
+	font-size: 28px;
+}
+.footer-clg-name{
+	font-size: 20px;
+}
+@media (min-width:320px) and (max-width:768px) {
+	.footer_title{
+		font-size: 30px;
+		margin-bottom: 12px;
+	}
+	.footer-tag{
+		font-size: 20px;
+	}
+	.footer-note{
+		font-size: 16px;
+	}
+	.footer-venue{
+		font-size: 18px;
+	}
+	.footer-clg-name{
+		font-size: 16px;
+	}
+	
+}
