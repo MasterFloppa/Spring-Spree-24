@@ -1,6 +1,5 @@
 
 import React, { useEffect, useState } from "react";
-
 import SponsorsCard from './SponsorsCard'
 import "./Sponsors.css"
 import Loader from '../Loader/index.js'
