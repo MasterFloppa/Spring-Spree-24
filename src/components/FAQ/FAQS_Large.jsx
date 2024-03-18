@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./FAQs_Large.css";
 import Accordions from "./FAQ_Skeleton"
+
 function FAQS_Large() {
 	const faqs = [
 		{

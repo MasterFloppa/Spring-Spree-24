@@ -16,7 +16,6 @@ const Card = ({ link1, link2, link3, link4 }) => {
                 <img src={link2} className={`title-pro ${hover ? '' : 'hidden'}`} alt="title" />
                 <img src={link3} className="character" alt="character" />
             </div>
-            {/* </a> */}
         </>
     )
 }

@@ -8,9 +8,6 @@ import FloatButton from "./FloatButton.js";
 import Grid from './Grid/index.js'
 import Loader from '../Loader/index.js'
 
-// import data from "./eventlist.json"; // get all events
-// data = data.eventList;
-
 
 // [{
 //     "eventname": "abc",
@@ -56,168 +53,167 @@ var numEvents = 0;
 
 function Events() {
 
-  const ref = useRef();
+	const ref = useRef();
 
-  const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(true);
 
-  const [width, setWidth] = useState(window.innerWidth);
+	const [width, setWidth] = useState(window.innerWidth);
 
-  const [touchStart, setTouchStart] = useState(null);
-  const [initScroll, setInitScroll] = useState(0);
-  const [current, setCurrent] = useState(0);
-  const [opacity, setOpacity] = useState(1);
+	const [touchStart, setTouchStart] = useState(null);
+	const [initScroll, setInitScroll] = useState(0);
+	const [current, setCurrent] = useState(0);
+	const [opacity, setOpacity] = useState(1);
 
-  const [view, setView] = useState('grid');
-  const [day, setDay] = useState('ALL');
-
-
-
-  const [data, setData] = useState([]);
-
-  const changeCurrent = (val) => {
-    if (val >= numEvents) val = numEvents - 1;
-    if (val < 0) val = 0;
-    c = val;
-    setCurrent(val);
-  }
+	const [view, setView] = useState('grid');
+	const [day, setDay] = useState('ALL');
 
 
-  const cardClick = (val) => {
-    changeView('swipe');
-    window.scrollTo(0, 0);
-    changeCurrent(val);
-  }
+	const [data, setData] = useState([]);
 
-  const changeView = (view) => {
-    document.body.style.zoom = 1;
-    if(view === 'schedule') setDay('day1');
-    setView(view);
-  }
-  
-
-  c = current;
-
-  // FETCH all the events
-  useEffect(() => {
-    const getEvents = async () => {
-      const response = await fetch(`${URL}/event/all`, {
-        method: "GET",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-        }
-      })
-
-      let data = await response.json();
-      numEvents = data.length;
-      setLoading(false);
-      setData(data);
-    }
-
-    window.addEventListener("hashchange", function(e) {
-      console.log(e);
-      e.preventDefault();
-    })
-
-    getEvents();
-  }, [])
-
-  useEffect(() => {
-    const klisten = (e) => {
-      console.log(e.keyCode);
-      switch (e.keyCode) {
-        case RIGHT:
-          changeCurrent(c + 1);
-          break;
-        case LEFT:
-          changeCurrent(c - 1);
-          break;
-        case ESC:
-        case BACK:
-          changeView('grid');
-      }
-    }
-    const resize = () => {
-      setWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', resize);
-    document.addEventListener('keydown', klisten);
-    return () => { document.removeEventListener('keydown', klisten); }
-  }, []);
+	const changeCurrent = (val) => {
+		if (val >= numEvents) val = numEvents - 1;
+		if (val < 0) val = 0;
+		c = val;
+		setCurrent(val);
+	}
 
 
-  return (loading ? <Loader /> : 
-    <div className='events bg-black'
-      onMouseMove={() => {
-        setOpacity(1);
-        if (time) clearTimeout(time);
-        time = setTimeout(() => {
-          setOpacity(0);
-        }, 2000);
-      }}>
-      <div>{
-        view === 'swipe' ?
-          <>
-          <div style={{height : window.innerHeight - 64}}>
-            <div className='outer'>
-              <div className='swipe' ref={ref}
-                style={{ width: numEvents * window.innerWidth + 10, left: - current * window.innerWidth }}
-                onTouchStart={
-                  (e) => {
-                    if (isNaN(parseInt(ref.current.style.left))) ref.current.style.left = 0;
-                    if (ref.current) {
-                      setInitScroll(parseInt(ref.current.style.left));
-                      ref.current.style.transition = 'none';
-                    }
-                    touchStartTime = e.timeStamp;
-                    setTouchStart(e.targetTouches[0].clientX);
-                  }
-                }
-                onTouchMove={(e) => {
-                  // normal scroll
-                  const curr = e.targetTouches[0].clientX;
-                  if (ref.current) {
-                    let d = curr - touchStart;
-                    let s = initScroll + 1.2 * d;
-                    if(s > 50) s = 50;
-                    if (s < - (numEvents - 1) * window.innerWidth - 50) s = - (numEvents - 1) * window.innerWidth - 50;
+	const cardClick = (val) => {
+		changeView('swipe');
+		window.scrollTo(0, 0);
+		changeCurrent(val);
+	}
 
-                    if(d > 50 || d < -50)
-                      ref.current.style.left = s + 'px';
-                  }
-                  v = (curr - touchStart) / (e.timeStamp - touchStartTime);
-                }}
-                onTouchEnd={(e) => {
-                  ref.current.style.transition = 'all 0.4s';
-                  //0, -width, -2*width
-                  let s = - parseInt(ref.current.style.left);
-                  let offset = 0;
+	const changeView = (view) => {
+		document.body.style.zoom = 1;
+		if (view === 'schedule') setDay('day1');
+		setView(view);
+	}
 
-                  if (Math.abs(-s - initScroll) > 50 && v > 1) offset = -1;
-                  if (Math.abs(-s - initScroll) > 50 && v < -1) offset = 1;
-                  s = Math.round(s / width) + offset;
-                  changeCurrent(s);
-                  ref.current.style.left = - s * window.innerWidth + 'px';
 
-                  setOpacity(0);
-                }}>
-                {data?.map((event, index) => <div key={index} className='d-card-outer'><Details data={event} current={index === c} /></div>)}
-              </div>
-            </div>
-            {current === data?.length - 1 ? '' : <span className='arrow-outer' onClick={() => changeCurrent(c+1)} style={{ opacity: opacity, right: 0, animation: (current === 0 ? 'click 1s infinite' : '') }}><i className="arrow fa-solid fa-caret-right"></i></span>}
-            {current === 0 ? '' : <span className='arrow-outer' onClick={() => changeCurrent(c-1)} style={{ opacity: opacity, left: 0 }}><i className="arrow fa-solid fa-caret-left "></i></span>}
-            </div>
-          </>
-          :
-          view === 'schedule' ?
-            <Schedule state={view} viewDetails={cardClick} day={day} days={days} changeDay={setDay} data={data} />
-            :
-            <Grid day={day} days={days} changeDay={setDay} data={data} onclick={cardClick} />
-      }
-      </div>
-      <FloatButton current={view} zoom={1} onclick={changeView} />
-    </div>
-  );
+	c = current;
+
+	// FETCH all the events
+	useEffect(() => {
+		const getEvents = async () => {
+			const response = await fetch(`${URL}/event/all`, {
+				method: "GET",
+				mode: "cors",
+				headers: {
+					"Content-Type": "application/json",
+				}
+			})
+
+			let data = await response.json();
+			numEvents = data.length;
+			setLoading(false);
+			setData(data);
+		}
+
+		window.addEventListener("hashchange", function (e) {
+			console.log(e);
+			e.preventDefault();
+		})
+
+		getEvents();
+	}, [])
+
+	useEffect(() => {
+		const klisten = (e) => {
+			console.log(e.keyCode);
+			switch (e.keyCode) {
+				case RIGHT:
+					changeCurrent(c + 1);
+					break;
+				case LEFT:
+					changeCurrent(c - 1);
+					break;
+				case ESC:
+				case BACK:
+					changeView('grid');
+			}
+		}
+		const resize = () => {
+			setWidth(window.innerWidth);
+		}
+		window.addEventListener('resize', resize);
+		document.addEventListener('keydown', klisten);
+		return () => { document.removeEventListener('keydown', klisten); }
+	}, []);
+
+
+	return (loading ? <Loader /> :
+		<div className='events bg-black'
+			onMouseMove={() => {
+				setOpacity(1);
+				if (time) clearTimeout(time);
+				time = setTimeout(() => {
+					setOpacity(0);
+				}, 2000);
+			}}>
+			<div>{
+				view === 'swipe' ?
+					<>
+						<div style={{ height: window.innerHeight - 64 }}>
+							<div className='outer'>
+								<div className='swipe' ref={ref}
+									style={{ width: numEvents * window.innerWidth + 10, left: - current * window.innerWidth }}
+									onTouchStart={
+										(e) => {
+											if (isNaN(parseInt(ref.current.style.left))) ref.current.style.left = 0;
+											if (ref.current) {
+												setInitScroll(parseInt(ref.current.style.left));
+												ref.current.style.transition = 'none';
+											}
+											touchStartTime = e.timeStamp;
+											setTouchStart(e.targetTouches[0].clientX);
+										}
+									}
+									onTouchMove={(e) => {
+										// normal scroll
+										const curr = e.targetTouches[0].clientX;
+										if (ref.current) {
+											let d = curr - touchStart;
+											let s = initScroll + 1.2 * d;
+											if (s > 50) s = 50;
+											if (s < - (numEvents - 1) * window.innerWidth - 50) s = - (numEvents - 1) * window.innerWidth - 50;
+
+											if (d > 50 || d < -50)
+												ref.current.style.left = s + 'px';
+										}
+										v = (curr - touchStart) / (e.timeStamp - touchStartTime);
+									}}
+									onTouchEnd={(e) => {
+										ref.current.style.transition = 'all 0.4s';
+										//0, -width, -2*width
+										let s = - parseInt(ref.current.style.left);
+										let offset = 0;
+
+										if (Math.abs(-s - initScroll) > 50 && v > 1) offset = -1;
+										if (Math.abs(-s - initScroll) > 50 && v < -1) offset = 1;
+										s = Math.round(s / width) + offset;
+										changeCurrent(s);
+										ref.current.style.left = - s * window.innerWidth + 'px';
+
+										setOpacity(0);
+									}}>
+									{data?.map((event, index) => <div key={index} className='d-card-outer'><Details data={event} current={index === c} /></div>)}
+								</div>
+							</div>
+							{current === data?.length - 1 ? '' : <span className='arrow-outer' onClick={() => changeCurrent(c + 1)} style={{ opacity: opacity, right: 0, animation: (current === 0 ? 'click 1s infinite' : '') }}><i className="arrow fa-solid fa-caret-right"></i></span>}
+							{current === 0 ? '' : <span className='arrow-outer' onClick={() => changeCurrent(c - 1)} style={{ opacity: opacity, left: 0 }}><i className="arrow fa-solid fa-caret-left "></i></span>}
+						</div>
+					</>
+					:
+					view === 'schedule' ?
+						<Schedule state={view} viewDetails={cardClick} day={day} days={days} changeDay={setDay} data={data} />
+						:
+						<Grid day={day} days={days} changeDay={setDay} data={data} onclick={cardClick} />
+			}
+			</div>
+			<FloatButton current={view} zoom={1} onclick={changeView} />
+		</div>
+	);
 }
 
 
