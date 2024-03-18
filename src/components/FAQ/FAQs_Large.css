@@ -17,6 +17,14 @@
     z-index: 100;
     padding-left: 20px;
 }
+.tabs{
+  width: 250px;
+  height: 600px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+
 .tabs input:nth-child(1):checked ~ .labels label:nth-child(1),
 .tabs input:nth-child(2):checked ~ .labels label:nth-child(2),
 .tabs input:nth-child(3):checked ~ .labels label:nth-child(3),
@@ -95,7 +103,8 @@
     color: #232754;
     font-size: 20px;
    }
-   
+
+  
 .content{
     position: absolute;
     top: -50px;
@@ -141,11 +150,99 @@
   margin-top: 200px;
 }
 .tabs input:nth-child(5):checked ~ .content{
-  height: 450px;
-  margin-top: 250px;
+  height: 500px;
+  margin-top: 200px;
 }
-.tabs input:nth-child(5):checked ~ .accordions__list .accordions__item:nth-child(2){
+.tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
+  height: 100px;
+}
+.tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
+  height: 110px;
+}
+.tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(4){
+  height: 200px;
+}
+.tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(1){
+  height: 290px;
+}
+.tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(4){
+  height: 200px;
+}
+.tabs input:nth-child(5):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(2){
   height: 130px;
+}
+.tabs input:nth-child(5):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(2){
+  height: 200px;
+}
+  @media (width: 1024px){
+  .tabs{
+    width: 200px;
+    margin-left: 35px;
+  }
+  .tabs .labels label{
+    padding-left: 0px;
+    font-size: 16px;
+  }
+  .tabs .labels .indicator{
+    width: 220px;
+  }
+  .tabs input:nth-child(3):checked ~ .labels label:nth-child(3){
+    color: #232754;
+    font-size: 20px;
+    padding-left: 25px;
+   }
+   .tabs input:nth-child(4):checked ~ .labels label:nth-child(4){
+    color: #232754;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+   }
+   .tabs .content{
+    left: 220px;
+    width: 700px;
+    max-height: 700px;
+   }
+   .tabs input:nth-child(3):checked ~ .content{
+    height: 800px;
+  }
+  .accordions__list .accordions__item {
+    height: 77px;
+  }
+  .accordions__control  .accordions__number{
+    font-size: 30px;
+  }
+  .accordions__control .accordions__title{
+    font-size: 26px;
+  }
+  .accordions__list .accordions__item  .accordions__content {
+    padding: 10px 60px 200px 60px;
+  }
+  .accordions__list .accordions__item .accordions__icon {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
+  }
+  .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
+    height: 100px;
+  }
+  .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
+    height: 110px;
+  }
+  .tabs input:nth-child(5):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(2){
+    height: 140px;
+  }
+  .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(4){
+    height: 220px;
+  }
+  .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(1){
+    height: 290px;
+  }
+  .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(4){
+    height: 220px;
+  }
+  .tabs input:nth-child(5):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(2){
+    height: 220px;
+  }
 }
 .process__container {
     max-width: 1240px;
@@ -165,12 +262,15 @@
   }
   .accordions__item {
     background-color: #f1f2f2;
-    height: 100px;
+    height: 90px;
     border-radius: 2.8rem;
     overflow: hidden;
     transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
     box-shadow: 0px 0.3125rem 0px 0px #191a23;
     border: 0.0625rem solid #191a23;
+  }
+  .open_faq.accordions__item{
+    height: 220px;
   }
   .accordions__control {
     display: flex;
@@ -184,12 +284,6 @@
     font-family: Space Grotesk;
     padding-right: 1.5625rem;
     font-weight: 500;
-  }
-  .accordions__number {
-    font-size: 60px;
-    font-family: Space Grotesk;
-    padding-right: 1.5625rem;
-    font-weight: 500; 
   }
   .accordions__title {
     font-family: Space Grotesk;
@@ -245,11 +339,14 @@
     z-index: 5;
   }
   .open_faq .accordions__content {
-    padding: 10px 60px 70px 60px;
+    padding: 10px 60px 200px 60px;
   }
   .open_faq {
     background-color: #2f2e5c;
   }
   .open_faq .accordions__icon {
     transform: rotate(225deg);
+  }
+  .open_faq .content{
+    max-height: none;;
   }

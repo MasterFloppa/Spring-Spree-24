@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FAQs.css';
+import './FAQs_Large.css';
 
 const Accordions = ({ faqs }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -32,10 +32,10 @@ const Accordions = ({ faqs }) => {
 
 const AccordionItem = ({ index, title, content, openIndex, toggleAccordion }) => {
   const isOpen = openIndex === index;
-  const height = isOpen ? '220px' : '120px';
   const color = isOpen ? '#f4d4d8': '#343663';
+  
   return (
-    <li className={`accordions__item ${isOpen ? 'open_faq' : ''}`} onClick={() => toggleAccordion(index)} style={{height, color }} >
+    <li className={`accordions__item ${isOpen ? 'open_faq' : ''}`} onClick={() => toggleAccordion(index)} style={{ color }} >
       <button className="accordions__control" aria-expanded={isOpen}>
         <span className="accordions__number">0{index + 1}</span>
         <span className="accordions__title">{title}</span>

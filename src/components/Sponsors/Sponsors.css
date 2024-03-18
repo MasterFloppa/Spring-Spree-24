@@ -56,7 +56,23 @@
     box-shadow: inset 0 10px 20px rbga(0,0,0,0.5);
     border-bottom: 2px solid rgba(255,255,255,0.45);
 }
-
+.spons_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@media(min-width: 280px) and (max-width: 768px){
+    .spons .spons_line{
+        display: flex;
+        flex-direction: column;
+    }  
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .spons .spons_line{
+        display: grid;
+    }  
+}
 @keyframes rotating{
     0%{
         --a:0deg;
