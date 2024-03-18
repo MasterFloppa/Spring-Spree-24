@@ -1,5 +1,5 @@
 import React from 'react'
-import FAQ_Mobile_Skeleton from './FAQ_Mobile_Skeleton'
+import FAQMobileSkeleton from './FAQ_Mobile_Skeleton'
 import "./FAQs_Mobile.css"
 function FAQS_Mobile() {
     const faqs = [
@@ -126,6 +126,7 @@ function FAQS_Mobile() {
         </div>
     </div>
   )
+
 }
 
 export default FAQS_Mobile

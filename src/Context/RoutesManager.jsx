@@ -13,6 +13,7 @@ import FAQS from '../components/FAQ/FAQ_final'
 
 import { Register } from '../components/Register';
 import Proshow from '../components/Proshow'
+import EachTeam from '../components/Teams/EachTeam'
 
 
 const RoutesManager = () => {
@@ -41,7 +42,7 @@ const RoutesManager = () => {
 			{/* <Route path="/blogs/:blogId" element={<BlogDetail />} /> */}
 			<Route path='/events/' element={<Events />} />
 			<Route path='/team' element={<Teams />} />
-			{/* <Route path="/team/:teamname" element={<EachTeam />} /> */}
+			<Route path="/team/:teamname" element={<EachTeam />} />
 			<Route path='/faq' element={<FAQS />} />
 			<Route path="/proshows" element={<Proshow />} />
 		</Routes >
