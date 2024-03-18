@@ -9,14 +9,14 @@ function FAQS_Large() {
         },
         {
           title: "When is the fest?",
-          content: "The fest is celebrated htmlFor three consecutive days from April 7 to April 9 2023."
+          content: "The fest is celebrated for three consecutive days from April 7 to April 9 2023."
         },
         {
           title: "What are the common events?",
           content: "The major spotlight events include: Idol (A Singing Competition), Director's Cut (A Short Film Contest), Allure (A Fashion Show), Q-Factor (A Quiz Competition), NIT-MUN (A Model United Nations)"
         },
         {
-            title: "What is the mode of conduction of the fest (Online or Offiline)?",
+            title: "What is the mode of conduction of the fest (Online or Offline)?",
             content: "Fest (Spring Spree'23) is being conducted offline."
           },
       ];
@@ -31,7 +31,7 @@ function FAQS_Large() {
         },
         {
           title: "How much is the entry fee?",
-          content: "There will be a fixed entry fee htmlFor other than NIT Warangal students to attend spree. Everyone should pay the fee htmlFor participating in any event mentioned by the respective event managers."
+          content: "There will be a fixed entry fee for other than NIT Warangal students to attend spree. Everyone should pay the fee htmlFor participating in any event mentioned by the respective event managers."
         },
         {
             title: "Who can attend the fest?",
