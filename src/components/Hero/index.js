@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import kaladhvani from './kaladhvani.png';
-import spreedate from './LOGOS-05.png';
+import rasengan from './Rasengan2.png';
+import spreedate from './LOGOS-052.png';
 import petalImager from './petal.png'
 import './index.css';
 import { useAuth } from "../../Context/AuthManager";
@@ -208,10 +208,10 @@ const Hero = () => {
 				</div>
 
 				<div className='heading1 flex flex-col justify-center items-center' style={{ 'background': 'transparent' }}>
-					<div className="spree-title" style={{ 'padding': '0 25px' }}>
+					<div className="spree-title" style={{ 'padding': '0 25px'}}>
 						<img src={spreedate} />
 					</div>
-					<div><img src={kaladhvani}></img></div>
+					<div><img src={rasengan}></img></div>
 					<h3>where the culture resonates</h3>
 					<div className="main flex justify-center">
 						<button className="btn35">
