@@ -1,15 +1,15 @@
 import React from 'react';
-import pspk from './pspk.jpg';
+import cguest from './pspk.jpg';
 import './index.css';
 
-export const Pspk = () =>{
+export const Cguest = () =>{
     return (
         <div>
             <div style={{ backgroundColor: '#283994' }} className='text-white w-full px-4 md:px-6 lg:px-8 flex flex-row justify-center items-center flex-wrap'>
                 <h1 className='flex-[100%] text-center text-4xl font-[800]'>Inaugural Ceremony</h1>
                 <div className='img-cont relative'>
                     <div className='overlay absolute top-0 left-0 h-full w-full z-10' ></div>
-                    <img className='min-w-[200px] max-w-[450px] w-full h-auto' src={pspk} alt='pspk'/>
+                    <img className='min-w-[200px] max-w-[450px] w-full h-auto' src={cguest} alt='cguest'/>
                 </div>
                 <div className='min-w-[45%] flex flex-col justify-center items-center p-6'>
                     <h2 className='text-2xl md:text-3xl lg:text-4xl font-[700] my-3'>Chief Guest</h2>

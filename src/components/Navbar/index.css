@@ -21,17 +21,17 @@ nav {
 
 	margin-right: 2%;
 	margin-left: 2%;
+	margin-top: 3%;
 }
 
-nav .title {
-	font-size: 1.5rem;
-	margin: 1rem;
-	font-weight: bold;
-	text-decoration: none;
-	color: white;
+.logo {
+	display: flex;
+	position: fixed;
 	background-color: transparent;
+	justify-content: center;
 	align-items: center;
-	flex: 1;
+	width: 100%;
+	margin-top: 2%;
 }
 
 /* Reg button */
@@ -43,6 +43,7 @@ nav .reg-login a {
 	background-color: #f4d4d8;
 	color: #232754;
 	border-radius: 5rem;
+	font-family: "Aftersick", sans-serif;
 }
 
 nav .reg-login a:not(.active):hover {
@@ -61,6 +62,7 @@ nav ul {
 nav ul li {
 	list-style: none;
 	background: linear-gradient(to right, #f4d4d8, #ca85b8);
+	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 }
@@ -76,6 +78,7 @@ nav ul li a {
 	white-space: nowrap;
 	/* prevents from overflowing into two lines */
 	transition: text-shadow 0.3s ease;
+	cursor: pointer;
 }
 
 /* Log out button */
@@ -90,16 +93,14 @@ nav ul li button {
 	background-color: #0051ff;
 }
 
-nav img {
+.logo img {
 	width: var(--img-width);
-	margin: 0.5rem 0 0 0.5rem;
-
 }
 
 /* prevents active link to be clicked again */
 nav ul li a:not(.active):hover {
 	background-color: #2f2e5c;
-	color: #f1f2f2;
+	color: #f4d4d8;
 	border-radius: 5rem;
 	animation: glow-animation 1s infinite alternate;
 }
@@ -131,9 +132,10 @@ nav .menu {
 .cross {
 	position: absolute;
 	cursor: pointer;
-	color: white;
+	color: #f1f2f2;
 	height: 2rem;
 	width: 2rem;
+	margin-left: 0.6rem;
 }
 
 .ham {
@@ -160,45 +162,6 @@ nav .menu {
 /* ------------------------------ */
 
 
-/* making it responsive */
-@media (max-width: 725px) {
-	nav .menu {
-		display: flex;
-	}
-
-	nav img {
-		width: calc(var(--img-width) + 3vw);
-	}
-
-	nav {
-		flex-direction: column;
-		align-items: flex-start;
-		/* position: sticky; */
-		background-color: #000000;
-	}
-
-	nav ul {
-		display: none;
-		/*comment this to edit folded view*/
-		flex-direction: column;
-		width: 100%;
-		margin-bottom: 0.25rem;
-	}
-
-	nav ul.open {
-		display: flex;
-	}
-
-	nav ul li {
-		width: 100%;
-		text-align: center;
-	}
-
-	nav ul li a {
-		margin: 0.2rem 0.5rem;
-	}
-}
-
 /* ------------- Drop-Down ----------------- */
 
 .dropdown-menu {
@@ -209,17 +172,100 @@ nav .menu {
 	margin: 0;
 }
 
+.dropdown-content li {
+	margin: 0;
+}
+
 .dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: transparent;
 	z-index: 1;
+	cursor: pointer;
 }
 
-.dropdown-menu .a:hover {
-	background-color: #f9f9f9;
-}
+/* ------------------------------------------ */
 
-.dropdown-menu:hover .dropdown-content {
-	display: block;
+
+/* making it responsive */
+@media (max-width: 725px) {
+	nav .menu {
+		display: flex;
+		margin-top: 1.6rem;
+		margin-right: 1rem;
+	}
+
+	.logo img {
+		width: calc(var(--img-width) + 10vw);
+		margin-top: 1rem;
+	}
+
+	nav {
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 0%;
+		/* background-color: #000000; */
+	}
+
+	nav ul {
+		display: none;
+		margin-top: 2rem;
+		align-items: center;
+		flex-direction: column;
+		width: 50%;
+		margin-bottom: 0.25rem;
+	}
+
+	.menu-open {
+		background-color: #f4d4d8;
+		margin-left: 0%;
+		padding-bottom: 2%;
+	}
+
+	nav ul.open {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/* Up Right Down Left */
+	}
+
+	nav ul li {
+		width: 100%;
+		text-align: center;
+		color: #f4d4d8;
+	}
+
+	nav ul li a {
+		margin: 0.2rem 0.5rem;
+		background-color: #232754;
+		border-radius: 5rem;
+		width: 100%;
+	}
+
+	.active {
+		width: 100%;
+		background-color: #ca85b8;
+		color: #232754;
+	}
+
+	.dropdown-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin-top: 1.2%;
+		width: 100%;
+	}
+
+	.dropdown-content li a:not(.active) {
+		background-color: #393e8f;
+	}
+
+	nav ul li a:not(.active):hover {
+		animation: none;
+	}
 }

@@ -4,8 +4,18 @@ import Card from './Card';
 const Day = ({ data }) => {
 
     const renderCards = () => {
-        return data.map(ele => {
-            return <Card link1={ele.link1} link2={ele.link2} link3={ele.link3} link4={ele.link4} />
+        return data.map((ele, index) => {
+            {/*Destructure the properties from the 'ele' object*/ }
+            const { link1, link2, link3, link4 } = ele;
+            return (
+                <Card
+                    key={index}
+                    link1={link1}
+                    link2={link2}
+                    link3={link3}
+                    link4={link4}
+                />
+            );
         });
     }
     return (

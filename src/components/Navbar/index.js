@@ -42,21 +42,31 @@ export default function Navbar() {
 		setMenuOpen(false);
 	};
 
+	const [dropdownOpen, setDropdownOpen] = useState(false);
+
+	const toggleDropdown = () => {
+		setDropdownOpen(!dropdownOpen);
+	};
+
+	const closeDropdown = () => {
+		setDropdownOpen(false);
+	};
+
 	const listItems = navigation.map((menuItem, index) => {
 		if (menuItem.name === "EVENTS") {
 			return (
 				<li key={index} className="dropdown-menu">
-					<NavLink to={menuItem.link} onClick={closeMenu}>{menuItem.name} ▼</NavLink>
-					<ul className="dropdown-content">
-						<li ><NavLink to="/proshows">PRO SHOWS</NavLink></li>
-						<li ><NavLink to="/event2">Event 2</NavLink></li>
+					<a to="#" onClick={toggleDropdown} style={{ color: '#f4d4d8' }}>{menuItem.name} {dropdownOpen ? '▲' : '▼'}</a>
+					<ul className="dropdown-content" style={{ display: dropdownOpen ? 'block' : 'none' }}>
+						<li ><NavLink to="/proshows" onClick={() => { closeMenu(); closeDropdown(); }}>PRO SHOWS</NavLink></li>
+						<li ><NavLink to={menuItem.link} onClick={() => { closeMenu(); closeDropdown(); }}>EVENTS</NavLink></li>
 					</ul>
-				</li>
+				</li >
 			);
 		} else {
 			return (
 				<li key={index}>
-					<NavLink to={menuItem.link} onClick={closeMenu}>{menuItem.name}</NavLink>
+					<NavLink to={menuItem.link} onClick={() => { closeMenu(); closeDropdown(); }}>{menuItem.name}</NavLink>
 				</li>
 			);
 		}
@@ -64,7 +74,15 @@ export default function Navbar() {
 
 	return (
 		<>
-			<nav>
+			{!menuOpen ? (
+				<div className="logo">
+					<Link to="./" onClick={closeMenu}>
+						<img src={springspree} alt="logo1" />
+					</Link>
+				</div>
+			) : (null
+			)}
+			<nav className={menuOpen ? 'menu-open' : 'menu-closed'}>
 				<div
 					className="menu"
 					onClick={() => {
@@ -87,11 +105,6 @@ export default function Navbar() {
 				<ul className={menuOpen ? "open" : ""}>{listItems}</ul>
 				{/* </div> */}
 
-				<div className="title">
-					<Link to="./" onClick={closeMenu}>
-						<img src={springspree} alt="logo1" />
-					</Link>
-				</div>
 
 				<div className="reg-login">
 					{isLoggedIn ? (
@@ -113,6 +126,8 @@ export default function Navbar() {
 					)}
 				</div>
 			</nav >
+
+
 		</>
 	);
 }
