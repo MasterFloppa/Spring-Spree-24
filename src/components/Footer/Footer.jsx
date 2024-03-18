@@ -5,7 +5,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div>
-      <footer className="w-full h-[620px] bg-pink relative pt-2rounded-4xl md:h-[500px] lg:h-[510px]">
+      <footer className="w-full h-[630px] bg-pink relative pt-2rounded-4xl md:h-[570px] lg:h-[570px]">
         <div className=" w-full h-auto bg-cover bg-center ">
           <div className=" w-full h-auto ">
             <div className="w-full h-full flex justify-center items-center">
@@ -16,30 +16,30 @@ export default function Footer() {
               />
               <div className="w-auto flex flex-col absolute heading">
                 <div className="text flex-col h-full justify-center items-center mb-6">
-                  <h3 className="text-2xl flex h-10 justify-center mt-4 mb-4 font-[800]  xsm:text-center  md:text-left text-purple">
+                  <h3 className=" footer_title flex h-10 justify-center mt-4 font-[800] font-aftersick  xsm:text-center  md:text-left text-purple">
                     Rasengan
                   </h3>
-                  <h3 className="text-xl mb-2 italic font-semibold text-purple xsm:text-center md:text-left flex justify-center">
+                  <h3 className="footer-tag mb-2 italic font-futura font-semibold text-purple xsm:text-center md:text-left flex justify-center">
                     Where the culture resonates
                   </h3>
-                  <h3 className="text-center mx-4 lg:mx-10">
+                  <h3 className="text-center footer-note  mx-4  font-futura lg:mx-20 ">
                     Namaste and a very warm welcome to SpringSpree - our vibrant
                     and colorful cultural fest celebrating the rich artistic
                     traditions of our community!
                   </h3>
                 </div>
-                <div className="flex-col justify-center items-center">
+                <div className="flex-col justify-center mt-6 items-center sm:mt-2 xsm:mt-2">
                   <div className="flex-col justify-center items-center mb-8">
-                    <span className="flex justify-center items-center block uppercase text-purple text-lg font-semibold my-2">
+                    <span className="flex justify-center font-futura items-center block uppercase text-purple font-semibold my-2 footer-venue">
                       Venue
                     </span>
                     <div>
                       <ul className="flex-col justify-center items-center text-center list-unstyled xsm:text-center sm:text-left mx-2">
-                        <li className="flex justify-center text-center tracking-wide text-purple font-medium">
+                        <li className="flex footer-clg-name font-futura justify-center text-center tracking-wide text-purple font-medium ">
                           National Institute of Technology Warangal, Hanamkonda
                           Road, 506004
                         </li>
-                        <li className=" flex justify-center text-purple font-medium">
+                        <li className=" flex font-futura justify-center text-purple font-medium">
                           springspree@nitw.ac.in
                         </li>
                       </ul>
@@ -51,7 +51,7 @@ export default function Footer() {
                         <li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink ">
                           <a
                             href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/privacy"
-                            className="block py-2 px-4"
+                            className="block font-futura py-2 px-4"
                           >
                             Privacy Policy
                           </a>
@@ -59,7 +59,7 @@ export default function Footer() {
                         <li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink mt-2">
                           <a
                             href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/terms"
-                            className="block py-2 px-4"
+                            className="block font-futura py-2 px-4"
                           >
                             Terms & Conditions
                           </a>
@@ -67,7 +67,7 @@ export default function Footer() {
                         <li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink mt-2">
                           <a
                             href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/refund"
-                            className="block py-2 px-4"
+                            className="block font-futura py-2 px-4"
                           >
                             Cancellation & Refund
                           </a>
@@ -75,7 +75,7 @@ export default function Footer() {
                         <li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink mt-2">
                           <a
                             href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/shipping"
-                            className="block py-2 px-4"
+                            className="block font-futura py-2 px-4"
                           >
                             Shipping & Delivery
                           </a>
@@ -83,7 +83,7 @@ export default function Footer() {
                         <li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink mt-2">
                           <a
                             href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/contact_us"
-                            className="block py-2 px-4"
+                            className="block font-futura py-2 px-4"
                           >
                             Contact Us
                           </a>
@@ -94,10 +94,10 @@ export default function Footer() {
 
                   <hr className="w-full my-2 border-black"></hr>
                   <div className="flex justify-center items-center mb-2">
-                    <div className="text-sm text-purple font-semibold py-1 ">
+                    <div className="text-sm text-purple font-futura font-semibold py-1 ">
                       All rights reserved ©{" "}
                       <span id="get-current-year">2024</span>
-                      <span className="text-purple hover:text-gray-800">
+                      <span className="text-purple font-futura hover:text-gray-800">
                         {" "}
                         SpringSpree'24 Dev Team{" "}
                       </span>

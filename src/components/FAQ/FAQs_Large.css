@@ -15,7 +15,9 @@
     transition: 0.5s;
     cursor: pointer;
     z-index: 100;
+    font-size: 20px;
     padding-left: 20px;
+    font-family: "AFtersick", "sans-serif";
 }
 .tabs{
   width: 250px;
@@ -85,7 +87,7 @@
 
 .tabs input:nth-child(1):checked ~ .labels label:nth-child(1){
  color: #232754;
- font-size: 20px;
+ font-size: 26px;
 }
 .tabs input:nth-child(2):checked ~ .labels label:nth-child(2){
     color: #232754;
@@ -145,12 +147,15 @@
     opacity: 1;
     visibility: visible;
 }
+.tabs input:nth-child(1):checked ~ .content{
+  max-height: 750px;
+}
 .tabs input:nth-child(4):checked ~ .content{
-  height: 450px;
+  height: 470px;
   margin-top: 200px;
 }
 .tabs input:nth-child(5):checked ~ .content{
-  height: 500px;
+  height: 530px;
   margin-top: 200px;
 }
 .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
@@ -163,7 +168,7 @@
   height: 200px;
 }
 .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(1){
-  height: 290px;
+  height: 330px;
 }
 .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(4){
   height: 200px;
@@ -215,7 +220,7 @@
     font-size: 26px;
   }
   .accordions__list .accordions__item  .accordions__content {
-    padding: 10px 60px 200px 60px;
+    padding: 10px 60px 240px 60px;
   }
   .accordions__list .accordions__item .accordions__icon {
     width: 50px;
@@ -223,19 +228,32 @@
     flex: 0 0 50px;
   }
   .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
-    height: 100px;
+    height: 120px;
   }
   .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
     height: 110px;
   }
+  .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(1){
+    height: 110px;
+  }
+  .tabs input:nth-child(4):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(2){
+    height: 120px;
+  }
   .tabs input:nth-child(5):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(2){
-    height: 140px;
+    height: 180px;
+  }
+
+  .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(1){
+    height: 210px;
+  }
+  .tabs input:nth-child(4):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(2){
+    height: 220px;
   }
   .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(4){
     height: 220px;
   }
   .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(1){
-    height: 290px;
+    height: 310px;
   }
   .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(4){
     height: 220px;
@@ -262,7 +280,7 @@
   }
   .accordions__item {
     background-color: #f1f2f2;
-    height: 90px;
+    height: 95px;
     border-radius: 2.8rem;
     overflow: hidden;
     transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
@@ -275,20 +293,21 @@
   .accordions__control {
     display: flex;
     align-items: center;
-    padding: 5px 60px;
+    padding: 8px 60px;
     width: 100%;
     position: relative;
   }
   .accordions__number {
-    font-size: 60px;
-    font-family: Space Grotesk;
+    font-size: 50px;
+    /* font-family: Space Grotesk; */
+    font-family: "Futura", 'sans-serif';
     padding-right: 1.5625rem;
     font-weight: 500;
   }
   .accordions__title {
-    font-family: Space Grotesk;
-    font-size: 30px;
-    font-weight: 500;
+    font-family: "Futura", 'sans-serif';
+    font-size: 28px;
+    font-weight:4500;
     text-transform: capitalize;
     flex: 1 1 auto;
     display: flex;
@@ -329,6 +348,7 @@
     transform: translate(-50%, -50%) rotate(90deg);
   }
   .accordions__content {
+    font-family: "Futura", 'sans-serif';
     padding: 0 60px 0 60px;
     max-height: 0;
     overflow: hidden;
@@ -339,7 +359,7 @@
     z-index: 5;
   }
   .open_faq .accordions__content {
-    padding: 10px 60px 200px 60px;
+    padding: 10px 60px 240px 60px;
   }
   .open_faq {
     background-color: #2f2e5c;

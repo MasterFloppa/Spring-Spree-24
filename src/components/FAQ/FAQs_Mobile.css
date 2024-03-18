@@ -13,8 +13,8 @@
     justify-content: start;
     align-items: center;
     width: 87%;
-    height: 85px;
-    margin: 0 auto 6px auto;
+    height: 90px; 
+    margin: 0 auto 8px auto;
     border-radius: 20px;
     background-color: white;
     border-bottom: 5px solid #343663;
@@ -36,6 +36,7 @@
     margin-left: 10px;
     color: #232754;
     font-size: 14px;
+    padding-right: 8px;
 }
 .answers{
     width: 80%;

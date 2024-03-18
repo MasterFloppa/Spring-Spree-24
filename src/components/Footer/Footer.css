@@ -47,3 +47,39 @@
 .heading{
     height: 200px;
 }
+.footer_title{
+	font-size: 50px;
+	background-color:transparent ;
+	margin-bottom: 25px;
+}
+.footer-tag{
+	font-size: 26px;
+}
+.footer-note{
+	font-size: 20px;
+}
+.footer-venue{
+	font-size: 28px;
+}
+.footer-clg-name{
+	font-size: 20px;
+}
+@media (min-width:320px) and (max-width:768px) {
+	.footer_title{
+		font-size: 30px;
+		margin-bottom: 12px;
+	}
+	.footer-tag{
+		font-size: 20px;
+	}
+	.footer-note{
+		font-size: 16px;
+	}
+	.footer-venue{
+		font-size: 18px;
+	}
+	.footer-clg-name{
+		font-size: 16px;
+	}
+	
+}

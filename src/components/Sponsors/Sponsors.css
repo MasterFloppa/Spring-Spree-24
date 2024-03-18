@@ -56,19 +56,52 @@
     box-shadow: inset 0 10px 20px rbga(0,0,0,0.5);
     border-bottom: 2px solid rgba(255,255,255,0.45);
 }
-.spons_line{
+.spons-title{
+    font-size: 30px;
+    font-family: "Aftersick",'sans-serif';
+}
+
+.spons_line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align items in the center horizontally */
+}
+
+.spons_line > * {
+    flex: 1 1 calc(50% - 20px); /* Each item takes up 50% width with some margin */
+    margin: 10px; /* Adjust margin as needed */
+}
+@media (min-width: 1024px) {
+    .spons_line > * {
+        flex-basis: calc(33.33% - 20px); /* On larger screens, each item takes up 33.33% width */
+    }
+}
+/* .spons_line{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
-@media(min-width: 280px) and (max-width: 768px){
+} */
+@media(min-width: 280px) and (max-width: 710px){
+    .box{
+        margin: 0 4px 0 0px;
+        width: 100%;
+        height: 270px;
+    }
     .spons .spons_line{
         display: flex;
         flex-direction: column;
     }  
+    .spons-title{
+        font-size: 26px;
+    }
 }
-@media(min-width: 768px) and (max-width: 1024px){
+@media(min-width: 712px) and (max-width: 1020px){
+    .box{
+        margin: 0 4px 0 20px;
+        width: 380px;
+        height: 325px;
+    }
     .spons .spons_line{
         display: grid;
     }  

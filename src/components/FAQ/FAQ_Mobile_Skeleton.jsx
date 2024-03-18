@@ -6,9 +6,9 @@ function FAQ_Mobile_Skeleton({title,content}) {
     <div className='faq'>
         <div className='main-heading' onClick={()=>{setShow(!show)}}>
             <p className='FQA_icon'>{show ?"-" : "＋"}</p>
-            <h3 className='questions'>{title}</h3>
+            <h3 className='questions font-futura'>{title}</h3>
         </div>
-            {show && <p className='answers'>{content}</p>}
+            {show && <p className='answers font-futura'>{content}</p>}
           
     </div>
   )
