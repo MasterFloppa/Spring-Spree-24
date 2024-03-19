@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import "./card.css"
 
-const Card = ({ link1, link2, link3, link4 }) => {
+const Card = ({ Image, Title, Desc, Image2, index }) => {
     const [hover, setHover] = useState(false);
-    console.log(link4);
 
     return (
         <>
-            {/* <a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank"> */}
-            <div className="card-pro mx-12 md:my-0" onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setHover(false) }}>
+            <div className="flex justify-center items-center card-pro mx-12 md:my-0" onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setHover(false) }}>
                 <div className="wrapper">
-                    <img src={link1} className={`cover-image ${hover ? 'hidden' : ''} `} alt="cover" />
-                    <img src={link4} className={`cover-image ${hover ? '' : 'hidden'} `} alt="cover" />
+                    <img src={Image} className={`cover-image ${hover ? 'hidden' : ''} `} alt="cover" />
+                    <img src={Image2} className={`cover-image ${hover ? '' : 'hidden'} `} alt="cover" />
                 </div>
-                <img src={link2} className={`title-pro ${hover ? '' : 'hidden'}`} alt="title" />
-                <img src={link3} className="character" alt="character" />
+                <div className="Title"> {Title} </div>
+                <div className='Desc'> {Desc} </div>
             </div>
         </>
     )

@@ -10,9 +10,7 @@ import { useEffect } from "react";
 var mar = 10;
 var imsz = 264;
 const COLSZ = mar + imsz;
-let traceback = 0;
 
-var ref;
 const Hero = () => {
 
 	const [loading, setLoading] = useState(true);
@@ -20,13 +18,17 @@ const Hero = () => {
 	//loading effect
 	useEffect(() => {
 		console.time("im");
-		Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
-			console.log('images finished loading');
-			setLoading(false);
-		});
+		Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => {
+			img.onload = img.onerror = resolve;
+		})))
+			.then(() => {
+				console.log('Images finished loading');
+				setLoading(false);
+			}).catch(() => {
+				console.log('Some images failed to load');
+			});
 	}, []);
 
-	const [size, setSize] = useState('transparent 5%, rgba(0, 0, 0) 30vh');
 	const { user } = useAuth();
 
 	let width = window.innerWidth - mar;
@@ -52,9 +54,6 @@ const Hero = () => {
 	//     mystyle1.classList.toggle('mystyle1');
 	//     mystyle2.classList.toggle('mystyle2');
 	//   }
-	const setRef = childref => {
-		ref = childref;
-	}
 
 	// const mouseMove = (e) => {
 	//     if(traceback) clearInterval(traceback);
@@ -202,16 +201,16 @@ const Hero = () => {
 				<PetalCanvas />
 
 				<div
-					ref={setRef}
-					className="absolute h-full w-full top-0 left-0 spotlight opacity-95"
-				>
+					className="absolute h-full w-full top-0 left-0 spotlight opacity-95"	>
 				</div>
 
 				<div className='heading1 flex flex-col justify-center items-center' style={{ 'background': 'transparent' }}>
-					<div className="spree-title" style={{ 'padding': '0 25px'}}>
-						<img src={spreedate} />
+					<div className="spree-title" style={{ 'padding': '0 25px' }}>
+						<img src={spreedate} alt="Spree dates" />
 					</div>
-					<div><img src={rasengan}></img></div>
+					<div>
+						<img src={rasengan} alt="Rasengan" />
+					</div>
 					<h3>where the culture resonates</h3>
 					<div className="main flex justify-center">
 						<button className="btn35">

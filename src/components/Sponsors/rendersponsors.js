@@ -20,6 +20,7 @@ function RenderSponsors() {
 
 		getSpons();
 	}, [])
+
 	const renderSponsors = () => {
 		console.log(spons);
 
@@ -39,16 +40,12 @@ function RenderSponsors() {
 		});
 	};
 
-
-	//-----
-
 	return (
 		<div>
 			{loading ? <Loader /> : ""}
 			<div className='bg-[#0E0E0E] text-[#F7CA17] pt-[100px] text-center flex'>
 				<h1 className="sponsors-hero-title text-4xl font-[800] text-bolder mx-auto flex justify-start items-center text-center">SPONSORS</h1>
 			</div>
-
 			<div className="row sponscont sm:p-4 md:px-12">
 				{renderSponsors()}
 			</div>

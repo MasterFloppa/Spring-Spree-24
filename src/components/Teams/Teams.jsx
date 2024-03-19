@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TeamsCard from "./TeamsCard";
 
-
 const teamInformation = [
     {
         teamName: "Prof. N.V. Ramana Rao ",
@@ -65,7 +64,6 @@ const teamInformation = [
 const Teams = () => {
     const [teamInfo, SetTeamInfo] = useState(teamInformation);
 
-
     useEffect(() => {
         const URL = process.env.REACT_APP_BACKEND_URL;
         const getTeam = async () => {
@@ -84,9 +82,8 @@ const Teams = () => {
         }
 
         getTeam();
-    }, [teamInfo]);
-
-
+        // eslint-disable-next-line
+    }, []);
 
     return (
         <div className="bg-bgBlue text-white">

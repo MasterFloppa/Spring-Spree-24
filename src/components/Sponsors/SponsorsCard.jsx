@@ -9,23 +9,13 @@ function SponsorsCard({
 }) {
 	console.log({ name, photo })
 	return (
-		// <div className='flex flex-col'>
-		// 	<div className='box mx-8'>
-		// 		<div>
-		// 			<img className='object-cover' src={image} alt='spons-card' />
-		// 		</div>
-		// 	</div>
-		// 	<div className='text-pink text-2xl mt-12 mb-10 flex justify-center'>{text}</div>
-		// </div>
 		<div className='flex flex-col justify-center'>
 			<div className='box mx-8'>
 				<div>
-					<img className='object-cover' src={photo} alt='spons-card' />
+					<a href={link}><img className='object-cover' src={photo} alt='spons-card' /></a>
 				</div>
 			</div>
-
-			<div className='text-pink text-2xl mt-12 mb-10 flex justify-center'>{name}</div>
-
+			<div className='text-pink text-2xl mt-6 mb-10 flex justify-center'>{name}</div>
 		</div>
 	)
 }
