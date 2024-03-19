@@ -1,26 +1,27 @@
-.faq_div{
+.faq_div {
     width: 75%;
     height: auto;
     background-color: #f4d4d8;
-    margin:20px 13%;
+    margin: 20px 13%;
     border-radius: 20px;
     padding: 20px 10px;
 
 }
-.main-heading{
+
+.main-heading {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 87%;
-    height: 90px; 
+    height: 90px;
     margin: 0 auto 8px auto;
     border-radius: 20px;
     background-color: white;
     border-bottom: 5px solid #343663;
 }
 
-.main-heading .FQA_icon{
+.main-heading .FQA_icon {
     margin-left: 10px;
     width: 20px;
     display: flex;
@@ -32,13 +33,15 @@
     border-radius: 50%;
     color: #343663;
 }
-.main-heading .questions{
+
+.main-heading .questions {
     margin-left: 10px;
     color: #232754;
     font-size: 14px;
     padding-right: 8px;
 }
-.answers{
+
+.answers {
     width: 80%;
     padding: 20px 20px;
     margin: 3% 10%;

@@ -2,26 +2,18 @@ import React from 'react';
 import Card from './Card';
 
 const Day = ({ data }) => {
-
     const renderCards = () => {
         return data.map((ele, index) => {
-            {/*Destructure the properties from the 'ele' object*/ }
-            const { link1, link2, link3, link4 } = ele;
             return (
-                <Card
-                    key={index}
-                    link1={link1}
-                    link2={link2}
-                    link3={link3}
-                    link4={link4}
-                />
+                <Card key={index} {...ele} />
             );
         });
-    }
+    };
+
     return (
-        <div className='flex flex-col md:flex-row justify-center items-center my-12 '>
+        <div className='flex justify-center items-center'>
             {renderCards()}
         </div>
-    )
+    );
 }
 export default Day;
