@@ -1,6 +1,6 @@
 import React from "react";
 import "./TeamsCard.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 import branch from "./rsz_1rsz_cherry_branch.png"
 
 const TeamsCard = ({

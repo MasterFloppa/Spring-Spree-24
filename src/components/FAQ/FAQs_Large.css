@@ -228,7 +228,7 @@
     flex: 0 0 50px;
   }
   .tabs input:nth-child(1):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
-    height: 120px;
+    height: 90px;
   }
   .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(4){
     height: 110px;
@@ -240,7 +240,7 @@
     height: 120px;
   }
   .tabs input:nth-child(5):checked ~ .content .process .process__accordions .accordions__list .accordions__item:nth-child(2){
-    height: 180px;
+    height: 140px;
   }
 
   .tabs input:nth-child(3):checked ~ .content .process .process__accordions .accordions__list .open_faq.accordions__item:nth-child(1){
@@ -307,7 +307,7 @@
   .accordions__title {
     font-family: "Futura", 'sans-serif';
     font-size: 28px;
-    font-weight:4500;
+    font-weight:450;
     text-transform: capitalize;
     flex: 1 1 auto;
     display: flex;
