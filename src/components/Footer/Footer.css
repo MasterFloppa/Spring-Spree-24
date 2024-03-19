@@ -44,9 +44,6 @@
 #horz-list ul li:last-child a {
 	border: none;
 }
-.heading{
-    height: 200px;
-}
 .footer_title{
 	font-size: 50px;
 	background-color:transparent ;
@@ -63,6 +60,9 @@
 }
 .footer-clg-name{
 	font-size: 20px;
+}
+.footer-section{
+	height: 480px;
 }
 @media (min-width:320px) and (max-width:768px) {
 	.footer_title{
@@ -82,4 +82,39 @@
 		font-size: 16px;
 	}
 	
+}
+@media (min-width:280px) and (max-width:320px) {
+	.footer-section{
+		height: 780px;
+	}
+}
+@media (min-width:320px) and (max-width:350px) {
+	.footer-section{
+		height: 600px;
+	}
+}
+@media (min-width:350px) and (max-width:370px) {
+	.footer-section{
+		height: 550px;
+	}
+}
+@media (min-width:375px) and (max-width:400px) {
+	.footer-section{
+		height: 540px;
+	}
+}
+@media (min-width:400px) and (max-width:570px) {
+	.footer-section{
+		height: 500px;
+	}
+}
+@media (min-width:570px) and (max-width:643px) {
+	.footer-section{
+		height: 470px;
+	}
+}
+@media (min-width:645px) and (max-width:768px) {
+	.footer-section{
+		height: 427px;
+	}
 }
