@@ -2,113 +2,115 @@ import React, { useEffect, useState } from 'react';
 import TeamsCard from './TeamsCard';
 
 const teamInformation = [
- // Director
- {
-  teamName: ' Prof. Bidyadhar Subudhi ',
-  position: 'Director',
-  photo:
-    'https://nitw.ac.in/api/static/files/Director_image1_2023-5-20-12-32-22.jpg',
-  link: '',
-  email: '',
-  phoneNum: '',
-},
 
-// Faculty
-{
-  teamName: 'Prof. D Srinivasa Charya',
-  position: 'Dean Student Welfare',
-  photo:
-    'https://erp.nitw.ac.in/ext/profile/getUserImage/ma-dsc',
-  link: '',
-  email: '',
-  phoneNum: '',
-},
-{
-  teamName: 'Prof. P. Muralidhar',
-  position: 'Chairman (Event Conduction and Coordination)',
-  photo:
-    'https://wsdc.nitw.ac.in/facultynew/media/16308/16308.jpg',
-  link: '',
-  email: '',
-  phoneNum: '',
-},
-{
-  teamName: 'Prof. Priyanka Chawla',
-  position: 'Chairwoman (Website and Social Media)',
-  photo:
-    'https://wsdc.nitw.ac.in/facultynew/media/17088/17088.jpg',
-  link: '',
-  email: '',
-  phoneNum: '',
-},
+	// Director
+	{
+		teamName: ' Prof. Bidyadhar Subudhi ',
+		position: 'Director',
+		photo:
+			'https://nitw.ac.in/api/static/files/Director_image1_2023-5-20-12-32-22.jpg',
+		link: '',
+		email: '',
+		phoneNum: '',
+	},
 
-{
-  teamName: 'Prof. P. Hari Prasad Reddy',
-  position: 'Chairman (Logistics and Transportation)',
-  photo:
-    'https://wsdc.nitw.ac.in/facultynew/media/16216/16216.jpg',
-  link: '',
-  email: '',
-  phoneNum: '',
-},
-{
-  teamName: 'Prof. T. Rahul',
-  position: 'Chairman (Sponsorship & Publicity)',
-  photo:
-    'https://wsdc.nitw.ac.in/facultynew/media/16650/16650.jpg',
-  link: '',
-  email: '',
-  phoneNum: '',
-},
-{
-  teamName: 'Prof. P. Abdul Azeem',
-  position: 'Chairman (Hospitality & Accomodation)',
-  photo:
-    'https://wsdc.nitw.ac.in/facultynew/media/16367/16367.jpg',
-  link: '',
-  email: '',
-  phoneNum: '',
-},
+	// Faculty
+	{
+		teamName: 'Prof. D Srinivasa Charya',
+		position: 'Dean Student Welfare',
+		photo:
+			'https://erp.nitw.ac.in/ext/profile/getUserImage/ma-dsc',
+		link: '',
+		email: '',
+		phoneNum: '',
+	},
+	{
+		teamName: 'Prof. P. Muralidhar',
+		position: 'Chairman (Event Conduction and Coordination)',
+		photo:
+			'https://wsdc.nitw.ac.in/facultynew/media/16308/16308.jpg',
+		link: '',
+		email: '',
+		phoneNum: '',
+	},
+	{
+		teamName: 'Prof. Priyanka Chawla',
+		position: 'Chairwoman (Website and Social Media)',
+		photo:
+			'https://wsdc.nitw.ac.in/facultynew/media/17088/17088.jpg',
+		link: '',
+		email: '',
+		phoneNum: '',
+	},
+
+	{
+		teamName: 'Prof. P. Hari Prasad Reddy',
+		position: 'Chairman (Logistics and Transportation)',
+		photo:
+			'https://wsdc.nitw.ac.in/facultynew/media/16216/16216.jpg',
+		link: '',
+		email: '',
+		phoneNum: '',
+	},
+	{
+		teamName: 'Prof. T. Rahul',
+		position: 'Chairman (Sponsorship & Publicity)',
+		photo:
+			'https://wsdc.nitw.ac.in/facultynew/media/16650/16650.jpg',
+		link: '',
+		email: '',
+		phoneNum: '',
+	},
+	{
+		teamName: 'Prof. P. Abdul Azeem',
+		position: 'Chairman (Hospitality & Accomodation)',
+		photo:
+			'https://wsdc.nitw.ac.in/facultynew/media/16367/16367.jpg',
+		link: '',
+		email: '',
+		phoneNum: '',
+	},
 
 
 
-// Student Coordinators
-{
-  teamName: 'P. Satya sai Sahith',
-  position: 'Student Coordinator',
-  photo:
-    '',
-  link: '',
-  email: 'ps862016@student.nitw.ac.in',
-  phoneNum: '',
-},
-{
-  teamName: 'Prashant Kumar',
-  position: 'Student Coordinator',
-  photo:
-    '',
-  link: '',
-  email: 'sec_fms@nitw.ac.in',
-  phoneNum: '',
-},
-{
-  teamName: 'Tanish Nasir',
-  position: 'Student Coordinator',
-  photo:
-    '',
-  link: '',
-  email: '????@student.nitw.ac.in',
-  phoneNum: '',
-},
-{
-  teamName: 'Chander',
-  position: 'Student Coordinator',
-  photo:
-    '',
-  link: '',
-  email: '????@student.nitw.ac.in',
-  phoneNum: '',
-},
+	// Student Coordinators
+	{
+		teamName: 'P. Satya sai Sahith',
+		position: 'Student Coordinator',
+		photo:
+			'',
+		link: '',
+		email: 'ps862016@student.nitw.ac.in',
+		phoneNum: '',
+	},
+	{
+		teamName: 'Prashant Kumar',
+		position: 'Student Coordinator',
+		photo:
+			'',
+		link: '',
+		email: 'sec_fms@nitw.ac.in',
+		phoneNum: '',
+	},
+	{
+		teamName: 'Thanish Nasir Ahammed',
+		position: 'Student Coordinator',
+		photo:
+			'',
+		link: '',
+		email: 'sec_sports@nitw.ac.in',
+		phoneNum: '',
+	},
+	{
+		teamName: 'Ramavath Chander Nayak',
+		position: 'Student Coordinator',
+		photo:
+			'',
+		link: '',
+		email: 'sec_technical@nitw.ac.in',
+		phoneNum: '',
+	},
+
 ];
 
 const Teams = () => {

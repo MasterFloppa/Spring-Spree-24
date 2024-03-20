@@ -195,13 +195,9 @@ const Hero = () => {
 			//     mouseLeave(e);
 			// }}
 			>
-				{/*[...Array(numCols).keys()].map((k) => {
-                return <SlideTrack key={k} forward={k % 2} images={images[k % images.length]} />
-            })*/}
 				<PetalCanvas />
-
 				<div
-					className="absolute h-full w-full top-0 left-0 spotlight opacity-95"	>
+					className="absolute h-full w-full top-0 left-0 spotlight opacity-95">
 				</div>
 
 				<div className='heading1 flex flex-col justify-center items-center' style={{ 'background': 'transparent' }}>
@@ -210,14 +206,6 @@ const Hero = () => {
 					</div>
 					<div>
 						<img src={rasengan} alt="Rasengan" />
-					</div>
-					<h3>where the culture resonates</h3>
-					<div className="main flex justify-center">
-						<button className="btn35">
-
-							<span><a href={user ? "/register" : "/auth"}>Register</a></span>
-
-						</button>
 					</div>
 
 				</div>
