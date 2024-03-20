@@ -17,6 +17,12 @@
 	perspective: 2500px;
 	margin: 0 50px;
 	border-radius: 20px;
+	background-color: rgba(255,255,255,0.2);
+	box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+	border: 1px solid rgba(255,255,255,0.25);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.55);
+	backdrop-filter: blur(4px);
 }
 
 @media (max-width: 768px) {
@@ -38,12 +44,12 @@
 	z-index: -1;
 }
 
-.card-pro:hover .wrapper {
+/* .card-pro:hover .wrapper {
 	transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
 	box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-}
+} */
 
 .wrapper::before,
 .wrapper::after {
@@ -118,6 +124,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.Title{
+	font-size: 28px;
+	text-align: center;
+}
+.Desc{
+	padding:20px;
+}
+.card-pro:hover .Title{
+	color: #343663;
 }
 
 @media (max-width: 768px) {
