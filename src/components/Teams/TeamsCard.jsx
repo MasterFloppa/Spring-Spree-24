@@ -29,7 +29,6 @@ const TeamsCard = ({
               <h2 className="text-xl font-bold mb-3 text-center">
                 {teamName}
               </h2>
-              {console.log(email)}
               {position !== "Student Coordinator" ? <h2 className="text-base text-md text-indigo-300 mb-1 text-center">{position}</h2> : null}
               {position === "Student Coordinator" ? <h2 className="text-base text-md text-indigo-300 mb-1 text-center">{email}</h2> : null}
             </div>

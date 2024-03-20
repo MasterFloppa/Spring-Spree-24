@@ -9,7 +9,7 @@ function RenderSponsors() {
 	const [spons, setSpons] = useState([]);
 	useEffect(() => {
 		const getSpons = async () => {
-			const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/sponsor/getAll`, { method: "GET" });
+			const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/sponsor`, { method: "GET" });
 			if (response.status !== 200) return;
 
 			const details = await response.json();

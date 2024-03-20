@@ -10,7 +10,7 @@ function Sponsors() {
 
 	const [sponsorsInfo, setSponsorsInfo] = useState([]);
 	useEffect(() => {
-		fetch(`${process.env.REACT_APP_BACKEND_URL}/sponsor`)
+		fetch(`${process.env.REACT_APP_BACKEND_URL}/api/sponsor`)
 			.then(res => res.json())
 			.then(data => {
 				setSponsorsInfo(data);
