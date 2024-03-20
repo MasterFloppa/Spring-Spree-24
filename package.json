@@ -10,7 +10,8 @@
 		"react-icons": "^5.0.1",
 		"react-qr-code": "^2.0.11",
 		"react-router": "^6.22.3",
-		"react-router-dom": "^6.9.0"
+		"react-router-dom": "^6.9.0",
+		"react-vanilla-tilt": "^1.0.0"
 	},
 	"scripts": {
 		"start": "set PORT=3000 && react-scripts start",
