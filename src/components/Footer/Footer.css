@@ -1,6 +1,7 @@
 .Links {
 	position: relative;
 }
+
 .Links::after {
 	content: '';
 	position: absolute;
@@ -14,9 +15,11 @@
 	/* Adjust the color as needed */
 	transition: width 0.3s ease-in-out;
 }
+
 .Links:hover::after {
 	width: 100%;
 }
+
 #horz-list ul {
 	margin: 0;
 	padding: 0;
@@ -41,80 +44,104 @@
 	font-size: 0.8rem;
 	font-weight: 200;
 }
+
+#horz-list ul li a:hover {
+	text-decoration: underline;
+}
+
+
 #horz-list ul li:last-child a {
 	border: none;
 }
-.footer_title{
+
+.footer_title {
 	font-size: 50px;
-	background-color:transparent ;
+	background-color: transparent;
 	margin-bottom: 25px;
 }
-.footer-tag{
+
+.footer-tag {
 	font-size: 26px;
 }
-.footer-note{
+
+.footer-note {
 	font-size: 20px;
 }
-.footer-venue{
+
+.footer-venue {
 	font-size: 28px;
 }
-.footer-clg-name{
+
+.footer-clg-name {
 	font-size: 20px;
 }
-.footer-section{
+
+.footer-section {
 	height: 480px;
 }
+
 @media (min-width:320px) and (max-width:768px) {
-	.footer_title{
+	.footer_title {
 		font-size: 30px;
 		margin-bottom: 12px;
 	}
-	.footer-tag{
+
+	.footer-tag {
 		font-size: 20px;
 	}
-	.footer-note{
+
+	.footer-note {
 		font-size: 16px;
 	}
-	.footer-venue{
+
+	.footer-venue {
 		font-size: 18px;
 	}
-	.footer-clg-name{
+
+	.footer-clg-name {
 		font-size: 16px;
 	}
-	
+
 }
+
 @media (min-width:280px) and (max-width:320px) {
-	.footer-section{
+	.footer-section {
 		height: 780px;
 	}
 }
+
 @media (min-width:320px) and (max-width:350px) {
-	.footer-section{
+	.footer-section {
 		height: 600px;
 	}
 }
+
 @media (min-width:350px) and (max-width:370px) {
-	.footer-section{
+	.footer-section {
 		height: 550px;
 	}
 }
+
 @media (min-width:375px) and (max-width:400px) {
-	.footer-section{
+	.footer-section {
 		height: 540px;
 	}
 }
+
 @media (min-width:400px) and (max-width:570px) {
-	.footer-section{
+	.footer-section {
 		height: 500px;
 	}
 }
+
 @media (min-width:570px) and (max-width:643px) {
-	.footer-section{
+	.footer-section {
 		height: 470px;
 	}
 }
+
 @media (min-width:645px) and (max-width:768px) {
-	.footer-section{
+	.footer-section {
 		height: 427px;
 	}
 }

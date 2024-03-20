@@ -9,13 +9,10 @@ import './index.css';
 
 const navigation = [
 	{ name: "HOME", link: "/" },
-	// { name: "ABOUT", href: "#", current: str == "about" },
 	{ name: "EVENTS", link: "/events" },
 	{ name: "SPONSORS", link: "/sponsors" },
-	// { name: "BLOGS", href: "/blogs", current: str === "blogs" },
 	{ name: "TEAM", link: "/team" },
 	{ name: "FAQs", link: "/faq" },
-	// { name: "MAKE YOUR DP", href: "https://springspree-frame.nitw.in", current: str === "frame" },
 	// { name: "PRO SHOWS", link: "/proshows" }
 ];
 
@@ -117,16 +114,15 @@ export default function Navbar() {
 						</button>
 					) : (
 						<ul style={{ justifyContent: 'flex-end' }}>
-							<li>
+							<li style={{ fontSize: '1.2rem' }}>
 								<NavLink to="/auth" onClick={closeMenu}>
-									Register/Login
+									Register
 								</NavLink>
 							</li>
 						</ul>
 					)}
 				</div>
 			</nav >
-
 
 		</>
 	);

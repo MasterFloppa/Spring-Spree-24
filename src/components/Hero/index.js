@@ -116,7 +116,7 @@ const Hero = () => {
 
 		useEffect(() => {
 			if (ctx && petalImg) {
-				const TOTAL = 500;
+				const TOTAL = 200;
 				const newPetalArray = [];
 				for (let i = 0; i < TOTAL; i++) {
 					newPetalArray.push(new Petal(ctx, petalImg));
@@ -149,8 +149,8 @@ const Hero = () => {
 			this.h = 20 + Math.random() * 10;
 			this.opacity = this.w / 40;
 			this.flip = Math.random();
-			this.xSpeed = 0.8 + Math.random() * 8;
-			this.ySpeed = 0.8 + Math.random() * 4;
+			this.xSpeed = 0.7 + Math.random() * 8;
+			this.ySpeed = 0.7 + Math.random() * 4;
 			this.flipSpeed = Math.random() * 0.03;
 			this.ctx = ctx;
 			this.img = img;
@@ -162,8 +162,8 @@ const Hero = () => {
 			if (this.y > this.ctx.canvas.height || this.x > this.ctx.canvas.width) {
 				this.x = -this.img.width;
 				this.y = (Math.random() * this.ctx.canvas.height * 2) - this.ctx.canvas.height;
-				this.xSpeed = 0.8 + Math.random() * 8;
-				this.ySpeed = 0.8 + Math.random() * 4;
+				this.xSpeed = 0.7 + Math.random() * 8;
+				this.ySpeed = 0.7 + Math.random() * 4;
 				this.flip = Math.random();
 			}
 			this.ctx.globalAlpha = this.opacity;
@@ -195,13 +195,9 @@ const Hero = () => {
 			//     mouseLeave(e);
 			// }}
 			>
-				{/*[...Array(numCols).keys()].map((k) => {
-                return <SlideTrack key={k} forward={k % 2} images={images[k % images.length]} />
-            })*/}
 				<PetalCanvas />
-
 				<div
-					className="absolute h-full w-full top-0 left-0 spotlight opacity-95"	>
+					className="absolute h-full w-full top-0 left-0 spotlight opacity-95">
 				</div>
 
 				<div className='heading1 flex flex-col justify-center items-center' style={{ 'background': 'transparent' }}>
@@ -210,14 +206,6 @@ const Hero = () => {
 					</div>
 					<div>
 						<img src={rasengan} alt="Rasengan" />
-					</div>
-					<h3>where the culture resonates</h3>
-					<div className="main flex justify-center">
-						<button className="btn35">
-
-							<span><a href={user ? "/register" : "/auth"}>Register</a></span>
-
-						</button>
 					</div>
 
 				</div>
