@@ -4,13 +4,12 @@ import "./EachTeamCard.css";
 const EachTeamCard = ({ teamName, position, photo, link, email, phoneNum }) => {
     return (
         <div className="p-4 sm:w-1/2 lg:w-1/4 xsm:w-full xsm:px-2 sm:p-4 xsm:py-4 h-102 text-black carddd game-container ">
-            <div className="item h-full border-2 border-[#fff]-200 border-opacity-60 rounded-lg overflow-hidden bg-white  border-none hover:border-stone-50 miniitem frosted-glass text-[#F9C512]">
+            <div className="item h-full border-2 border-[#fff]-200 border-opacity-60 rounded-lg overflow-hidden bg-white  border-none hover:border-stone-50 miniitem frosted-glass text-[#ca85b8]">
                 <div className="block">
-                    <div className="banner-card relative" id="container">
+                    <div className="banner-card relative outting" id="container">
                         <img
                             src={photo}
                             alt="team_image"
-                            className="max-w-fit object-cover"
                         ></img>
                     </div>
                     <div className="p-6 transition duration-300 ease-in miniitem border-none ">

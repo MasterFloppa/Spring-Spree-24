@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import TeamsCard from './TeamsCard';
-import Loader from '../Loader';
 
 const teamInformation = [
 
@@ -111,156 +110,145 @@ const teamInformation = [
 		email: 'sec_technical@nitw.ac.in',
 		phoneNum: '',
 	},
+
 ];
 
 const Teams = () => {
-	const [teamInfo, SetTeamInfo] = useState(teamInformation);
+  const [teamInfo, SetTeamInfo] = useState(teamInformation);
 
-	useEffect(() => {
-		const URL = process.env.REACT_APP_BACKEND_URL;
-		const getTeam = async () => {
-			const response = await fetch(`${URL}/api/team`, {
-				method: 'GET',
-				mode: 'cors',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-			});
+  useEffect(() => {
+    const URL = process.env.REACT_APP_BACKEND_URL;
+    const getTeam = async () => {
+      const response = await fetch(`${URL}/api/team`, {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
 
-			let data = await response.json();
-			console.log(data);
-			const newTeam = [
-				...teamInfo,
-				...data.map((x) => ({
-					teamName: x.name,
-					// make URL safe
-					link: '/team/' + encodeURIComponent(x.name),
+      let data = await response.json();
+      console.log(data);
+      const newTeam = [
+        ...teamInfo,
+        ...data.map((x) => ({
+          teamName: x.name,
+          // make URL safe
+          link: '/team/' + encodeURIComponent(x.name),
 
-					...x,
-				})),
-			];
-			SetTeamInfo(newTeam);
-		};
+          ...x,
+        })),
+      ];
+      SetTeamInfo(newTeam);
+    };
 
-		getTeam();
-		// eslint-disable-next-line
-	}, []);
+    getTeam();
+  }, []);
 
-	return (
-		<div className="bg-bgBlue text-white">
-			<div className="bg-purple text-pink pt-[100px] text-center flex">
-				<h1 className="sponsors-hero-title text-4xl font-[800] text-bolder mx-auto flex justify-start items-center text-center">
-					SpringSpree Team
-				</h1>
-			</div>
-			<section className="md:h-full flex items-center text-gray-60 bg-purple">
-				<div className="container px-5 py-8 mx-auto">
-					<div className="text-center mb-6">
-						<h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
-							Director
-						</h1>
-					</div>
-					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
-						{teamInfo.map((team, index) => {
-							if (index === 0) {
-								return (
-									<TeamsCard
-										key={index}
-										teamName={team.teamName}
-										position={team.position}
-										photo={team.photo}
-										link={team.link}
-										members={team.members}
-									/>
-								);
-							} else return <></>;
-						})}
-					</div>
-					<br />
-					<div className="text-center mb-8 mt-4">
-						<h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
-							Faculty
-						</h1>
-					</div>
-					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-24">
-						{teamInfo.map((team, index) => {
-							if (index > 0 && index <= 6) {
-								return (
-									<TeamsCard
-										key={index}
-										teamName={team.teamName}
-										position={team.position}
-										photo={team.photo}
-										link={team.link}
-										members={team.members}
-									/>
-								);
-							} else return <></>;
-						})}
-					</div>
-					<br />
-					<div className="text-center mb-8 mt-4">
-						<h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
-							Student Coordinators
-						</h1>
-					</div>
-					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-24">
-						{teamInfo.map((team, index) => {
-							if (index > 6 && index <= 11) {
-								return (
-									<TeamsCard
-										key={index}
-										teamName={team.teamName}
-										position={team.position}
-										photo={team.photo}
-										link={team.link}
-										members={team.members}
-										email={team.email}
-									/>
-								);
-							} else return <></>;
-						})}
-					</div>
-					<br />
-					<br />
-
-					<div className="text-center mb-8 bt-4">
-						<h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
-							Student Teams
-						</h1>
-					</div>
-
-					{/*--------------------------- Students team -------------------------*/}
-					{!teamInfo || teamInfo.length < 12
-						?
-						<>
-							< Loader />
-						</>
-						:
-						<>
-							{console.log(teamInfo)}
-							<div className="flex flex-wrap justify-center -m-4  md:px-16 sm:px-24">
-								{teamInfo.map((team, index) => {
-									if (index > 11) {
-										return (
-											<TeamsCard
-												key={index}
-												teamName={team.teamName}
-												position={team.position}
-												photo={team.photo}
-												link={team.link}
-												members={team.members}
-											/>
-										);
-									} else return <></>;
-								})}
-							</div></>}
-
-					{/*--------------------------- Students team -------------------------*/}
-				</div>
-			</section>
-		</div>
-	);
+  return (
+    <div className="bg-bgBlue text-white">
+      <div className="bg-purple text-pink pt-[100px] text-center flex">
+        <h1 className="sponsors-hero-title text-4xl font-[800] text-bolder mx-auto flex justify-start items-center text-center">
+          SpringSpree Team
+        </h1>
+      </div>
+      <section className="md:h-full flex items-center text-gray-60 bg-purple">
+        <div className="container py-8 mx-auto" style={{
+                maxWidth: "75%",
+        }}>
+          <div className="text-center mb-6">
+            <h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
+              Director
+            </h1>
+          </div>
+          <div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
+            {teamInfo.map((team, index) => {
+              if (index === 0) {
+                return (
+                  <TeamsCard
+                    key={index}
+                    teamName={team.teamName}
+                    position={team.position}
+                    photo={team.photo}
+                    link={team.link}
+                    members={team.members}
+                  />
+                );
+              } else return <></>;
+            })}
+          </div>
+          <br />
+          <div className="text-center mb-8 mt-4">
+            <h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
+              Faculty
+            </h1>
+          </div>
+          <div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
+            {teamInfo.map((team, index) => {
+              if (index > 0 && index <= 2) {
+                return (
+                  <TeamsCard
+                    key={index}
+                    teamName={team.teamName}
+                    position={team.position}
+                    photo={team.photo}
+                    link={team.link}
+                    members={team.members}
+                  />
+                );
+              } else return <></>;
+            })}
+          </div>
+          <br />
+          <div className="text-center mb-8 mt-4">
+            <h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
+              Student Coordinators
+            </h1>
+          </div>
+          <div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
+            {teamInfo.map((team, index) => {
+              if (index > 2 && index <= 6) {
+                return (
+                  <TeamsCard
+                    key={index}
+                    teamName={team.teamName}
+                    position={team.position}
+                    photo={team.photo}
+                    link={team.link}
+                    members={team.members}
+                    email={team.email}
+                  />
+                );
+              } else return <></>;
+            })}
+          </div>
+          <br />
+          <br />
+          <div className="text-center mb-8 bt-4">
+            <h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
+              Student Teams
+            </h1>
+          </div>
+          <div className="flex flex-wrap justify-center -m-4  md:px-16 sm:px-16">
+            {teamInfo.map((team, index) => {
+              if (index > 6) {
+                return (
+                  <TeamsCard
+                    key={index}
+                    teamName={team.teamName}
+                    position={team.position}
+                    photo={team.photo}
+                    link={team.link}
+                    members={team.members}
+                  />
+                );
+              } else return <></>;
+            })}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 };
 
 export default Teams;
