@@ -14,44 +14,42 @@ import FAQS from '../components/FAQ/FAQ_final';
 import { Register } from '../components/Register';
 import Proshow from '../components/Proshow';
 import EachTeam from '../components/Teams/EachTeam';
-import EachDepartment from '../components/Teams/EachDepartment';
 import { useLocation } from 'react-router-dom';
 
 const RoutesManager = () => {
-  const { user } = useAuth();
-  const location = useLocation();
-  return (
-    <Routes>
-      {/* If user is not logged in, show only AuthPage */}
-      {!user ? (
-        <>
-          <Route path="/auth" element={<AuthPage />} />
-          <Route path="/register" element={<AuthPage />} />
-          <Route path="/profile" element={<AuthPage />} />
-        </>
-      ) : (
-        <>
-          <Route path="/auth" element={<Register />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/profile" element={<Profile />} />
-        </>
-      )}
+	const { user } = useAuth();
+	const location = useLocation();
+	return (
+		<Routes>
+			{/* If user is not logged in, show only AuthPage */}
+			{!user ? (
+				<>
+					<Route path="/auth" element={<AuthPage />} />
+					<Route path="/register" element={<AuthPage />} />
+					<Route path="/profile" element={<AuthPage />} />
+				</>
+			) : (
+				<>
+					<Route path="/auth" element={<Register />} />
+					<Route path="/register" element={<Register />} />
+					<Route path="/profile" element={<Profile />} />
+				</>
+			)}
 
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/sponsors" element={<Sponsors />} />
-      {/* <Route path='/blogs' element={<Blogs />} /> */}
-      {/* <Route path="/blogs/:blogId" element={<BlogDetail />} /> */}
-      <Route path="/events/" element={<Events />} />
-      <Route path="/team" element={<Teams />} />
-      <Route
-        path="/team/:teamname"
-        element={<EachTeam state={location.state} />}
-      />
-      <Route path="/department" element={<EachDepartment />} />
-      <Route path="/faq" element={<FAQS />} />
-      <Route path="/proshows" element={<Proshow />} />
-    </Routes>
-  );
+			<Route path="/" element={<Home />} />
+			<Route path="/about" element={<About />} />
+			<Route path="/sponsors" element={<Sponsors />} />
+			{/* <Route path='/blogs' element={<Blogs />} /> */}
+			{/* <Route path="/blogs/:blogId" element={<BlogDetail />} /> */}
+			<Route path="/events/" element={<Events />} />
+			<Route path="/team" element={<Teams />} />
+			<Route
+				path="/team/:teamname"
+				element={<EachTeam state={location.state} />}
+			/>
+			<Route path="/faq" element={<FAQS />} />
+			<Route path="/proshows" element={<Proshow />} />
+		</Routes>
+	);
 };
 export default RoutesManager;

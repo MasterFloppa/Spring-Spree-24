@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import TeamsCard from './TeamsCard';
+import './Teams.css';
+
 import sac from './media/SAC_PRES.jpeg';
 import ben from './media/PROF_SATISH_BEN.jpeg';
-import './Teams.css';
+import chand from './media/Chander.jpeg';
+import sahith from './media/Sahith.jpeg';
+
 
 const teamInformation = [
 
@@ -17,7 +21,7 @@ const teamInformation = [
 		phoneNum: '',
 	},
 
-	// Faculty
+	// 2
 	{
 		teamName: 'Prof. D Srinivasa Charya',
 		position: 'Dean Student Welfare',
@@ -27,7 +31,6 @@ const teamInformation = [
 		email: '',
 		phoneNum: '',
 	},
-	//Prof P . Harikrishna
 	{
 		teamName: 'Prof P. Harikrishna',
 		position: 'SAC President',
@@ -36,9 +39,11 @@ const teamInformation = [
 		email: '',
 		phoneNum: '',
 	},
+
+	// Cultural Presidents
 	{
 		teamName: 'Prof B. Satish Ben',
-		position: 'SAC Vice President',
+		position: 'Vice President Cultural',
 		photo: ben,
 		link: '',
 		email: '',
@@ -46,7 +51,7 @@ const teamInformation = [
 	},
 	{
 		teamName: 'Prof. P. Muralidhar',
-		position: 'Chairman (Event Conduction and Coordination)',
+		position: 'Vice President Film-Music',
 		photo:
 			'https://wsdc.nitw.ac.in/facultynew/media/16308/16308.jpg',
 		link: '',
@@ -55,7 +60,7 @@ const teamInformation = [
 	},
 	{
 		teamName: 'Prof. P. Hari Prasad Reddy',
-		position: 'Chairman (Logistics and Transportation)',
+		position: 'Vice President Technical',
 		photo:
 			'https://wsdc.nitw.ac.in/facultynew/media/16216/16216.jpg',
 		link: '',
@@ -64,7 +69,7 @@ const teamInformation = [
 	},
 	{
 		teamName: 'Prof. P. Abdul Azeem',
-		position: 'Chairman (Hospitality & Accomodation)',
+		position: 'Vice President Sports',
 		photo:
 			'https://wsdc.nitw.ac.in/facultynew/media/16367/16367.jpg',
 		link: '',
@@ -78,8 +83,7 @@ const teamInformation = [
 	{
 		teamName: 'P. Satya sai Sahith',
 		position: 'Student Coordinator',
-		photo:
-			'',
+		photo: sahith,
 		link: '',
 		email: 'ps862016@student.nitw.ac.in',
 		phoneNum: '',
@@ -105,8 +109,7 @@ const teamInformation = [
 	{
 		teamName: 'Ramavath Chander Nayak',
 		position: 'Student Coordinator',
-		photo:
-			'',
+		photo: chand,
 		link: '',
 		email: 'sec_technical@nitw.ac.in',
 		phoneNum: '',
@@ -155,7 +158,7 @@ const Teams = () => {
 			</div>
 			<section className="md:h-full flex items-center text-gray-60 bg-purple">
 				<div className="container py-8 mx-auto" style={{
-					maxWidth: "75%",
+					maxWidth: "90%",
 				}}>
 					<div className="text-center mb-8 mt-4">
 						<h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
@@ -207,7 +210,7 @@ const Teams = () => {
 							Cultural Presidents
 						</h1>
 					</div>
-					<div className="flex flex-row justify-center -m-4 md:px-12 sm:px-16">
+					<div className="flex md:flex-row flex-col justify-center -m-4 md:px-12 sm:px-16">
 						{teamInfo.map((team, index) => {
 							if (index > 2 && index <= 6) {
 								return (
@@ -230,7 +233,7 @@ const Teams = () => {
 							Student Secretaries
 						</h1>
 					</div>
-					<div className="flex flex-row justify-center -m-4 md:px-12 sm:px-16">
+					<div className="flex md:flex-row flex-col justify-center -m-4 md:px-12 sm:px-16">
 						{teamInfo.map((team, index) => {
 							if (index > 6 && index <= 10) {
 								return (
@@ -256,7 +259,7 @@ const Teams = () => {
 					</div>
 					<div className="flex flex-wrap justify-center -m-4  md:px-16 sm:px-16">
 						{teamInfo.map((team, index) => {
-							if (index > 12) {
+							if (index > 10) {
 								return (
 									<TeamsCard
 										key={index}
