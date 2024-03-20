@@ -94,21 +94,21 @@ const teamInformation = [
 		phoneNum: '',
 	},
 	{
-		teamName: 'Tanish Nasir',
+		teamName: 'Thanish Nasir Ahammed',
 		position: 'Student Coordinator',
 		photo:
 			'',
 		link: '',
-		email: '????@student.nitw.ac.in',
+		email: 'sec_sports@nitw.ac.in',
 		phoneNum: '',
 	},
 	{
-		teamName: 'Chander',
+		teamName: 'Ramavath Chander Nayak',
 		position: 'Student Coordinator',
 		photo:
 			'',
 		link: '',
-		email: '????@student.nitw.ac.in',
+		email: 'sec_technical@nitw.ac.in',
 		phoneNum: '',
 	},
 ];

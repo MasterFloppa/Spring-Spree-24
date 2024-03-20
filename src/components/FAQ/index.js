@@ -174,11 +174,10 @@ const faqs5 = [
 	{
 		id: 17,
 		question: <h2>
-			Who are the celebrities which are going to perform at the star
-			nights of Spring Spree 2023?
+			Who are the celebrities which are going to perform at the star nights of Spring Spree 2023?
 		</h2>,
 		answer: <p>
-			Will be deeclared soon...
+			Will be declared soon...
 		</p>,
 	},
 ];
