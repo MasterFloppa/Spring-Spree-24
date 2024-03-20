@@ -47,9 +47,9 @@ export default function Footer() {
 										</div>
 									</div>
 									<div className="flex justify-center items-center mb-8">
-										<div id="horz-list" className="">
+										<div id="horz-list" className="linX">
 											<ul>
-												<li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink ">
+												<li className="rounded-full overflow-hidden">
 													<a
 														href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/privacy"
 														className="block py-2 px-4"
@@ -57,7 +57,7 @@ export default function Footer() {
 														Privacy Policy
 													</a>
 												</li>
-												<li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink mt-2">
+												<li className="rounded-full overflow-hiddenmt-2">
 													<a
 														href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/terms"
 														className="block py-2 px-4"
@@ -65,7 +65,7 @@ export default function Footer() {
 														Terms & Conditions
 													</a>
 												</li>
-												<li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink mt-2">
+												<li className="rounded-full overflow-hiddenmt-2">
 													<a
 														href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/refund"
 														className="block py-2 px-4"
@@ -73,7 +73,7 @@ export default function Footer() {
 														Cancellation & Refund
 													</a>
 												</li>
-												<li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink mt-2">
+												<li className="rounded-full overflow-hiddenmt-2">
 													<a
 														href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/shipping"
 														className="block py-2 px-4"
@@ -81,7 +81,7 @@ export default function Footer() {
 														Shipping & Delivery
 													</a>
 												</li>
-												<li className="rounded-full overflow-hidden transition duration-300 hover:bg-purple rounded-lg py-1 hover:text-pink mt-2">
+												<li className="rounded-full overflow-hiddenmt-2">
 													<a
 														href="https://merchant.razorpay.com/policy/LSwZLjiieyrJiX/contact_us"
 														className="block py-2 px-4"
