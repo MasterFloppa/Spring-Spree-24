@@ -2,11 +2,20 @@ import React, { useEffect, useState } from 'react';
 import TeamsCard from './TeamsCard';
 import './Teams.css';
 
+// Image Imports
+import director from './media/director.jpg';
 import sac from './media/SAC_PRES.jpeg';
+import dean from './media/dean.jpeg';
+
 import ben from './media/PROF_SATISH_BEN.jpeg';
+import murali from './media/Murali.jpg';
+import hari from './media/Hari.jpg';
+import azeem from './media/Azeem.jpg';
+
 import chand from './media/Chander.jpeg';
 import sahith from './media/Sahith.jpeg';
-
+import prashant from './media/Prashant.jpeg';
+import thanish from './media/Thanish.jpeg';
 
 const teamInformation = [
 
@@ -14,8 +23,7 @@ const teamInformation = [
 	{
 		teamName: ' Prof. Bidyadhar Subudhi ',
 		position: 'Director',
-		photo:
-			'https://nitw.ac.in/api/static/files/Director_image1_2023-5-20-12-32-22.jpg',
+		photo: director,
 		link: '',
 		email: '',
 		phoneNum: '',
@@ -25,8 +33,7 @@ const teamInformation = [
 	{
 		teamName: 'Prof. D Srinivasa Charya',
 		position: 'Dean Student Welfare',
-		photo:
-			'https://erp.nitw.ac.in/ext/profile/getUserImage/ma-dsc',
+		photo: dean,
 		link: '',
 		email: '',
 		phoneNum: '',
@@ -52,8 +59,7 @@ const teamInformation = [
 	{
 		teamName: 'Prof. P. Muralidhar',
 		position: 'Vice President Film-Music',
-		photo:
-			'https://wsdc.nitw.ac.in/facultynew/media/16308/16308.jpg',
+		photo: murali,
 		link: '',
 		email: '',
 		phoneNum: '',
@@ -61,8 +67,7 @@ const teamInformation = [
 	{
 		teamName: 'Prof. P. Hari Prasad Reddy',
 		position: 'Vice President Technical',
-		photo:
-			'https://wsdc.nitw.ac.in/facultynew/media/16216/16216.jpg',
+		photo: hari,
 		link: '',
 		email: '',
 		phoneNum: '',
@@ -70,8 +75,7 @@ const teamInformation = [
 	{
 		teamName: 'Prof. P. Abdul Azeem',
 		position: 'Vice President Sports',
-		photo:
-			'https://wsdc.nitw.ac.in/facultynew/media/16367/16367.jpg',
+		photo: azeem,
 		link: '',
 		email: '',
 		phoneNum: '',
@@ -85,14 +89,13 @@ const teamInformation = [
 		position: 'Student Coordinator',
 		photo: sahith,
 		link: '',
-		email: 'ps862016@student.nitw.ac.in',
+		email: 'sec_cultural@nitw.ac.in',
 		phoneNum: '',
 	},
 	{
 		teamName: 'Prashant Kumar',
 		position: 'Student Coordinator',
-		photo:
-			'',
+		photo: prashant,
 		link: '',
 		email: 'sec_fms@nitw.ac.in',
 		phoneNum: '',
@@ -100,8 +103,7 @@ const teamInformation = [
 	{
 		teamName: 'Thanish Nasir Ahammed',
 		position: 'Student Coordinator',
-		photo:
-			'',
+		photo: thanish,
 		link: '',
 		email: 'sec_sports@nitw.ac.in',
 		phoneNum: '',
@@ -135,18 +137,20 @@ const Teams = () => {
 			console.log(data);
 			const newTeam = [
 				...teamInfo,
-				...data.map((x) => ({
+				...data.map((x, index) => ({
 					teamName: x.name,
 					// make URL safe
 					link: '/team/' + encodeURIComponent(x.name),
 
 					...x,
+					key: index,
 				})),
 			];
 			SetTeamInfo(newTeam);
 		};
 
 		getTeam();
+		// eslint-disable-next-line
 	}, []);
 
 	return (
@@ -207,7 +211,7 @@ const Teams = () => {
 					<br />
 					<div className="text-center mb-8 mt-4">
 						<h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
-							Cultural Presidents
+							Vice Presidents
 						</h1>
 					</div>
 					<div className="flex md:flex-row flex-col justify-center -m-4 md:px-12 sm:px-16">

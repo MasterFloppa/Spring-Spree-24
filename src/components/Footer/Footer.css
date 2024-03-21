@@ -77,7 +77,7 @@
 }
 
 .footer-section {
-	height: 480px;
+	height: 420px;
 }
 
 @media (min-width:320px) and (max-width:768px) {
@@ -124,13 +124,13 @@
 
 @media (min-width:375px) and (max-width:400px) {
 	.footer-section {
-		height: 540px;
+		height: 440px;
 	}
 }
 
 @media (min-width:400px) and (max-width:570px) {
 	.footer-section {
-		height: 500px;
+		height: 420px;
 	}
 }
 

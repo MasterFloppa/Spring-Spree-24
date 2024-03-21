@@ -3,7 +3,7 @@ import rasengan from './Rasengan2.png';
 import spreedate from './LOGOS-052.png';
 import petalImager from './petal.png'
 import './index.css';
-import { useAuth } from "../../Context/AuthManager";
+// import { useAuth } from "../../Context/AuthManager";
 import Loader from "../Loader";
 import { useEffect } from "react";
 
@@ -17,7 +17,7 @@ const Hero = () => {
 
 	//loading effect
 	useEffect(() => {
-		console.time("im");
+		// console.time("im");
 		Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => {
 			img.onload = img.onerror = resolve;
 		})))
@@ -29,7 +29,7 @@ const Hero = () => {
 			});
 	}, []);
 
-	const { user } = useAuth();
+	// const { user } = useAuth();
 
 	let width = window.innerWidth - mar;
 	let numCols = Math.max(3, Math.ceil(width / COLSZ));
@@ -187,14 +187,7 @@ const Hero = () => {
 	return (
 		<div>
 			{loading ? <Loader /> : ""}
-			<div className=" relative flex overflow-hidden mx-auto w-full"
-			// onMouseMove={(e) => {
-			//     mouseMove(e);
-			// }}
-			// onMouseLeave={(e) => {
-			//     mouseLeave(e);
-			// }}
-			>
+			<div className=" relative flex overflow-hidden mx-auto w-full">
 				<PetalCanvas />
 				<div
 					className="absolute h-full w-full top-0 left-0 spotlight opacity-95">

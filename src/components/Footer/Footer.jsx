@@ -20,7 +20,7 @@ export default function Footer() {
 										Rasengan
 									</h3>
 									<h3 className="footer-tag mb-2 italic font-ojuju font-semibold text-purple xsm:text-center md:text-left flex justify-center">
-										Where the culture resonates
+										Unwind, recharge and revel is the tagline we used
 									</h3>
 									<h3 className="text-center footer-note  mx-4  font-ojuju text-purple font-[300] lg:mx-20 ">
 										Namaste and a very warm welcome to SpringSpree - our vibrant
@@ -45,7 +45,9 @@ export default function Footer() {
 											</ul>
 										</div>
 									</div>
-									<div className="flex justify-center items-center mb-8">
+
+									{/*---------------------------------RazorPay links---------------------------------*/}
+									{/* <div className="flex justify-center items-center mb-8">
 										<div id="horz-list">
 											<ul>
 												<li className="rounded-full overflow-hidden">
@@ -90,7 +92,7 @@ export default function Footer() {
 												</li>
 											</ul>
 										</div>
-									</div>
+									</div> */}
 
 									<hr className="w-full my-2 border-black"></hr>
 									<div className="flex justify-center items-center">

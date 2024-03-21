@@ -99,11 +99,12 @@
 }
 
 .spree-title img {
-	min-width: 100px;
-	max-width: 320px;
+	min-width: 140px;
+	max-width: 500px;
 	width: 100%;
 	height: auto;
 	display: inline-block;
+	z-index: 1;
 }
 
 .main {

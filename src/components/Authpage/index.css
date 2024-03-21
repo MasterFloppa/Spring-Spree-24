@@ -61,11 +61,6 @@
     animation-delay: 0.06s;
 }
 
-.rasengan {
-    margin-top: 4%;
-    height: 250px;
-    width: 250px;
-}
 
 @keyframes ripple {
     0% {
@@ -79,13 +74,16 @@
     }
 }
 
+#R {
+    margin-top: 1.5%;
+}
 
 @media (max-width: 426px) {
     #regi {
         margin-top: 30%;
     }
 
-    .rasengan {
+    #R {
         margin-top: 10%;
         height: 100px;
         width: 100px;
@@ -93,7 +91,7 @@
 
     .rasenganIMG {
         /* display: none; */
-        margin-top: 42%;
+        margin-top: 28%;
     }
 
 }
