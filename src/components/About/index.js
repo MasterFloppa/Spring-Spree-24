@@ -1,5 +1,7 @@
 import React from "react";
 import './about.css'
+import spreelogo from './springspree2.png'
+import rasengan from './Rasengan.png'
 
 export const About = () => {
     return (
@@ -10,7 +12,7 @@ export const About = () => {
                     <h1 className="flex-[100%] text-center text-4xl font-bold uppercase bg-gradient-to-r from-[#FFFFFF] to-[#F7CA17] inline-block text-transparent pb-5 bg-clip-text">About SpringSpree</h1>
                     <div className="sm:w-[100%] md:w-[45%] flex justify-center items-center">
 
-                        <img className="sm:w-[156px] lg:w-[296px] h-auto flex-shrink-1" src="../../../images/SpringSpree2.png" alt="spreelogo"/>
+                        <img className="sm:w-[156px] lg:w-[296px] h-auto flex-shrink-1" src={spreelogo} alt="spreelogo"/>
                     </div>
                     <div className="about-content sm:w-[100%] md:w-[45%]">
                     <span className="text-[#ca85b8] font-bold">SpringSpree, NIT Warangal's annual cultural festival</span>, started in 1978 as a refreshing break from
@@ -23,7 +25,7 @@ esteemed presence and performances.
                 <div className="about-theme flex flex-row-reverse flex-wrap justify-center justify-items-center items-center gap-4 p-4 mb-10">
                     <h1 className="flex-[100%] text-center font-bold text-4xl uppercase bg-gradient-to-r from-[#FFFFFF] to-[#F7CA17] inline-block text-transparent pb-5 bg-clip-text">The Theme</h1>
                     <div className="sm:w-[100%] md:w-[45%] flex justify-center items-center">
-                        <img className="sm:w-[330px] lg:w-[590px] h-auto flex-shrink-1 " src="../../../images/Rasengan.png" alt="themelogo"/>
+                        <img className="sm:w-[330px] lg:w-[590px] h-auto flex-shrink-1 " src={rasengan} alt="themelogo"/>
                     </div>
                     <div className="theme-content sm:w-[100%] md:w-[45%]">
                     <span className="text-[#ca85b8] font-bold">Spring</span>, a season of vibrant renewal and boundless energy, explodes onto the scene at NITW with
