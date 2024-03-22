@@ -23,6 +23,9 @@ function Sponsors() {
 			?
 			<>
 				< Loader />
+				<div style={{ marginTop: '-15rem', marginBottom: '15%' }}>
+					<h1 className='flex justify-center text-pink text-4xl mb-10 '>Coming soon</h1>
+				</div>
 			</>
 			:
 			< div className='w-full h-auto bg-purple flex flex-col pt-4' >
