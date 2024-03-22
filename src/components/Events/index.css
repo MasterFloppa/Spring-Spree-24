@@ -111,3 +111,30 @@
 .current{
   width: 100%;
 }
+
+.buttoni {
+  background-color: #232754 ;
+  border-radius: 10px;
+  color: #f4d4d8;
+  box-shadow: #d2828b;
+  animation: shadow-animation 5s infinite alternate;
+}
+
+@keyframes shadow-animation {
+  0% {
+      box-shadow: 0 0 20px #fe95a2;
+  }
+  50% {
+      box-shadow: 0 0 25px #e07581;
+  }
+  100% {
+      box-shadow: 0 0 30px #f06f7e;
+  }
+}
+
+.boxi {
+  background-color: #f4d4d8;
+  border-radius: 10px;
+  z-index: 1;
+  height: 5rem;
+}

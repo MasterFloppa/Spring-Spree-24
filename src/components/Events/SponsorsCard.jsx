@@ -10,6 +10,7 @@ function SponsorsCard({
 	venue,
 }) {
 	console.log({ name, photo })
+	
 	return (
 		<div className='flex flex-col justify-center'>
 			<div className='box mx-8'>
@@ -23,10 +24,8 @@ function SponsorsCard({
 			{/* Add the description of the event */}
 			{/* Add venue here */}
 
-			{type === 'Music Club' &&
-				<div className='text-pink text-2xl mt-6 mb-10 flex justify-center'>PDFS</div>
-			}
 
+            
 		</div>
 	)
 }
