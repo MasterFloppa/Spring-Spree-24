@@ -105,9 +105,17 @@ function Events() {
 			})
 
 			let data = await response.json();
+		        const sortedEvents = [];
+			const categories = [...new Set(eventsInfo.map(event => event.category))];
+			categories.map(category=>{
+				const thisCategoryEvents =eventsInfo.filter(event => event.category === category);
+				sortedEvents.push(...thisCategoryEvents);
+				
+			})
+			setData(sortedEvents);
 			numEvents = data.length;
 			setLoading(false);
-			setData(data);
+			//setData(data);
 		}
 
 		window.addEventListener("hashchange", function (e) {
