@@ -45,9 +45,9 @@ var v = 0;
 var time = 0;
 
 const days = ['day1', 'day2', 'day3'];
-const URL = `https://springspree-backend.nitw.in`
-// const URL = `http://localhost:5000`
-
+//const URL = `https://springspree-backend.nitw.in`
+//const URL = `http://localhost:5000`
+const URL = process.env.REACT_APP_BACKEND_URL
 var numEvents = 0;
 
 
@@ -63,11 +63,10 @@ function Events() {
 	const [initScroll, setInitScroll] = useState(0);
 	const [current, setCurrent] = useState(0);
 	const [opacity, setOpacity] = useState(1);
-
 	const [view, setView] = useState('grid');
 	const [day, setDay] = useState('ALL');
 
-
+	const [eventsInfo, setEventsInfo] = useState([]);
 	const [data, setData] = useState([]);
 
 	const changeCurrent = (val) => {
@@ -104,19 +103,22 @@ function Events() {
 				}
 			})
 
-			let data = await response.json();
-		        const sortedEvents = [];
+	    	let data = await response.json();
+		    setEventsInfo(data);
+			const sortedEvents = [];
 			const categories = [...new Set(eventsInfo.map(event => event.category))];
 			categories.map(category=>{
 				const thisCategoryEvents =eventsInfo.filter(event => event.category === category);
 				sortedEvents.push(...thisCategoryEvents);
 				
 			})
-			setData(sortedEvents);
+			 setData(sortedEvents);
 			numEvents = data.length;
 			setLoading(false);
-			//setData(data);
+			setData(data);
 		}
+		//data.sort((a, b) => a.category.localeCompare(b.category))
+
 
 		window.addEventListener("hashchange", function (e) {
 			console.log(e);
@@ -125,7 +127,8 @@ function Events() {
 
 		getEvents();
 	}, [])
-
+ 
+	
 	useEffect(() => {
 		const klisten = (e) => {
 			console.log(e.keyCode);
@@ -213,6 +216,7 @@ function Events() {
 						</div>
 					</>
 					:
+					
 					view === 'schedule' ?
 						<Schedule state={view} viewDetails={cardClick} day={day} days={days} changeDay={setDay} data={data} />
 						:
