@@ -22,6 +22,11 @@ function SponsorsCard({
 			<div className='text-pink text-2xl mt-6 mb-10 flex justify-center'>{name}</div>
 			{/* Add the description of the event */}
 			{/* Add venue here */}
+
+			{type === 'Music Club' &&
+				<div className='text-pink text-2xl mt-6 mb-10 flex justify-center'>PDFS</div>
+			}
+
 		</div>
 	)
 }

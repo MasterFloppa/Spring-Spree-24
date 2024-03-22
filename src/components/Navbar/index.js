@@ -10,7 +10,7 @@ import './index.css';
 const navigation = [
 	{ name: "HOME", link: "/" },
 	{ name: "EVENTS", link: "/events" },
-	{ name: "SPONSORS", link: "/sponsors" },
+	// { name: "SPONSORS", link: "/sponsors" },
 	{ name: "TEAM", link: "/team" },
 	{ name: "FAQs", link: "/faq" },
 	// { name: "PRO SHOWS", link: "/proshows" }

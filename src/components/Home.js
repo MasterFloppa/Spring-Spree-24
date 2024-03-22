@@ -1,10 +1,8 @@
-import React, { useState, useLayoutEffect } from "react";
-// components
+import React from "react";
 import Hero from "./Hero";
 import { About } from "./About";
 import { Cguest } from "./Cguest";
-import top_bg from './top_bg2.png';
-import bottom_bg from './bottom_bg2.png';
+
 
 const Home = (props) => {
     return (
