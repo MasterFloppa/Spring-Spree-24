@@ -103,16 +103,16 @@ function Events() {
 				}
 			})
 
-	    	let data = await response.json();
-		    setEventsInfo(data);
+			let data = await response.json();
+			setEventsInfo(data);
 			const sortedEvents = [];
 			const categories = [...new Set(eventsInfo.map(event => event.category))];
-			categories.map(category=>{
-				const thisCategoryEvents =eventsInfo.filter(event => event.category === category);
+			categories.map(category => {
+				const thisCategoryEvents = eventsInfo.filter(event => event.category === category);
 				sortedEvents.push(...thisCategoryEvents);
-				
+
 			})
-			 setData(sortedEvents);
+			setData(sortedEvents);
 			numEvents = data.length;
 			setLoading(false);
 			setData(data);
@@ -127,8 +127,8 @@ function Events() {
 
 		getEvents();
 	}, [])
- 
-	
+
+
 	useEffect(() => {
 		const klisten = (e) => {
 			console.log(e.keyCode);
@@ -216,7 +216,7 @@ function Events() {
 						</div>
 					</>
 					:
-					
+
 					view === 'schedule' ?
 						<Schedule state={view} viewDetails={cardClick} day={day} days={days} changeDay={setDay} data={data} />
 						:
