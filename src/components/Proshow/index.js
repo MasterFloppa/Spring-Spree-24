@@ -9,12 +9,12 @@ const Proshow = () => {
             {data.map((day, index) => {
                 return (
                     <div key={index} className=" pro_show_page_card_container flex-auto flex justify-center items-center flex-col">
-                        <h2 className="Day-text text-center text-[#f4d4d8] font-bold mb-2">Pro Show {index + 1}</h2>
-                        <Day data={day} />
+                        <h2 className="Day-text text-center text-[#f4d4d8] font-bold mb-2">Day {index + 1}</h2>
+                        <Day key={index} data={day} />
                     </div>
                 );
             })}
-            </div>
+        </div>
     )
 }
 export default Proshow;

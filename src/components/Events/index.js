@@ -1,13 +1,16 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react';
 import './index.css';
-import SponsorsCard from '../Sponsors/SponsorsCard'
+import EventsCard from '../Events/EventsCard'
 import Loader from '../Loader/index.js'
 
-const MainPDF  = 'rules.pdf';
-const BOBPDF = 'BOB.pdf';
-const RIPDF = 'RI.pdf';
-const SIPDF = 'SI.pdf';
+
+const pdfLinks = [
+	{ name: 'Rule Book', link: 'rules.pdf' },
+	{ name: 'Battle of Bands', link: 'BOB.pdf' },
+	{ name: 'Solo Idol', link: 'SI.pdf' },
+	{ name: 'Rap Idol', link: 'RI.pdf' }
+]
 
 function Events() {
 
@@ -24,7 +27,7 @@ function Events() {
 		window.open(`${process.env.REACT_APP_BACKEND_URL}/api/media/${PDFlink}`);
 		console.log(PDFlink);
 	}
-    
+
 	const types = [...new Set(evetnsInfo.map(sponsor => sponsor.type))];
 	return (
 		!evetnsInfo || evetnsInfo.length === 0
@@ -45,29 +48,28 @@ function Events() {
 								<div className='spons_line'>
 									{evetnsInfo.filter(sponsor => sponsor.type === type).map((sponsor, index) =>
 										<div key={index} className='flex justify-center'>
-											<SponsorsCard {...sponsor} /></div>
+											<EventsCard {...sponsor} /></div>
 									)}
 								</div>
 								{type === 'Music Club' &&
-								<>
-								<div className='flex justify-center'>
-									<h1 className='text-pink text-3xl mt-6 mb-2'>Important Links</h1>
-								</div>
-									<div className='boxi flex  justify-around items-center text-pink text-2xl mt-6 mb-10 '>
-					
-										<button className='buttoni' onClick={() => openPDF(MainPDF)}>Rule Book</button>
-										<button className='buttoni' onClick={() => openPDF(BOBPDF)}>Battle of Bands</button>
-										<button className='buttoni' onClick={() => openPDF(SIPDF)}>Solo Idol</button>
-										<button className='buttoni' onClick={() => openPDF(RIPDF)}>Rap Idol</button>
-									</div>
+									<>
+										<div className='flex justify-center'>
+											<h1 className='text-pink text-3xl mt-6 mb-2'>Important Links</h1>
+										</div>
+										<div className='boxi flex  justify-around items-center text-pink text-2xl mt-6 mb-10 '>
+
+											{pdfLinks.map((pdf, index) => {
+												return (
+													<button key={index} className='buttoni' onClick={() => openPDF(pdf.link)}>{pdf.name}</button>
+												)
+											})}
+										</div>
 									</>
 								}
-
 							</div>
 						)
 					})
 				}
-
 			</div >
 	)
 }

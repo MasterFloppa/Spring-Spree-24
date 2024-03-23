@@ -13,7 +13,6 @@ function FAQMobileSkeleton({ title, content }) {
 			{show && <p className='answers'>{content}</p>}
 		</div>
 	)
-
 }
 
 export default FAQMobileSkeleton
