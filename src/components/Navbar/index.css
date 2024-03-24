@@ -188,7 +188,6 @@ nav .menu {
 
 /* ------------------------------------------ */
 
-
 /* making it responsive */
 @media (max-width: 725px) {
 	nav .menu {
@@ -269,5 +268,13 @@ nav .menu {
 
 	nav ul li a:not(.active):hover {
 		animation: none;
+	}
+}
+
+
+@media (max-width: 1000px) {
+
+	.logo img {
+		width: calc(var(--img-width) + 3vw);
 	}
 }
