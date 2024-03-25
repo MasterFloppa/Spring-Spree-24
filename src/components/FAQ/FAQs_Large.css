@@ -28,7 +28,7 @@ margin-top: 40px;
 
 @media (min-width: 1700px) {
 .tabs{
-  margin-left: 27%
+  margin-left: 15%
 }
 .tabs input:nth-child(1):checked ~ .content{
   display: flex;
@@ -37,6 +37,15 @@ margin-top: 40px;
   height: 800px;
   padding-bottom: 20px;
 }
+}
+
+@media (min-width: 2200px) {
+  .tabs{
+    margin-left: 25%
+  }
+  .faq-title{
+    margin-top: 100px;
+  }
 }
 
 .tabs input:nth-child(1):checked ~ .labels label:nth-child(1),
