@@ -272,7 +272,7 @@ nav .menu {
 }
 
 
-@media (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 
 	.logo img {
 		width: calc(var(--img-width) + 3vw);

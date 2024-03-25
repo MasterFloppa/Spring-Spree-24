@@ -12,6 +12,13 @@ const pdfLinks = [
 	{ name: 'Rap Idol', link: 'RI.pdf' }
 ]
 
+//Hardcoded data
+// const HardEvents = [
+// 	{ name: "Sex", photo: "https://m.media-amazon.com/images/M/MV5BYmM2ZjBiYzUtNDU2Zi00MGMzLWIyY2MtY2IxNTFjYTFhYjE3XkEyXkFqcGdeQXVyMjIzODI1ODM@._V1_.jpg", type: "Music Club", },
+// 	{ name: "Duck", photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOqhrNbk2U2ma00x0ZZKeGvkww8mU_X7avVCJ-_eSX1FRTg0WO", type: "Music Club", },
+// 	{ name: "Nigger", photo: "https://i.pinimg.com/736x/ea/70/30/ea70303a0f812ef794f4ac672b282538.jpg", type: "LDC" },
+// ]
+
 function Events() {
 
 	const [evetnsInfo, setevetnsInfo] = useState([]);
