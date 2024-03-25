@@ -14,7 +14,7 @@
     padding: 20px 20px;
     overflow: hidden;
     transition: 0.5s;
-
+    min-width: 250px;
 }
 
 .pro_show_card_container:hover {
@@ -75,6 +75,9 @@
 
 .pro_show_page_container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pro_show_page_card_container {
@@ -87,10 +90,6 @@
 }
 
 @media (min-width:726px) and (max-width:1024px) {
-    .pro_show_page_container {
-        display: flex;
-        flex-direction: column;
-    }
 
     .pro_show_page_card_container:nth-child(1) {
         margin-top: 15%;
@@ -103,10 +102,6 @@
 }
 
 @media (min-width:320px) and (max-width:726px) {
-    .pro_show_page_container {
-        display: flex;
-        flex-direction: column;
-    }
 
     .pro_show_page_card_container:nth-child(1) {
         margin-top: 25%;
@@ -134,7 +129,7 @@
 
 @media (min-width:350px) and (max-width:450px) {
     .pro_show_card_container {
-        width: 300px;
+        width: 340px;
         height: 250px;
     }
 

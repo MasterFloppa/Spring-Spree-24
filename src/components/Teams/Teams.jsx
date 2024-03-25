@@ -32,7 +32,7 @@ const teamInformation = [
 
 	// 2
 	{
-		teamName: 'Prof. D Srinivasa Charya',
+		teamName: 'Prof. D. Srinivasacharya',
 		position: 'Dean Student Welfare',
 		photo: dean,
 		link: '',
@@ -41,7 +41,7 @@ const teamInformation = [
 		importance: 'Yes',
 	},
 	{
-		teamName: 'Prof P. Harikrishna',
+		teamName: 'Prof P. Hari Krishna',
 		position: 'SAC President',
 		photo: sac,
 		link: '',
