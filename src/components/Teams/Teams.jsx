@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TeamsCard from './TeamsCard';
 import './Teams.css';
+import bg from './DSC01325_2.jpg';
 
 // Image Imports
 import director from './media/director.jpg';
@@ -155,6 +156,7 @@ const Teams = () => {
 
 	return (
 		<div className="bg-bgBlue text-white">
+			<img src={bg} className='bg-img' alt='bg'/>
 			<div className="bg-purple text-pink pt-[100px] text-center flex">
 				<h1 className="sponsors-hero-title text-4xl font-[800] text-bolder mx-auto flex justify-start items-center text-center">
 					SpringSpree Team

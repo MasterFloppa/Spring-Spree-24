@@ -43,19 +43,17 @@ function Events() {
 				{
 					types.map(type => {
 						return (
-							<div key={type} className='spons flex-col justify-center items-center mb-6'>
+							<div key={type} className='spons flex-col justify-center items-center mb-6'  style={{ 'z-index': '2' }}>
 								<h1 className='flex justify-center text-pink text-4xl mb-10 mt-20'>{type}</h1>
 								<div className='spons_line'>
 									{evetnsInfo.filter(sponsor => sponsor.type === type).map((sponsor, index) =>
 										<div key={index} className='flex justify-center'>
-											<EventsCard {...sponsor} /></div>
+											<EventsCard {...sponsor} />
+										</div>
 									)}
 								</div>
 								{type === 'Music Club' &&
 									<>
-										<div className='flex justify-center'>
-											<h1 className='text-pink text-3xl mt-6 mb-2'>Important Links</h1>
-										</div>
 										<div className='boxi flex  justify-around items-center text-pink text-2xl mt-6 mb-10 '>
 
 											{pdfLinks.map((pdf, index) => {
@@ -70,6 +68,12 @@ function Events() {
 						)
 					})
 				}
+				<div className='bg-rot1'>
+					<Loader />
+				</div>
+				<div className='bg-rot2'>
+					<Loader type={true} />
+				</div>
 			</div >
 	)
 }

@@ -117,24 +117,53 @@
   border-radius: 10px;
   color: #f4d4d8;
   box-shadow: #d2828b;
-  animation: shadow-animation 5s infinite alternate;
+  animation: pulse-animation 2s ease-in-out infinite alternate;
+  padding: 1%;
+  opacity: 70%;
 }
 
-@keyframes shadow-animation {
+.buttoni:hover{
+  opacity: 100%;
+}
+
+@keyframes pulse-animation {
   0% {
-      box-shadow: 0 0 20px #fe95a2;
+    transform: scale(0.95);
   }
   50% {
-      box-shadow: 0 0 25px #e07581;
+    transform: scale(1.05);
   }
   100% {
-      box-shadow: 0 0 30px #f06f7e;
+    transform: scale(0.95);
   }
 }
+
 
 .boxi {
   background-color: #f4d4d8;
   border-radius: 10px;
   z-index: 1;
   height: 5rem;
+}
+
+.bg-rot1{
+  position: fixed;
+  top: 0;
+  left: -25%;
+  width: 250%;
+  height: 250%;
+  object-fit: cover;
+  z-index: 0; /* Ensure the image is behind all content */
+  opacity: 0.2; /* Adjust the opacity as needed */
+}
+
+.bg-rot2{
+  position: fixed;
+  top: 0;
+  left: -125%;
+  width: 250%;
+  height: 250%;
+  object-fit: cover;
+  z-index: 0; /* Ensure the image is behind all content */
+  opacity: 0.2; /* Adjust the opacity as needed */
 }
