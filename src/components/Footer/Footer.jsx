@@ -96,7 +96,7 @@ export default function Footer() {
 
 									<hr className="w-full my-2 border-black"></hr>
 									<div className="flex justify-center items-center">
-										<div className="text-sm text-purple mx-1 font-futura font-semibold py-1 ">
+										<div className="text-sm text-purple mx-1 font-futura font-semibold py-1 footer-last">
 											All rights reserved ©{" "}
 											<span id="get-current-year">2024</span>
 											<span className="text-purple font-futura hover:text-gray-800">
