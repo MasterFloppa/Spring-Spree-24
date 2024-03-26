@@ -7,8 +7,15 @@
 }
 
 .spin {
+    position: absolute;
     height: 20%;
     animation: spin 4s linear infinite;
+}
+
+.spin1-5 {
+    position: absolute;
+    height: 20%;
+    animation: spin2 4s linear infinite;
 }
 
 @keyframes spin {
@@ -25,6 +32,12 @@
     position: absolute;
     height: 50%;
     animation: spin2 4s linear infinite;
+}
+
+.spin2-5 {
+    position: absolute;
+    height: 50%;
+    animation: spin 4s linear infinite;
 }
 
 @keyframes spin2 {
