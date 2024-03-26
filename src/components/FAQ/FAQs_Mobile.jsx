@@ -9,21 +9,21 @@ function FAQS_Mobile() {
 		},
 		{
 			title: "When is the fest?",
-			content: "The fest is celebrated for three consecutive days from April 7 to April 9 2023."
+			content: "The fest is celebrated for three consecutive days from April 5 to April 7 2024."
 		},
 		{
 			title: "What are the common events?",
 			content: "The major spotlight events include: Idol (A Singing Competition), Director's Cut (A Short Film Contest), Allure (A Fashion Show), Q-Factor (A Quiz Competition), NIT-MUN (A Model United Nations)"
 		},
 		{
-			title: "What is the mode of conduction of the fest (Online or Offline)?",
-			content: "Fest (Spring Spree'23) is being conducted offline."
+			title: "What is the mode of conduction of the fest?",
+			content: "Fest (Spring Spree'24) is being conducted offline."
 		},
 	];
 	const faqs1 = [
 		{
 			title: "What is the process of registration?",
-			content: "Registration can be done on this website ,by filling up your details, as well offline by registering on the spot."
+			content: "Registration can be done through the google form provided in the registration page, by filling up your details, as well offline by registering on the spot."
 		},
 		{
 			title: "How do I confirm my registration?",
@@ -31,25 +31,25 @@ function FAQS_Mobile() {
 		},
 		{
 			title: "How much is the entry fee?",
-			content: "There will be a fixed entry fee htmlFor other than NIT Warangal students to attend spree. Everyone should pay the fee htmlFor participating in any event mentioned by the respective event managers."
+			content: "There will be a fixed entry fee for other than NIT Warangal students to attend spree. Everyone should pay the fee htmlFor participating in any event mentioned by the respective event managers."
 		},
 		{
 			title: "Who can attend the fest?",
-			content: "College students from any institute (as well as those past the 12th grade but have not chosen a college yet) are permitted to participate in Spring Spree 2023."
+			content: "College students from any institute (as well as those past the 12th grade but have not chosen a college yet) are permitted to participate in Spring Spree 2024."
 		},
 	];
 	const faqs2 = [
 		{
 			title: "What all events and competitions will be there?",
-			content: "There will be spotlight events, club events,workshops and music and dance competitions and many exciting events."
+			content: "There will be spotlight events, club events, workshops as well as music and dance competitions, and many other exciting events"
 		},
 		{
 			title: "Will there be any fee to attend an event?",
-			content: "Yes, there will be fee to attend few events."
+			content: "Yes, there will be a fee to attend few events."
 		},
 		{
 			title: "Will there be any cash prizes?",
-			content: "Yes, there are exciting cash prizes and goodies."
+			content: "No, there are NO cash prizes but a lot of exciting goodies."
 		},
 		{
 			title: "Who decides the winners and what will be the judging creteria?",
@@ -59,7 +59,7 @@ function FAQS_Mobile() {
 	const faqs3 = [
 		{
 			title: "Will I get food and accomodation?",
-			content: "No, Only accomodation will be taken care by the spree team once after you register for the fest."
+			content: "No, only accomodation will be taken care by the spree team once after you register for the fest."
 		},
 		{
 			title: "Is the fest open to attend for any outsiders?",
@@ -72,7 +72,7 @@ function FAQS_Mobile() {
 			content: "Proshows are your chance to see your favorite celebrities live. These are concerts lined up on each night of Spree."
 		},
 		{
-			title: "Who are the celebrities which are going to perform at the star nights of Spring Spree 2024?",
+			title: "Which celebrities are going to perform at the star nights of Spring Spree 2024?",
 			content: "Will be deeclared soon..."
 		},
 	];

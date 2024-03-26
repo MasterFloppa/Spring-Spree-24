@@ -40,7 +40,7 @@ const faqs1 = [
 		question: <h2>When is the fest?</h2>,
 		answer: <p>
 			The fest is celebrated for three consecutive days from April 7 to
-			April 9 2023.
+			April 9 2024.
 		</p>,
 	},
 	{
@@ -53,7 +53,7 @@ const faqs1 = [
 				<li>Director's Cut (A Short Film Contest)</li>
 				<li>Allure (A Fashion Show)</li>
 				<li>Q-Factor (A Quiz Competition)</li>
-				<li>NIT-MUN (A Model United Nations)</li>
+				{/* <li>NIT-MUN (A Model United Nations)</li> */}
 			</ul>
 		</p>,
 	},
@@ -62,7 +62,7 @@ const faqs1 = [
 		question: <h2>
 			What is the mode of conduction of the fest (Online or Offiline)?
 		</h2>,
-		answer: <p>Fest (Spring Spree'23) is being conducted offline.</p>,
+		answer: <p>Fest (Spring Spree'24) is being conducted offline.</p>,
 	},
 ];
 
@@ -73,8 +73,7 @@ const faqs2 = [
 		id: 5,
 		question: <h2>What is the process of registration?</h2>,
 		answer: <p>
-			Registration can be done on this website (
-			<a href="https://springspree.nitw.in">springspree.nitw.in</a>) by filling
+			Registration can be done through the google form provided in the registration page, by filling
 			up your details, as well offline by registering on the spot.
 		</p>,
 	},
@@ -98,7 +97,7 @@ const faqs2 = [
 		answer: <p>
 			College students from any institute (as well as those past the 12th
 			grade but have not chosen a college yet) are permitted to
-			participate in Spring Spree 2023.
+			participate in Spring Spree 2024.
 		</p>,
 	},
 ];
@@ -109,14 +108,14 @@ const faqs3 = [
 		id: 9,
 		question: <h2>What all events and competitions will be there?</h2>,
 		answer: <p>
-			There will be spotlight events, club events,workshops and music and
-			dance competitions and many exciting events.
+			There will be spotlight events, club events, workshops as well as music and
+			dance competitions, and many other exciting events.
 		</p>,
 	},
 	{
 		id: 10,
 		question: <h2>Will there be any fee to attend an event?</h2>,
-		answer: <p>Yes, there will be fee to attend few events.</p>,
+		answer: <p>Yes, there will be a fee to attend few events.</p>,
 	},
 	{
 		id: 11,
@@ -150,8 +149,7 @@ const faqs4 = [
 		id: 14,
 		question: <h2>Will I get food and accomodation?</h2>,
 		answer: <p>
-			Yes, both food and accomodation will be taken care by the spree team
-			once after you register for the fest.
+			No, only accomodation will be taken care by the spree team once after you register for the fest.
 		</p>,
 	},
 	{
@@ -174,7 +172,7 @@ const faqs5 = [
 	{
 		id: 17,
 		question: <h2>
-			Who are the celebrities which are going to perform at the star nights of Spring Spree 2023?
+			Who are the celebrities which are going to perform at the star nights of Spring Spree 2024?
 		</h2>,
 		answer: <p>
 			Will be declared soon...

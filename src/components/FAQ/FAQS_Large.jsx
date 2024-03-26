@@ -24,7 +24,7 @@ function FAQS_Large() {
 	const faqs1 = [
 		{
 			title: "What is the process of registration?",
-			content: "Registration can be done on this website ,by filling up your details, as well offline by registering on the spot."
+			content: "Registration can be done through the google form provided in the registration page, by filling up your details, as well offline by registering on the spot."
 		},
 		{
 			title: "How do I confirm my registration?",
@@ -32,7 +32,7 @@ function FAQS_Large() {
 		},
 		{
 			title: "How much is the entry fee?",
-			content: "There will be a fixed entry fee for other than NIT Warangal students to attend spree. Everyone should pay the fee htmlFor participating in any event mentioned by the respective event managers."
+			content: "There will be a fixed entry fee for other than NIT Warangal students to attend spree. Everyone should pay the fee for participating in any event mentioned by the respective event managers."
 		},
 		{
 			title: "Who can attend the fest?",
@@ -42,15 +42,15 @@ function FAQS_Large() {
 	const faqs2 = [
 		{
 			title: "What all events and competitions will be there?",
-			content: "There will be spotlight events, club events,workshops and music and dance competitions and many exciting events."
+			content: "There will be spotlight events, club events, workshops as well as music and dance competitions, and many other exciting events"
 		},
 		{
 			title: "Will there be any fee to attend an event?",
-			content: "Yes, there will be fee to attend few events."
+			content: "Yes, there will be a fee to attend few events."
 		},
 		{
 			title: "Will there be any cash prizes?",
-			content: "Yes, there are exciting cash prizes and goodies."
+			content: "No, there are NO cash prizes but a lot of exciting goodies."
 		},
 		{
 			title: "Who decides the winners and what will be the judging creteria?",
