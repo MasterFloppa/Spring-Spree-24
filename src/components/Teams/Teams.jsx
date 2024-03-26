@@ -28,24 +28,27 @@ const teamInformation = [
 		link: '',
 		email: '',
 		phoneNum: '',
+		importance: 'Yes',
 	},
 
 	// 2
 	{
-		teamName: 'Prof. D Srinivasa Charya',
+		teamName: 'Prof. D. Srinivasacharya',
 		position: 'Dean Student Welfare',
 		photo: dean,
 		link: '',
 		email: '',
 		phoneNum: '',
+		importance: 'Yes',
 	},
 	{
-		teamName: 'Prof P. Harikrishna',
+		teamName: 'Prof P. Hari Krishna',
 		position: 'SAC President',
 		photo: sac,
 		link: '',
 		email: '',
 		phoneNum: '',
+		importance: 'Yes',
 	},
 
 	// Cultural Presidents
@@ -56,6 +59,7 @@ const teamInformation = [
 		link: '',
 		email: '',
 		phoneNum: '',
+		importance: 'No',
 	},
 	{
 		teamName: 'Prof. P. Muralidhar',
@@ -64,6 +68,7 @@ const teamInformation = [
 		link: '',
 		email: '',
 		phoneNum: '',
+		importance: 'No',
 	},
 	{
 		teamName: 'Prof. P. Hari Prasad Reddy',
@@ -72,6 +77,7 @@ const teamInformation = [
 		link: '',
 		email: '',
 		phoneNum: '',
+		importance: 'No',
 	},
 	{
 		teamName: 'Prof. P. Abdul Azeem',
@@ -80,6 +86,7 @@ const teamInformation = [
 		link: '',
 		email: '',
 		phoneNum: '',
+		importance: 'No',
 	},
 
 
@@ -92,6 +99,7 @@ const teamInformation = [
 		link: '',
 		email: 'sec_cultural@nitw.ac.in',
 		phoneNum: '',
+		importance: 'No',
 	},
 	{
 		teamName: 'Prashant Kumar',
@@ -100,6 +108,7 @@ const teamInformation = [
 		link: '',
 		email: 'sec_fms@nitw.ac.in',
 		phoneNum: '',
+		importance: 'No',
 	},
 	{
 		teamName: 'Thanish Nasir Ahammed',
@@ -108,6 +117,7 @@ const teamInformation = [
 		link: '',
 		email: 'sec_sports@nitw.ac.in',
 		phoneNum: '',
+		importance: 'No',
 	},
 	{
 		teamName: 'Ramavath Chander Nayak',
@@ -116,6 +126,7 @@ const teamInformation = [
 		link: '',
 		email: 'sec_technical@nitw.ac.in',
 		phoneNum: '',
+		importance: 'No',
 	},
 
 ];
@@ -182,6 +193,7 @@ const Teams = () => {
 										photo={team.photo}
 										link={team.link}
 										members={team.members}
+										imporatance={team.importance}
 									/>
 								);
 							} else return <></>;
@@ -205,6 +217,7 @@ const Teams = () => {
 										photo={team.photo}
 										link={team.link}
 										members={team.members}
+										imporatance={team.importance}
 									/>
 								);
 							} else return <></>;
@@ -216,7 +229,7 @@ const Teams = () => {
 							Vice Presidents
 						</h1>
 					</div>
-					<div className="flex md:flex-row flex-col justify-center -m-4 md:px-12 sm:px-16">
+					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
 						{teamInfo.map((team, index) => {
 							if (index > 2 && index <= 6) {
 								return (
@@ -239,7 +252,7 @@ const Teams = () => {
 							Student Secretaries
 						</h1>
 					</div>
-					<div className="flex md:flex-row flex-col justify-center -m-4 md:px-12 sm:px-16">
+					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
 						{teamInfo.map((team, index) => {
 							if (index > 6 && index <= 10) {
 								return (
@@ -251,6 +264,7 @@ const Teams = () => {
 										link={team.link}
 										members={team.members}
 										email={team.email}
+										imporatance={team.importance}
 									/>
 								);
 							} else return <></>;
@@ -263,7 +277,7 @@ const Teams = () => {
 							Student Teams
 						</h1>
 					</div>
-					<div className="flex flex-wrap justify-center -m-4  md:px-16 sm:px-16">
+					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
 						{teamInfo.map((team, index) => {
 							if (index > 10) {
 								return (
@@ -274,6 +288,7 @@ const Teams = () => {
 										photo={team.photo}
 										link={team.link}
 										members={team.members}
+										imporatance={"No"}
 									/>
 								);
 							} else return <></>;

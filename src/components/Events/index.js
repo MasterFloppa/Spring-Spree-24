@@ -12,6 +12,7 @@ const pdfLinks = [
 	{ name: 'Rap Idol', link: 'RI.pdf' }
 ]
 
+
 function Events() {
 
 	const [evetnsInfo, setevetnsInfo] = useState([]);

@@ -129,7 +129,7 @@ const faqs3 = [
 	{
 		id: 12,
 		question: <h2>Will there be any cash prizes?</h2>,
-		answer: <p>Yes, there are exciting cash prizes and goodies.</p>,
+		answer: <p>No, there are NO cash prizes but a lot of exciting goodies.</p>,
 	},
 	{
 		id: 13,

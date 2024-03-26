@@ -5,11 +5,11 @@ import "./Card_1.css";
 const Proshow = () => {
 
     return (
-        <div className="pro_show_page_container min-h-screen overflow-x-hidden">
+        <div className="pro_show_page_container min-h-screen pt-16 overflow-x-hidden">
             {data.map((day, index) => {
                 return (
                     <div key={index} className=" pro_show_page_card_container flex-auto flex justify-center items-center flex-col">
-                        <h2 className="Day-text text-center text-[#f4d4d8] font-bold mb-2">Day {index + 1}</h2>
+                        <h2 className="Day-text text-center text-[#f4d4d8] font-bold my-2">Day {index + 1}</h2>
                         <Day key={index} data={day} />
                     </div>
                 );

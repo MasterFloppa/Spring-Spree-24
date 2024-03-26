@@ -11,7 +11,7 @@ const Day = ({ data }) => {
     };
 
     return (
-        <div className='flex justify-center items-center'>
+        <div className='flex flex-wrap justify-center gap-4 items-center mb-4'>
             {renderCards()}
         </div>
     );
