@@ -2,10 +2,12 @@ import React from "react";
 import { data } from "./data";
 import Day from "./Day";
 import "./Card_1.css";
+import bg from "./music_bg.jpeg";
 const Proshow = () => {
 
     return (
         <div className="pro_show_page_container min-h-screen pt-16 overflow-x-hidden">
+            <img src={bg} className='bg-img' alt='bg'/>
             {data.map((day, index) => {
                 return (
                     <div key={index} className=" pro_show_page_card_container flex-auto flex justify-center items-center flex-col">
