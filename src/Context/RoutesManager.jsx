@@ -22,20 +22,12 @@ const RoutesManager = () => {
 	return (
 		<Routes>
 			{/* If user is not logged in, show only AuthPage */}
-			{!user ? (
+			
 				<>
 					<Route path="/auth" element={<AuthPage />} />
 					<Route path="/register" element={<AuthPage />} />
 					<Route path="/profile" element={<AuthPage />} />
 				</>
-			) : (
-				<>
-					<Route path="/auth" element={<Register />} />
-					<Route path="/register" element={<Register />} />
-					<Route path="/profile" element={<Profile />} />
-				</>
-			)}
-
 			<Route path="/" element={<Home />} />
 			<Route path="/about" element={<About />} />
 			<Route path="/sponsors" element={<Sponsors />} />
