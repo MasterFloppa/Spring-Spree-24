@@ -289,6 +289,7 @@ const Teams = () => {
 										link={team.link}
 										members={team.members}
 										imporatance={"No"}
+										teamType='StudentTeams'
 									/>
 								);
 							} else return <></>;

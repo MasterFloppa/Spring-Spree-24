@@ -12,6 +12,7 @@ const TeamsCard = ({
 	email,
 	phoneNum,
 	imporatance,
+	teamType
 }) => {
 	return (
 		<div className={`boxx sm:w-1/1 md:w-1/2 lg:w-1/3 sm:p-4 xsm:py-4 text-black hover:text-tzblue game-container 
@@ -25,6 +26,7 @@ const TeamsCard = ({
 								src={photo}
 								alt="team_image"
 								className="sm:max-w-full md:max-w-fit"
+								style={{ borderRadius: (teamType === "StudentTeams") ? '0' : '' }}
 							></img>
 						</div>
 						<div className="p-6 transition duration-300 ease-in miniitem">

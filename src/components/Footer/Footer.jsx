@@ -20,7 +20,7 @@ export default function Footer() {
 										Rasengan
 									</h3>
 									<h3 className="footer-tag mb-2 italic font-ojuju font-semibold text-purple xsm:text-center md:text-left flex justify-center">
-										Unwind, recharge and revel is the tagline we used
+										Unwind, recharge and revel
 									</h3>
 									<h3 className="text-center footer-note  mx-4  font-ojuju text-purple font-[300] lg:mx-20 ">
 										Namaste and a very warm welcome to SpringSpree - our vibrant
