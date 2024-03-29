@@ -19,6 +19,7 @@ import { useLocation } from 'react-router-dom';
 const RoutesManager = () => {
 	const { user } = useAuth();
 	const location = useLocation();
+	window.scroll(0,0);
 	return (
 		<Routes>
 			{/* If user is not logged in, show only AuthPage */}
