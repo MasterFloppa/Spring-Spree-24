@@ -7,7 +7,7 @@ import Loader from '../Loader/index.js'
 
 const pdfLinks = [
 	{ name: 'Rule Book', link: 'rules.pdf' },
-	{ name: 'Battle of Bands', link: 'BOB.pdf' },
+	// { name: 'Battle of Bands', link: 'BOB.pdf' },
 	{ name: 'Solo Idol', link: 'SI.pdf' },
 	{ name: 'Rap Idol', link: 'RI.pdf' }
 ]
@@ -44,7 +44,7 @@ function Events() {
 				{
 					types.map(type => {
 						return (
-							<div key={type} className='spons flex-col justify-center items-center mb-6'  style={{ 'z-index': '2' }}>
+							<div key={type} className='spons flex-col justify-center items-center mb-6' style={{ 'z-index': '2' }}>
 								<h1 className='flex justify-center text-pink text-4xl mb-10 mt-20'>{type}</h1>
 								<div className='spons_line'>
 									{evetnsInfo.filter(sponsor => sponsor.type === type).map((sponsor, index) =>
