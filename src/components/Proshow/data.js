@@ -1,6 +1,7 @@
 import Nakash_Aziz from "./media/Nakash_Aziz.jpeg";
 import Chowraasta from "./media/Chowraasta.jpg";
 import lohar from "./media/lohar.jpg"
+import hari from "./media/hari.jpg"
 
 
 export const data = [
@@ -11,6 +12,11 @@ export const data = [
             Title: "Chowraasta",
             Desc: "Chowraasta is an Indian band known for its unique fusion of folk, rock, and alternative music.",
             // Image2: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?cs=srgb&dl=pexels-sebastian-ervi-1763075.jpg&fm=jpg"
+        },
+        {
+            Image: hari,
+            Title: "Haricharan",
+            Desc: " Haricharan, is an Indian Carnatic vocalist, playback singer, and musician who predominantly works in music and cinema."
         },
     ],
     // Day 2
