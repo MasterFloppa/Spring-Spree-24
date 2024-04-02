@@ -6,8 +6,8 @@ import { ImCross } from "react-icons/im";
 import springspree from "./springspree2.png";
 import './index.css';
 
-
-const navigation = [
+const isMobileView = window.innerWidth <= 725;
+const oldNavigation  = [
 	{ name: "HOME", link: "/" },
 	{ name: "EVENTS", link: "/events" },
 	// { name: "SPONSORS", link: "/sponsors" },
@@ -15,6 +15,13 @@ const navigation = [
 	{ name: "FAQs", link: "/faq" },
 	// { name: "PRO SHOWS", link: "/proshows" }
 ];
+let navigation =[];
+if(isMobileView){
+	 navigation = oldNavigation.concat({name:"REGISTER",link:"/auth"});
+}
+else{
+	navigation=oldNavigation;
+}
 
 export default function Navbar() {
 
