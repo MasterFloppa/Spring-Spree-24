@@ -6,7 +6,7 @@ import bg from "./music_bg.jpeg";
 const Proshow = () => {
 
     return (
-        <div className="pro_show_page_container min-h-screen pt-16 overflow-x-hidden">
+        <div className="pro_show_page_container min-h-screen pt-16 overflow-x-hidden" style={{"margin-bottom":"50px"}}>
             <img src={bg} className='bg-img' alt='bg'/>
             {data.map((day, index) => {
                 return (
