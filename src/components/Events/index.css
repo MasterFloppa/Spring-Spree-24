@@ -163,7 +163,26 @@
   border-radius: 10px;
   z-index: 1;
   height: 5rem;
+  margin-left:7%; 
+  margin-right: 7%;
+
 }
+
+@media (max-width :500px){
+	.boxi{
+		margin-left:2%;
+		margin-right:2%;
+	}
+
+	.buttoni{
+		width : 30%;
+		height : 90%;
+		animation: none;
+		
+	}
+}
+
+
 
 .bg-rot1{
   position: fixed;

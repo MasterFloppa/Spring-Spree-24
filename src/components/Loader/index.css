@@ -9,13 +9,13 @@
 .spin {
     position: absolute;
     height: 20%;
-    animation: spin 4s linear infinite;
+    animation: spin 10s linear infinite;
 }
 
 .spin1-5 {
     position: absolute;
     height: 20%;
-    animation: spin2 4s linear infinite;
+    animation: spin2 10s linear infinite;
 }
 
 @keyframes spin {
@@ -31,13 +31,13 @@
 .spin2 {
     position: absolute;
     height: 50%;
-    animation: spin2 4s linear infinite;
+    animation: spin2 10s linear infinite;
 }
 
 .spin2-5 {
     position: absolute;
     height: 50%;
-    animation: spin 4s linear infinite;
+    animation: spin 10s linear infinite;
 }
 
 @keyframes spin2 {
@@ -47,5 +47,25 @@
 
     to {
         transform: rotate(-360deg);
+    }
+}
+
+@media (max-width:850px) {
+
+    .spin{
+        
+        height:40vw;
+    }
+
+    .spin2{
+        height:100vw;
+    }
+
+    .spin1-5{
+        height:40vw;
+    }
+
+    .spin2-5{
+        height:100vw;
     }
 }
