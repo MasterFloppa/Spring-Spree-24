@@ -8,7 +8,7 @@ import Loader from '../Loader/index.js'
 const pdfLinks = [
 	{ name: 'Rule Book', link: 'rules.pdf' },
 	// { name: 'Battle of Bands', link: 'BOB.pdf' },
-	{ name: 'Solo Idol', link: 'SI.pdf' },
+	{ name: 'NITW Solo Idol', link: 'SI.pdf' },
 	{ name: 'Rap Idol', link: 'RI.pdf' }
 ]
 

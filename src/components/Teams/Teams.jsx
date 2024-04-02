@@ -12,6 +12,7 @@ import ben from './media/PROF_SATISH_BEN.jpeg';
 import murali from './media/Murali.jpg';
 import hari from './media/Hari.jpg';
 import azeem from './media/Azeem.jpg';
+import dhari from './media/DHari.jpg';
 
 import chand from './media/Chander.jpeg';
 import sahith from './media/Sahith.jpeg';
@@ -51,7 +52,7 @@ const teamInformation = [
 		importance: 'Yes',
 	},
 
-	// Cultural Presidents
+	// Vice Presidents
 	{
 		teamName: 'Prof B. Satish Ben',
 		position: 'Vice President Cultural',
@@ -83,6 +84,15 @@ const teamInformation = [
 		teamName: 'Prof. P. Abdul Azeem',
 		position: 'Vice President Sports',
 		photo: azeem,
+		link: '',
+		email: '',
+		phoneNum: '',
+		importance: 'No',
+	},
+	{
+		teamName: 'Dr. D. Hari',
+		position: 'Assistant Registrar SAC',
+		photo: dhari,
 		link: '',
 		email: '',
 		phoneNum: '',
@@ -167,7 +177,7 @@ const Teams = () => {
 
 	return (
 		<div className="bg-bgBlue text-white">
-			<img src={bg} className='bg-img' alt='bg'/>
+			<img src={bg} className='bg-img' alt='bg' />
 			<div className="bg-purple text-pink pt-[100px] text-center flex">
 				<h1 className="sponsors-hero-title text-4xl font-[800] text-bolder mx-auto flex justify-start items-center text-center">
 					SpringSpree Team
@@ -224,14 +234,15 @@ const Teams = () => {
 						})}
 					</div>
 					<br />
+					<br />
 					<div className="text-center mb-8 mt-4">
 						<h1 className="sponsors-hero-title text-3xl md:text-3xl text-bolder mb-1">
-							Vice Presidents
+							Vice Presidents & Assistant Registrar
 						</h1>
 					</div>
 					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
 						{teamInfo.map((team, index) => {
-							if (index > 2 && index <= 6) {
+							if (index > 2 && index <= 7) {
 								return (
 									<TeamsCard
 										key={index}
@@ -254,7 +265,7 @@ const Teams = () => {
 					</div>
 					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
 						{teamInfo.map((team, index) => {
-							if (index > 6 && index <= 10) {
+							if (index > 7 && index <= 11) {
 								return (
 									<TeamsCard
 										key={index}
@@ -279,7 +290,7 @@ const Teams = () => {
 					</div>
 					<div className="flex flex-wrap justify-center -m-4 md:px-12 sm:px-16">
 						{teamInfo.map((team, index) => {
-							if (index > 10) {
+							if (index > 11) {
 								return (
 									<TeamsCard
 										key={index}

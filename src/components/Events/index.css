@@ -131,78 +131,82 @@
 }
 
 .buttoni {
-  background-color: #232754 ;
-  border-radius: 10px;
-  color: #f4d4d8;
-  box-shadow: #d2828b;
-  animation: pulse-animation 2s ease-in-out infinite alternate;
-  padding: 1%;
-  opacity: 70%;
+	background-color: #232754;
+	border-radius: 10px;
+	color: #f4d4d8;
+	box-shadow: #d2828b;
+	animation: pulse-animation 2s ease-in-out infinite alternate;
+	padding: 1%;
+	opacity: 70%;
 }
 
-.buttoni:hover{
-  opacity: 100%;
+.buttoni:hover {
+	opacity: 100%;
 }
 
 @keyframes pulse-animation {
-  0% {
-    transform: scale(0.95);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(0.95);
-  }
+	0% {
+		transform: scale(0.95);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
 
 }
 
 
 .boxi {
-  background-color: #f4d4d8;
-  border-radius: 10px;
-  z-index: 1;
-  height: 5rem;
-  margin-left:7%; 
-  margin-right: 7%;
-
+	background-color: #f4d4d8;
+	border-radius: 10px;
+	z-index: 1;
+	height: 5rem;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
-@media (max-width :500px){
-	.boxi{
-		margin-left:2%;
-		margin-right:2%;
+@media (max-width :500px) {
+	.boxi {
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 
-	.buttoni{
-		width : 30%;
-		height : 90%;
+	.buttoni {
+		width: 30%;
+		height: 90%;
 		animation: none;
-		
+
 	}
 }
 
 
 
-.bg-rot1{
-  position: fixed;
-  top: 0;
-  left: -25%;
-  width: 250%;
-  height: 250%;
-  object-fit: cover;
-  z-index: 0; /* Ensure the image is behind all content */
-  opacity: 0.2; /* Adjust the opacity as needed */
+.bg-rot1 {
+	position: fixed;
+	top: 0;
+	left: -25%;
+	width: 250%;
+	height: 250%;
+	object-fit: cover;
+	z-index: 0;
+	/* Ensure the image is behind all content */
+	opacity: 0.2;
+	/* Adjust the opacity as needed */
 }
 
-.bg-rot2{
-  position: fixed;
-  top: 0;
-  left: -125%;
-  width: 250%;
-  height: 250%;
-  object-fit: cover;
-  z-index: 0; /* Ensure the image is behind all content */
-  opacity: 0.2; /* Adjust the opacity as needed */
+.bg-rot2 {
+	position: fixed;
+	top: 0;
+	left: -125%;
+	width: 250%;
+	height: 250%;
+	object-fit: cover;
+	z-index: 0;
+	/* Ensure the image is behind all content */
+	opacity: 0.2;
+	/* Adjust the opacity as needed */
 }
-

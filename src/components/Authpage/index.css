@@ -91,7 +91,31 @@
 
     .rasenganIMG {
         /* display: none; */
-        margin-top: 28%;
+        margin-top: 35%;
     }
 
+    .btn35 {
+        width: 30%;
+    }
+}
+
+@media (max-width: 376px) {
+    .rasenganIMG {
+        /* display: none; */
+        margin-top: 41%;
+    }
+}
+
+@media (max-width: 376px) {
+    .rasenganIMG {
+        /* display: none; */
+        margin-top: 41%;
+    }
+}
+
+@media (max-width: 321px) {
+    .rasenganIMG {
+        /* display: none; */
+        margin-top: 51%;
+    }
 }

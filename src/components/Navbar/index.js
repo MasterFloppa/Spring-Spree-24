@@ -7,7 +7,7 @@ import springspree from "./springspree2.png";
 import './index.css';
 
 const isMobileView = window.innerWidth <= 725;
-const oldNavigation  = [
+const oldNavigation = [
 	{ name: "HOME", link: "/" },
 	{ name: "EVENTS", link: "/events" },
 	// { name: "SPONSORS", link: "/sponsors" },
@@ -21,25 +21,25 @@ export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);				//for hamburger menu
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 	const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 725);
-   
-	useEffect(() => {
-        const handleResize = () => {
-            setIsMobileView(window.innerWidth <= 725);
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
-    useEffect(() => {
-        if (isMobileView) {
-            setNavigation([...oldNavigation, { name: "REGISTER", link: "/auth" }]);
-        } else {
-            setNavigation(oldNavigation);
-        }
-    }, [isMobileView]);
-	
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobileView(window.innerWidth <= 725);
+		};
+		window.addEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
+	useEffect(() => {
+		if (isMobileView) {
+			setNavigation([...oldNavigation, { name: "REGISTER", link: "/auth" }]);
+		} else {
+			setNavigation(oldNavigation);
+		}
+	}, [isMobileView]);
+
 	// const { user, logOut } = useUserAuth();	//for backend integration
 
 	// useEffect(() => {
