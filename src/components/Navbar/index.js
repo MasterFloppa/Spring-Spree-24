@@ -15,18 +15,31 @@ const oldNavigation  = [
 	{ name: "FAQs", link: "/faq" },
 	// { name: "PRO SHOWS", link: "/proshows" }
 ];
-let navigation =[];
-if(isMobileView){
-	 navigation = oldNavigation.concat({name:"REGISTER",link:"/auth"});
-}
-else{
-	navigation=oldNavigation;
-}
 
 export default function Navbar() {
-
+	const [navigation, setNavigation] = useState(oldNavigation);
 	const [menuOpen, setMenuOpen] = useState(false);				//for hamburger menu
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
+	const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 725);
+   
+	useEffect(() => {
+        const handleResize = () => {
+            setIsMobileView(window.innerWidth <= 725);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (isMobileView) {
+            setNavigation([...oldNavigation, { name: "REGISTER", link: "/auth" }]);
+        } else {
+            setNavigation(oldNavigation);
+        }
+    }, [isMobileView]);
+	
 	// const { user, logOut } = useUserAuth();	//for backend integration
 
 	// useEffect(() => {
