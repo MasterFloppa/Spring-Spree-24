@@ -17,3 +17,9 @@
 h1{
 	font-family: "Aftersick";
 }
+
+@media (max-width: 725px) {
+  .pmob {
+    font-size: 1.8rem; /* Adjust the font size as needed */
+  }
+}

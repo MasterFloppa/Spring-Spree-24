@@ -15,7 +15,7 @@ export const Cguest = () =>{
                 <div className='min-w-[45%] flex flex-col justify-center items-center p-6'>
                     <h1 className='text-lg md:text-xl lg:text-2xl font-[600] mb-[-6px]'>TO</h1>
                     <h2 className='text-lg md:text-xl lg:text-2xl font-[600] mb-[-6px]'>Our Honorable Director</h2>
-                    <h2 className='text-lg md:text-xl lg:text-2xl font-[600]'><span className='text-3xl md:text-5xl lg:text-6xl font-[900] text-[#ca85b8]'>Prof. Bidyadhar Subudhi</span></h2>
+                    <h2 className='text-lg md:text-xl lg:text-2xl font-[600] '><span className='text-3xl md:text-5xl lg:text-6xl font-[900] text-[#ca85b8] pmob'>Prof. Bidyadhar Subudhi</span></h2>
                     <br/>
                     <h1 className='text-lg md:text-xl lg:text-2xl font-[600] mb-[-6px]'>INAUGURAL CEREMONY</h1>
                     <div className='flex flex-row flex-wrap justify-around gap-2 mt-4 md:mt-7'>
