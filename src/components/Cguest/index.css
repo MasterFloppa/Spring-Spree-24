@@ -1,6 +1,6 @@
 .overlay{
     /* background-image: radial-gradient(circle, rgba(2,0,36,0) 10%, rgba(1,0,20,0) 30%, rgba(0,0,0,1) 70%); */
-    background-image: radial-gradient(circle, rgba(42,57,184,0) 10%, rgba(41,57,168,0) 30%, rgba(40,57,148,1) 70%);
+    background-image: radial-gradient(circle, rgba(42,57,184,0) 30%, rgba(41,57,168,0) 50%, rgba(40,57,148,1) 70%);
 
     background-position: 100% 100%;
 }
