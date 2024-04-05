@@ -10,7 +10,7 @@ export const Cguest = () =>{
                 
                 <div className='img-cont relative'>
                     <div className='overlay absolute top-0 left-0 h-full w-full z-10' ></div>
-                    <img className='min-w-[450px] max-w-[450px] w-full h-auto' src={cguest} alt='cguest'/>
+                    <img className='min-w-[100px] max-w-[450px] w-full h-auto' src={cguest} alt='cguest'/>
                 </div>
                 <div className='min-w-[45%] flex flex-col justify-center items-center p-6'>
                     <h1 className='text-lg md:text-xl lg:text-2xl font-[600] mb-[-6px]'>TO</h1>
